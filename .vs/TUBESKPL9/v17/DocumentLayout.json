@@ -14,12 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -28,9 +24,9 @@
               "RelativeDocumentMoniker": "TUBESKPL9\\Program.cs",
               "ToolTip": "D:\\TUBESKPL9\\TUBESKPL9\\Program.cs",
               "RelativeToolTip": "TUBESKPL9\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T16:15:33.995Z",
+              "WhenOpened": "2025-05-01T22:07:18.144Z",
               "EditorCaption": ""
             }
           ]
