@@ -12,7 +12,7 @@ public class Buku
 
     public override string ToString()
     {
-        return $"ID: {idBuku}, Judul: {judul}, Penulis: {penulis}, Kategori: {kategori}, Tahun: {tahunTerbit}";
+        return $"ID: {idBuku}, Judul: {judul}";
     }
 }
 
@@ -21,17 +21,25 @@ public class Peminjaman
     public Buku BukuDipinjam { get; set; }
     public string NamaPeminjam { get; set; }
     public DateTime TanggalPinjam { get; set; }
+    public bool SudahKembali { get; private set; }
 
     public Peminjaman(Buku buku, string nama)
     {
         BukuDipinjam = buku;
         NamaPeminjam = nama;
         TanggalPinjam = DateTime.Now;
+        SudahKembali = false;
+    }
+
+    public void Kembalikan()
+    {
+        SudahKembali = true;
     }
 
     public string Info()
     {
-        return $"Judul: {BukuDipinjam.judul}, Dipinjam oleh: {NamaPeminjam}, Tanggal: {TanggalPinjam.ToShortDateString()}";
+        string status = SudahKembali ? "Sudah dikembalikan" : "Belum dikembalikan";
+        return $"Judul: {BukuDipinjam.judul}, Peminjam: {NamaPeminjam}, Tanggal Pinjam: {TanggalPinjam.ToShortDateString()}, Status: {status}";
     }
 }
 
@@ -39,39 +47,25 @@ class Program
 {
     static void Main()
     {
-        List<Buku> daftarBuku = new List<Buku>
-        {
-            new Buku { idBuku = "B01", judul = "Algoritma", penulis = "Dian", kategori = "Teknik", tahunTerbit = 2019 },
-            new Buku { idBuku = "B02", judul = "Pemrograman C#", penulis = "Andi", kategori = "Komputer", tahunTerbit = 2021 },
-            new Buku { idBuku = "B03", judul = "Sejarah Dunia", penulis = "Rini", kategori = "Sejarah", tahunTerbit = 2018 }
-        };
+        // Data dummy peminjaman aktif (asumsi sebelumnya dipinjam)
+        var buku1 = new Buku { idBuku = "B02", judul = "Pemrograman C#", penulis = "Andi", kategori = "Komputer", tahunTerbit = 2021 };
+        var peminjaman = new Peminjaman(buku1, "Adit");
 
-        List<Peminjaman> daftarPeminjaman = new List<Peminjaman>();
+        Console.WriteLine("Data Peminjaman Sebelum Pengembalian:");
+        Console.WriteLine(peminjaman.Info());
 
-        Console.WriteLine("Daftar Buku:");
-        foreach (var buku in daftarBuku)
-        {
-            Console.WriteLine(buku);
-        }
-
-        Console.Write("\nMasukkan ID buku yang ingin dipinjam: ");
+        Console.Write("\nMasukkan ID buku yang ingin dikembalikan: ");
         string id = Console.ReadLine();
-        Buku bukuDipilih = daftarBuku.FirstOrDefault(b => b.idBuku == id);
 
-        if (bukuDipilih != null)
+        if (id == peminjaman.BukuDipinjam.idBuku && !peminjaman.SudahKembali)
         {
-            Console.Write("Masukkan nama peminjam: ");
-            string nama = Console.ReadLine();
-
-            Peminjaman pinjam = new Peminjaman(bukuDipilih, nama);
-            daftarPeminjaman.Add(pinjam);
-
-            Console.WriteLine("\n--- Bukti Peminjaman ---");
-            Console.WriteLine(pinjam.Info());
+            peminjaman.Kembalikan();
+            Console.WriteLine("\n--- Bukti Pengembalian ---");
+            Console.WriteLine(peminjaman.Info());
         }
         else
         {
-            Console.WriteLine("ID buku tidak ditemukan.");
+            Console.WriteLine("\nGagal: Buku tidak ditemukan atau sudah dikembalikan.");
         }
     }
 }
