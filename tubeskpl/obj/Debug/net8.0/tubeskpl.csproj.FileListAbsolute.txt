@@ -13,3 +13,18 @@ C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\tubeskpl\tubeskpl\obj\Debug\net
 C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\tubeskpl\tubeskpl\obj\Debug\net8.0\tubeskpl.pdb
 C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\tubeskpl\tubeskpl\obj\Debug\net8.0\tubeskpl.genruntimeconfig.cache
 C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\tubeskpl\tubeskpl\obj\Debug\net8.0\ref\tubeskpl.dll
+C:\Users\ekaya\OneDrive\Documents\GitHub\TUBESKPL_9\tubeskpl\bin\Debug\net8.0\tubeskpl.exe
+C:\Users\ekaya\OneDrive\Documents\GitHub\TUBESKPL_9\tubeskpl\bin\Debug\net8.0\tubeskpl.deps.json
+C:\Users\ekaya\OneDrive\Documents\GitHub\TUBESKPL_9\tubeskpl\bin\Debug\net8.0\tubeskpl.runtimeconfig.json
+C:\Users\ekaya\OneDrive\Documents\GitHub\TUBESKPL_9\tubeskpl\bin\Debug\net8.0\tubeskpl.dll
+C:\Users\ekaya\OneDrive\Documents\GitHub\TUBESKPL_9\tubeskpl\bin\Debug\net8.0\tubeskpl.pdb
+C:\Users\ekaya\OneDrive\Documents\GitHub\TUBESKPL_9\tubeskpl\obj\Debug\net8.0\tubeskpl.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ekaya\OneDrive\Documents\GitHub\TUBESKPL_9\tubeskpl\obj\Debug\net8.0\tubeskpl.AssemblyInfoInputs.cache
+C:\Users\ekaya\OneDrive\Documents\GitHub\TUBESKPL_9\tubeskpl\obj\Debug\net8.0\tubeskpl.AssemblyInfo.cs
+C:\Users\ekaya\OneDrive\Documents\GitHub\TUBESKPL_9\tubeskpl\obj\Debug\net8.0\tubeskpl.csproj.CoreCompileInputs.cache
+C:\Users\ekaya\OneDrive\Documents\GitHub\TUBESKPL_9\tubeskpl\obj\Debug\net8.0\tubeskpl.sourcelink.json
+C:\Users\ekaya\OneDrive\Documents\GitHub\TUBESKPL_9\tubeskpl\obj\Debug\net8.0\tubeskpl.dll
+C:\Users\ekaya\OneDrive\Documents\GitHub\TUBESKPL_9\tubeskpl\obj\Debug\net8.0\refint\tubeskpl.dll
+C:\Users\ekaya\OneDrive\Documents\GitHub\TUBESKPL_9\tubeskpl\obj\Debug\net8.0\tubeskpl.pdb
+C:\Users\ekaya\OneDrive\Documents\GitHub\TUBESKPL_9\tubeskpl\obj\Debug\net8.0\tubeskpl.genruntimeconfig.cache
+C:\Users\ekaya\OneDrive\Documents\GitHub\TUBESKPL_9\tubeskpl\obj\Debug\net8.0\ref\tubeskpl.dll
