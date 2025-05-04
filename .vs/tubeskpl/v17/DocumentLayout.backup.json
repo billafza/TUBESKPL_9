@@ -5,6 +5,22 @@
     {
       "AbsoluteMoniker": "D:0:0:{9F33FBEC-18B9-429C-BD88-EBF2FB649EB0}|tubeskpl\\tubeskpl.csproj|c:\\nashbilla nurfazza\\konstruksi perangkat lunak\\tubeskpl\\tubeskpl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F33FBEC-18B9-429C-BD88-EBF2FB649EB0}|tubeskpl\\tubeskpl.csproj|solutionrelative:tubeskpl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F33FBEC-18B9-429C-BD88-EBF2FB649EB0}|tubeskpl\\tubeskpl.csproj|c:\\nashbilla nurfazza\\konstruksi perangkat lunak\\tubeskpl\\tubeskpl\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F33FBEC-18B9-429C-BD88-EBF2FB649EB0}|tubeskpl\\tubeskpl.csproj|solutionrelative:tubeskpl\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F33FBEC-18B9-429C-BD88-EBF2FB649EB0}|tubeskpl\\tubeskpl.csproj|c:\\nashbilla nurfazza\\konstruksi perangkat lunak\\tubeskpl\\tubeskpl\\buku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F33FBEC-18B9-429C-BD88-EBF2FB649EB0}|tubeskpl\\tubeskpl.csproj|solutionrelative:tubeskpl\\buku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F33FBEC-18B9-429C-BD88-EBF2FB649EB0}|tubeskpl\\tubeskpl.csproj|c:\\nashbilla nurfazza\\konstruksi perangkat lunak\\tubeskpl\\tubeskpl\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F33FBEC-18B9-429C-BD88-EBF2FB649EB0}|tubeskpl\\tubeskpl.csproj|solutionrelative:tubeskpl\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F33FBEC-18B9-429C-BD88-EBF2FB649EB0}|tubeskpl\\tubeskpl.csproj|c:\\nashbilla nurfazza\\konstruksi perangkat lunak\\tubeskpl\\tubeskpl\\library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F33FBEC-18B9-429C-BD88-EBF2FB649EB0}|tubeskpl\\tubeskpl.csproj|solutionrelative:tubeskpl\\library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,8 +33,17 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\tubeskpl\\tubeskpl\\User.cs",
+              "RelativeDocumentMoniker": "tubeskpl\\User.cs",
+              "ToolTip": "C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\tubeskpl\\tubeskpl\\User.cs",
+              "RelativeToolTip": "tubeskpl\\User.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAAwH0AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T02:20:05.016Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -26,11 +51,50 @@
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\tubeskpl\\tubeskpl\\Program.cs",
               "RelativeDocumentMoniker": "tubeskpl\\Program.cs",
-              "ToolTip": "C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\tubeskpl\\tubeskpl\\Program.cs",
-              "RelativeToolTip": "tubeskpl\\Program.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAmwB4AAAAmAAAAAAAAAA==",
+              "ToolTip": "C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\tubeskpl\\tubeskpl\\Program.cs*",
+              "RelativeToolTip": "tubeskpl\\Program.cs*",
+              "ViewState": "AgIAABMAAAAAAAAAAAAiwCkAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-30T13:35:43.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Library.cs",
+              "DocumentMoniker": "C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\tubeskpl\\tubeskpl\\Library.cs",
+              "RelativeDocumentMoniker": "tubeskpl\\Library.cs",
+              "ToolTip": "C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\tubeskpl\\tubeskpl\\Library.cs",
+              "RelativeToolTip": "tubeskpl\\Library.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T02:54:26.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\tubeskpl\\tubeskpl\\Menu.cs",
+              "RelativeDocumentMoniker": "tubeskpl\\Menu.cs",
+              "ToolTip": "C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\tubeskpl\\tubeskpl\\Menu.cs",
+              "RelativeToolTip": "tubeskpl\\Menu.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAQwHEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T01:50:23.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Buku.cs",
+              "DocumentMoniker": "C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\tubeskpl\\tubeskpl\\Buku.cs",
+              "RelativeDocumentMoniker": "tubeskpl\\Buku.cs",
+              "ToolTip": "C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\tubeskpl\\tubeskpl\\Buku.cs",
+              "RelativeToolTip": "tubeskpl\\Buku.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAIwEAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T00:50:27.179Z",
               "EditorCaption": ""
             }
           ]
