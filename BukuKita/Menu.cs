@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static BookLibrary.Library;
+using static UserLibrary.Library;
 
-namespace tubeskpl
+namespace BukuKita
 {
     public interface Menu
     {
@@ -19,7 +21,6 @@ namespace tubeskpl
             while (isRunning)
             {
                 Admin admin = new Admin();
-                Buku b = new Buku();
 
                 Console.WriteLine("\n=== MENU ADMIN ===");
                 Console.WriteLine("1. Lihat Semua Pengguna");
@@ -36,7 +37,7 @@ namespace tubeskpl
                         break;
 
                     case 2:
-                        admin.KelolaBuku(book);
+                        Buku.KelolaBuku(book);
                         break;
 
                     case 0:
@@ -58,7 +59,6 @@ namespace tubeskpl
             bool isRunning = true;
             while (isRunning)
             {
-                Buku b = new Buku();
 
                 Console.WriteLine("\n=== MENU MAHASISWA ===");
                 Console.WriteLine("1. Katalog Buku");
@@ -74,7 +74,7 @@ namespace tubeskpl
                 switch (input)
                 {
                     case 1:
-                        b.DaftarBuku(book);
+                        Buku.DaftarBuku(book);
                         break;
 
                     case 2:
@@ -92,7 +92,7 @@ namespace tubeskpl
                             Console.WriteLine("--- Hasil Pencarian Buku : " + keyword + " ---");
                             foreach (var b1 in hasil)
                             {
-                                Library.displayBuku(b1);
+                                Buku.displayBuku(b1);
                             }
                         }
                         break;
@@ -108,7 +108,7 @@ namespace tubeskpl
                         break;
 
                     case 5:
-                        b.TambahBuku(book);
+                        Buku.TambahBuku(book);
                         break;
 
                     case 0:
@@ -120,7 +120,6 @@ namespace tubeskpl
                         break;
                 }
             }
-            
         }
     }
 }

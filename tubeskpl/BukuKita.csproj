@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBES_KPL_BUKUKITA.cs" Link="TUBES_KPL_BUKUKITA.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BookLibrary\BookLibrary.csproj" />
+    <ProjectReference Include="..\UserLibrary\UserLibrary.csproj" />
+  </ItemGroup>
+
+</Project>

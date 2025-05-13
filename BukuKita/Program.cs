@@ -1,6 +1,8 @@
 ﻿using System;
+using static BookLibrary.Library;
+using static UserLibrary.Library;
 
-namespace tubeskpl
+namespace BukuKita
 {
     class program
     {
@@ -14,7 +16,6 @@ namespace tubeskpl
                 new Buku {idBuku = "B04", judul = "Sejarah Indonesia", kategori = "Sejarah", penulis = "Sri Handayani", tahunTerbit = 2021},
                 new Buku {idBuku = "B05", judul = "Sejarah Umum Indonesia", kategori = "Sejarah", penulis = "Sri Suryani", tahunTerbit = 2011}
             };
-
 
             bool isRunning = true;
             while (isRunning)
