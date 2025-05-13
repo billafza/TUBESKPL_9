@@ -2,7 +2,7 @@
 
 namespace UserLibrary
 {
-    public static class Library
+    public static class UserLibrary
     {
         public abstract class User
         {
