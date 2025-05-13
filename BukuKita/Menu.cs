@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static BookLibrary.BookLibrary;
-using static BookLibrary.BookLibrary;
-using static UserLibrary.UserLibrary;
-using static UserLibrary.UserLibrary;
+using static BookLibrary.BookLib;
+using static UserLibrary.UserLib;
 
 namespace BukuKita
 {
@@ -17,12 +15,12 @@ namespace BukuKita
 
     class AdminMenu : Menu
     {
+        //Method untuk menampilkan menu Admin
         public void displayMenu(List<Buku> book)
         {
             bool isRunning = true;
             while (isRunning)
             {
-                Admin admin = new Admin();
 
                 Console.WriteLine("\n=== MENU ADMIN ===");
                 Console.WriteLine("1. Lihat Semua Pengguna");
@@ -56,6 +54,7 @@ namespace BukuKita
 
     class MahasiswaMenu : Menu
     {
+        //Method untuk menampilkan menu Mahasiswa
         public void displayMenu(List<Buku> book)
         {
             bool isRunning = true;
@@ -80,7 +79,7 @@ namespace BukuKita
                         break;
 
                     case 2:
-                        Console.Write("Masukkan kata kunci buku: ");
+                        Console.Write("Masukkan ID/Judul/Penulis/Kategori buku: ");
                         string keyword = Console.ReadLine();
 
                         List<Buku> hasil = Buku.FilterBuku(book, keyword);
@@ -100,12 +99,12 @@ namespace BukuKita
                         break;
 
                     case 3:
-                        Console.WriteLine("case 3");
+                        Console.WriteLine("Meminjam Buku");
 
                         break;
 
                     case 4:
-                        Console.WriteLine("case 4");
+                        Console.WriteLine("Mengembalikan Buku");
 
                         break;
 

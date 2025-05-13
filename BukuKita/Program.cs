@@ -1,6 +1,6 @@
 ﻿using System;
-using static BookLibrary.BookLibrary;
-using static UserLibrary.UserLibrary;
+using static BookLibrary.BookLib;
+using static UserLibrary.UserLib;
 
 namespace BukuKita
 {

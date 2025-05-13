@@ -2,7 +2,7 @@
 
 namespace BookLibrary
 {
-    public static class BookLibrary
+    public static class BookLib
     {
         public class Buku
         {
@@ -22,11 +22,13 @@ namespace BookLibrary
                 this.tahunTerbit = tahunTerbit;
             }
 
+            //Method untuk menampilkan sebuah buku
             public static void displayBuku(Buku b)
             {
                 Console.WriteLine($"\nID Buku: {b.idBuku} \nJudul: {b.judul} oleh {b.penulis} \nKategori: {b.kategori} \nTahun Terbit: {b.tahunTerbit}");
             }
 
+            //Method untuk menampilkan semua buku
             public static void DaftarBuku(List<Buku> book)
             {
                 Console.WriteLine("\n=== Katalog Buku ===");
@@ -36,6 +38,7 @@ namespace BookLibrary
                 }
             }
 
+            //Method untuk menambah atau mengunggah buku
             public static void TambahBuku(List<Buku> book)
             {
                 Console.WriteLine("ID Buku: ");
@@ -54,12 +57,30 @@ namespace BookLibrary
                 int tahunTerbit = int.Parse(Console.ReadLine());
 
                 book.Add(new Buku { idBuku = id, judul = judul, penulis = penulis, kategori = kategori, tahunTerbit = tahunTerbit });
+
+                Console.WriteLine($"Buku {judul} berhasil ditambahkan.");
             }
 
+            //Method untuk menghapus buku berdasarkan ID
             public static void HapusBuku(List<Buku> book)
             {
+                Console.WriteLine("Masukkan ID Buku yang ingin dihapus: ");
+                string id = Console.ReadLine();
 
+                Buku hapusBuku = book.FirstOrDefault(b => b.idBuku.Equals(id, StringComparison.OrdinalIgnoreCase));
+
+                if(hapusBuku != null)
+                {
+                    book.Remove(hapusBuku);
+                    Console.WriteLine($"Buku dengan ID {id} berhasil dihapus.");
+                }
+                else
+                {
+                    Console.WriteLine($"Buku dengan ID {id} tidak ditemukan.");
+                }
             }
+
+            //Method untuk mencari buku berdasarkan ID/Judul/Penulis/Kategori
             public static List<Buku> FilterBuku(List<Buku> daftarBuku, string keyword)
             {
                 return daftarBuku
@@ -70,6 +91,7 @@ namespace BookLibrary
                     .ToList();
             }
 
+            //Method untuk menampilkan menu kelola buku untuk Admin
             public static void KelolaBuku(List<Buku> book)
             {
                 bool isRunning = true;
@@ -81,6 +103,7 @@ namespace BookLibrary
                     Console.WriteLine("2. Menambah Buku");
                     Console.WriteLine("3. Menghapus Buku");
                     Console.WriteLine("0. Kembali");
+                    Console.WriteLine("Pilih: ");
                     int pilih = int.Parse(Console.ReadLine());
                     Console.WriteLine();
 
