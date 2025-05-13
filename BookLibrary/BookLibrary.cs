@@ -2,7 +2,7 @@
 
 namespace BookLibrary
 {
-    public static class Library
+    public static class BookLibrary
     {
         public class Buku
         {

@@ -3,23 +3,31 @@
   "WorkspaceRootPath": "C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\tubeskpl\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9F33FBEC-18B9-429C-BD88-EBF2FB649EB0}|tubeskpl\\BukuKita.csproj|c:\\nashbilla nurfazza\\konstruksi perangkat lunak\\tubes_kpl_bukukita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{15ED23D5-A9BD-43E5-A06A-8A24C0A223ED}|BookLibrary\\BookLibrary.csproj|c:\\nashbilla nurfazza\\konstruksi perangkat lunak\\tubeskpl\\booklibrary\\booklibrary.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{15ED23D5-A9BD-43E5-A06A-8A24C0A223ED}|BookLibrary\\BookLibrary.csproj|solutionrelative:booklibrary\\booklibrary.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15ED23D5-A9BD-43E5-A06A-8A24C0A223ED}|BookLibrary\\BookLibrary.csproj|c:\\nashbilla nurfazza\\konstruksi perangkat lunak\\tubeskpl\\booklibrary\\library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{15ED23D5-A9BD-43E5-A06A-8A24C0A223ED}|BookLibrary\\BookLibrary.csproj|solutionrelative:booklibrary\\library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{15ED23D5-A9BD-43E5-A06A-8A24C0A223ED}|BookLibrary\\BookLibrary.csproj|c:\\nashbilla nurfazza\\konstruksi perangkat lunak\\tubeskpl\\booklibrary\\booklibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15ED23D5-A9BD-43E5-A06A-8A24C0A223ED}|BookLibrary\\BookLibrary.csproj|solutionrelative:booklibrary\\booklibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\tubeskpl\\BukuKita\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BukuKita\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D96AE042-416C-4181-82C0-17AF121CAE85}|UserLibrary\\UserLibrary.csproj|c:\\nashbilla nurfazza\\konstruksi perangkat lunak\\tubeskpl\\userlibrary\\userlibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D96AE042-416C-4181-82C0-17AF121CAE85}|UserLibrary\\UserLibrary.csproj|solutionrelative:userlibrary\\userlibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\tubeskpl\\BukuKita\\Menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BukuKita\\Menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{15ED23D5-A9BD-43E5-A06A-8A24C0A223ED}|BookLibrary\\BookLibrary.csproj|c:\\nashbilla nurfazza\\konstruksi perangkat lunak\\tubeskpl\\booklibrary\\booklibrary.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{15ED23D5-A9BD-43E5-A06A-8A24C0A223ED}|BookLibrary\\BookLibrary.csproj|solutionrelative:booklibrary\\booklibrary.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\tubeskpl\\BukuKita\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BukuKita\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\tubeskpl\\tubeskpl\\BukuKita.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:tubeskpl\\BukuKita.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\TUBES_KPL_BUKUKITA.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,44 +42,67 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TUBES_KPL_BUKUKITA.cs",
-              "DocumentMoniker": "C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\TUBES_KPL_BUKUKITA.cs",
-              "RelativeDocumentMoniker": "..\\TUBES_KPL_BUKUKITA.cs",
-              "ToolTip": "C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\TUBES_KPL_BUKUKITA.cs",
-              "RelativeToolTip": "..\\TUBES_KPL_BUKUKITA.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T10:03:04.921Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Library.cs",
-              "DocumentMoniker": "C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\tubeskpl\\BookLibrary\\Library.cs",
-              "RelativeDocumentMoniker": "BookLibrary\\Library.cs",
-              "ToolTip": "C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\tubeskpl\\BookLibrary\\Library.cs",
-              "RelativeToolTip": "BookLibrary\\Library.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T10:02:52.047Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "BookLibrary.csproj",
               "DocumentMoniker": "C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\tubeskpl\\BookLibrary\\BookLibrary.csproj",
               "RelativeDocumentMoniker": "BookLibrary\\BookLibrary.csproj",
               "ToolTip": "C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\tubeskpl\\BookLibrary\\BookLibrary.csproj",
               "RelativeToolTip": "BookLibrary\\BookLibrary.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-13T12:03:45.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BukuKita.csproj",
+              "DocumentMoniker": "C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\tubeskpl\\tubeskpl\\BukuKita.csproj",
+              "RelativeDocumentMoniker": "tubeskpl\\BukuKita.csproj",
+              "ToolTip": "C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\tubeskpl\\tubeskpl\\BukuKita.csproj",
+              "RelativeToolTip": "tubeskpl\\BukuKita.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-13T10:02:50.644Z"
+              "WhenOpened": "2025-05-13T11:54:45.945Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "UserLibrary.cs",
+              "DocumentMoniker": "C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\tubeskpl\\UserLibrary\\UserLibrary.cs",
+              "RelativeDocumentMoniker": "UserLibrary\\UserLibrary.cs",
+              "ToolTip": "C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\tubeskpl\\UserLibrary\\UserLibrary.cs",
+              "RelativeToolTip": "UserLibrary\\UserLibrary.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T10:10:08.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TUBES_KPL_BUKUKITA.cs",
+              "DocumentMoniker": "C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\TUBES_KPL_BUKUKITA.cs",
+              "RelativeDocumentMoniker": "..\\TUBES_KPL_BUKUKITA.cs",
+              "ToolTip": "C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\TUBES_KPL_BUKUKITA.cs",
+              "RelativeToolTip": "..\\TUBES_KPL_BUKUKITA.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAowBQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T10:03:04.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookLibrary.cs",
+              "DocumentMoniker": "C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\tubeskpl\\BookLibrary\\BookLibrary.cs",
+              "RelativeDocumentMoniker": "BookLibrary\\BookLibrary.cs",
+              "ToolTip": "C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\tubeskpl\\BookLibrary\\BookLibrary.cs",
+              "RelativeToolTip": "BookLibrary\\BookLibrary.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T10:02:52.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\tubeskpl\\BukuKita\\Program.cs",
               "RelativeDocumentMoniker": "BukuKita\\Program.cs",
@@ -89,7 +120,7 @@
               "RelativeDocumentMoniker": "BukuKita\\Menu.cs",
               "ToolTip": "C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\tubeskpl\\BukuKita\\Menu.cs",
               "RelativeToolTip": "BukuKita\\Menu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF0AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-13T10:02:04.149Z"
             }

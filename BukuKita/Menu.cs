@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static BookLibrary.Library;
-using static UserLibrary.Library;
+using static BookLibrary.BookLibrary;
+using static BookLibrary.BookLibrary;
+using static UserLibrary.UserLibrary;
+using static UserLibrary.UserLibrary;
 
 namespace BukuKita
 {
