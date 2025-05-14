@@ -4,58 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using static BookLibrary.BookLib;
-using static UserLibrary.UserLib;
+using BukuKita.Model;
 
-namespace BukuKita
+namespace BukuKita.View
 {
-    public interface Menu
-    {
-        public void displayMenu(List<Buku> book);
-    }
-
-    class AdminMenu : Menu
-    {
-        //Method untuk menampilkan menu Admin
-        public void displayMenu(List<Buku> book)
-        {
-            bool isRunning = true;
-            while (isRunning)
-            {
-
-                Console.WriteLine("\n=== MENU ADMIN ===");
-                Console.WriteLine("1. Lihat Semua Pengguna");
-                Console.WriteLine("2. Kelola Buku");
-                Console.WriteLine("0. Logout");
-                Console.WriteLine("Pilih: ");
-                int input = int.Parse(Console.ReadLine());
-                Console.WriteLine();
-
-                switch (input)
-                {
-                    case 1:
-                        Console.WriteLine("case 1");
-                        break;
-
-                    case 2:
-                        Buku.KelolaBuku(book);
-                        break;
-
-                    case 0:
-                        isRunning = false;
-                        break;
-
-                    default:
-                        Console.WriteLine("\nPilih menu yang sesuai.");
-                        break;
-                }
-            }
-        }
-    }
-
-    class MahasiswaMenu : Menu
+    class MahasiswaView
     {
         //Method untuk menampilkan menu Mahasiswa
-        public void displayMenu(List<Buku> book)
+        public void displayMenu(List<Buku> book, List<Peminjaman> daftarPeminjaman, List<Pengembalian> daftarPengembalian)
         {
             bool isRunning = true;
             while (isRunning)
@@ -99,13 +55,11 @@ namespace BukuKita
                         break;
 
                     case 3:
-                        Console.WriteLine("Meminjam Buku");
-
+                        PeminjamanView.PinjamBuku(book, daftarPeminjaman);
                         break;
 
                     case 4:
-                        Console.WriteLine("Mengembalikan Buku");
-
+                        PengembalianView.KembalikanBuku(daftarPeminjaman, daftarPengembalian);
                         break;
 
                     case 5:
@@ -117,7 +71,7 @@ namespace BukuKita
                         break;
 
                     default:
-                        Console.WriteLine("\nPilih menu yang sesuai.");
+                        Console.WriteLine("\nPilih menu yang sesuai [1-5] / 0 untuk Keluar.");
                         break;
                 }
             }
