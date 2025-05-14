@@ -1,6 +1,7 @@
 ﻿using System;
 using static BookLibrary.BookLib;
-using static UserLibrary.UserLib;
+using BukuKita.Model;
+using BukuKita.View;
 
 namespace BukuKita
 {
@@ -17,11 +18,14 @@ namespace BukuKita
                 new Buku {idBuku = "B05", judul = "Sejarah Umum Indonesia", kategori = "Sejarah", penulis = "Sri Suryani", tahunTerbit = 2011}
             };
 
+            List<Peminjaman> daftarPeminjaman = new List<Peminjaman>();
+            List<Pengembalian> daftarPengembalian = new List<Pengembalian>();
+
             bool isRunning = true;
             while (isRunning)
             {
-                AdminMenu menuAdmin = new AdminMenu();
-                MahasiswaMenu menuMhs = new MahasiswaMenu();
+                AdminView menuAdmin = new AdminView();
+                MahasiswaView menuMhs = new MahasiswaView();
 
                 Console.WriteLine("\n=== LOGIN ===");
                 Console.WriteLine("1. Menu Admin");
@@ -34,10 +38,10 @@ namespace BukuKita
                 switch (input)
                 {
                     case 1:
-                        menuAdmin.displayMenu(book);
+                        menuAdmin.displayMenu(book, daftarPeminjaman);
                         break;
                     case 2:
-                        menuMhs.displayMenu(book);
+                        menuMhs.displayMenu(book, daftarPeminjaman, daftarPengembalian);
                         break;
                     case 0:
                         Console.WriteLine("\nTerima kasih telah menggunakan Buku Kita!");
