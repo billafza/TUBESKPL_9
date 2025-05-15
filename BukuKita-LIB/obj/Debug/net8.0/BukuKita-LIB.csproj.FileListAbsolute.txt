@@ -10,3 +10,15 @@ C:\Users\KhansaAulia\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\BukuKita-LIB.dll
 C:\Users\KhansaAulia\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\refint\BukuKita-LIB.dll
 C:\Users\KhansaAulia\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\BukuKita-LIB.pdb
 C:\Users\KhansaAulia\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\ref\BukuKita-LIB.dll
+D:\TUBESKPL_9\BukuKita-LIB\bin\Debug\net8.0\BukuKita-LIB.deps.json
+D:\TUBESKPL_9\BukuKita-LIB\bin\Debug\net8.0\BukuKita-LIB.dll
+D:\TUBESKPL_9\BukuKita-LIB\bin\Debug\net8.0\BukuKita-LIB.pdb
+D:\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\BukuKita-LIB.GeneratedMSBuildEditorConfig.editorconfig
+D:\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\BukuKita-LIB.AssemblyInfoInputs.cache
+D:\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\BukuKita-LIB.AssemblyInfo.cs
+D:\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\BukuKita-LIB.csproj.CoreCompileInputs.cache
+D:\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\BukuKita-LIB.sourcelink.json
+D:\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\BukuKita-LIB.dll
+D:\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\refint\BukuKita-LIB.dll
+D:\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\BukuKita-LIB.pdb
+D:\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\ref\BukuKita-LIB.dll
