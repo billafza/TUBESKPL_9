@@ -11,6 +11,9 @@ namespace BookLibrary
             public string penulis { get; set; }
             public string kategori { get; set; }
             public int tahunTerbit { get; set; }
+            public bool IsAvailable => Borrower == null;
+            public string Borrower { get; set; }
+            public DateTime? BorrowedAt { get; set; }
 
             public Buku() { }
             public Buku(string idBuku, string judul, string penulis, string kategori, int tahunTerbit)

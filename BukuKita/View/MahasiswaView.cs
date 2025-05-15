@@ -59,7 +59,7 @@ namespace BukuKita.View
                         break;
 
                     case 4:
-                        PengembalianView.KembalikanBuku(daftarPeminjaman, daftarPengembalian);
+                        PengembalianView.KembalikanBuku(book, daftarPeminjaman, daftarPengembalian);
                         break;
 
                     case 5:
