@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "BukuKita/1.0.0": {
+        "dependencies": {
+          "BukuKita-LIB": "1.0.0"
+        },
+        "runtime": {
+          "BukuKita.dll": {}
+        }
+      },
+      "BukuKita-LIB/1.0.0": {
+        "runtime": {
+          "BukuKita-LIB.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BukuKita/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BukuKita-LIB/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

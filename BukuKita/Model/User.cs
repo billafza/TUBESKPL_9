@@ -11,7 +11,8 @@ namespace BukuKita.Model
         public enum EnumJenisKelamin { PRIA, WANITA };
 
         public string nama { get; set; }
-        private EnumJenisKelamin jnsKelamin { get; set; }
+        public EnumJenisKelamin jnsKelamin { get; set; }
+        public string NIM { get; set; }
         public string email { get; set; }
         public string password { get; set; }
         public string role { get; set; }

@@ -2,6 +2,7 @@
 using static BookLibrary.BookLib;
 using BukuKita.Model;
 using BukuKita.View;
+using BukuKita.Auth;
 
 namespace BukuKita
 {
@@ -22,37 +23,71 @@ namespace BukuKita
             List<Pengembalian> daftarPengembalian = new List<Pengembalian>();
 
             bool isRunning = true;
+            AuthSystem auth = new AuthSystem();
+
             while (isRunning)
             {
-                AdminView menuAdmin = new AdminView();
-                MahasiswaView menuMhs = new MahasiswaView();
+                Console.WriteLine("\n=== MENU UTAMA ===");
+                Console.WriteLine("1. Login");
+                Console.WriteLine("2. Register Mahasiswa");
+                Console.WriteLine("3. Keluar");
+                Console.Write("Pilih opsi (1/2/3): ");
+                string pilihan = Console.ReadLine();
 
-                Console.WriteLine("\n=== LOGIN ===");
-                Console.WriteLine("1. Menu Admin");
-                Console.WriteLine("2. Menu Mahasiswa");
-                Console.WriteLine("0. Logout");
-                Console.WriteLine("Pilih: ");
-                int input = int.Parse(Console.ReadLine());
-                Console.WriteLine();
-
-                switch (input)
+                switch (pilihan)
                 {
-                    case 1:
-                        menuAdmin.displayMenu(book, daftarPeminjaman);
+                    case "1":
+                        Console.WriteLine("\n=== LOGIN ===");
+                        Console.Write("Email: ");
+                        string email = Console.ReadLine();
+                        Console.Write("Password: ");
+                        string password = Console.ReadLine();
+
+                        User userLogin = auth.Login(email, password); // perhatikan: huruf besar "L" di Login
+
+                        if (userLogin != null)
+                        {
+                            Console.WriteLine($"\nLogin berhasil sebagai {userLogin.role} - {userLogin.nama}");
+
+                            if (userLogin.role.ToLower() == "admin")
+                            {
+                                AdminView menuAdmin = new AdminView();
+                                menuAdmin.displayMenu(book, daftarPeminjaman);
+                            }
+                            else if (userLogin.role.ToLower() == "mahasiswa")
+                            {
+                                MahasiswaView menuMhs = new MahasiswaView();
+                                menuMhs.displayMenu(book, daftarPeminjaman, daftarPengembalian);
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("\nEmail atau password salah.");
+                        }
                         break;
-                    case 2:
-                        menuMhs.displayMenu(book, daftarPeminjaman, daftarPengembalian);
+
+                    case "2":
+                        auth.RegisterMahasiswa();
                         break;
-                    case 0:
-                        Console.WriteLine("\nTerima kasih telah menggunakan Buku Kita!");
+
+                    case "3":
                         isRunning = false;
+                        Console.WriteLine("Terima kasih telah menggunakan BukuKita!");
                         break;
 
                     default:
-                        Console.WriteLine("\nPilih menu yang sesuai.");
+                        Console.WriteLine("Opsi tidak valid.");
                         break;
                 }
+
+                if (isRunning)
+                {
+                    Console.Write("\nKembali ke menu utama? (y/n): ");
+                    string lanjut = Console.ReadLine();
+                    if (lanjut.ToLower() != "y") isRunning = false;
+                }
             }
+
         }
     }
 }
