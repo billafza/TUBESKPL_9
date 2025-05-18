@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "BukuKita-LIB/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/BukuKita-LIB.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BukuKita-LIB.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "BukuKita-LIB/1.0.0": {
+      "type": "project",
+      "path": "../BukuKita-LIB/BukuKita-LIB.csproj",
+      "msbuildProject": "../BukuKita-LIB/BukuKita-LIB.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "BukuKita-LIB >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\ekaya\\.nuget\\packages\\": {},
@@ -14,19 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< Updated upstream:tubeskpl/obj/project.assets.json
-      "projectUniqueName": "C:\\Users\\ekaya\\OneDrive\\Documents\\GitHub\\TUBESKPL_9\\tubeskpl\\tubeskpl.csproj",
-      "projectName": "tubeskpl",
-      "projectPath": "C:\\Users\\ekaya\\OneDrive\\Documents\\GitHub\\TUBESKPL_9\\tubeskpl\\tubeskpl.csproj",
+      "projectUniqueName": "C:\\Users\\ekaya\\Downloads\\kpl\\TUBESKPL_9\\BukuKita\\BukuKita.csproj",
+      "projectName": "BukuKita",
+      "projectPath": "C:\\Users\\ekaya\\Downloads\\kpl\\TUBESKPL_9\\BukuKita\\BukuKita.csproj",
       "packagesPath": "C:\\Users\\ekaya\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ekaya\\OneDrive\\Documents\\GitHub\\TUBESKPL_9\\tubeskpl\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\ekaya\\Downloads\\kpl\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj",
-      "projectName": "BukuKita-LIB",
-      "projectPath": "C:\\Users\\ekaya\\Downloads\\kpl\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj",
-      "packagesPath": "C:\\Users\\ekaya\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ekaya\\Downloads\\kpl\\TUBESKPL_9\\BukuKita-LIB\\obj\\",
->>>>>>> Stashed changes:BukuKita-LIB/obj/project.assets.json
+      "outputPath": "C:\\Users\\ekaya\\Downloads\\kpl\\TUBESKPL_9\\BukuKita\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -46,7 +57,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\ekaya\\Downloads\\kpl\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj": {
+              "projectPath": "C:\\Users\\ekaya\\Downloads\\kpl\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -80,7 +95,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
