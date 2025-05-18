@@ -26,7 +26,7 @@ namespace BukuKita.Auth
             currentState = LoginState.Start;
         }
 
-        public void MulaiLogin(List<User> daftarUser, List<Buku> bukuList, List<Peminjaman> daftarPeminjaman, List<Pengembalian> daftarPengembalian)
+        public void MulaiLogin(List<User> daftarUser, List<Buku> bukuList, List<Peminjaman> daftarPeminjaman, List<Pengembalian> daftarPengembalian, List<Approval> daftarApproval)
         {
             string email = "";
             string password = "";
@@ -61,15 +61,16 @@ namespace BukuKita.Auth
                             userLogin.DisplayUser();
                             currentState = LoginState.Berhasil;
 
+                            // Di method MulaiLogin
                             if (userLogin.role.ToLower() == "admin")
                             {
                                 AdminView adminMenu = new AdminView();
-                                adminMenu.displayMenu(bukuList, daftarPeminjaman);
+                                adminMenu.displayMenu(bukuList, daftarPeminjaman, daftarApproval);
                             }
                             else if (userLogin.role.ToLower() == "mahasiswa")
                             {
                                 MahasiswaView mhsMenu = new MahasiswaView();
-                                mhsMenu.displayMenu(bukuList, daftarPeminjaman, daftarPengembalian);
+                                mhsMenu.displayMenu(bukuList, daftarPeminjaman, daftarPengembalian, daftarApproval);
                             }
                         }
                         else
