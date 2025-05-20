@@ -55,3 +55,22 @@ C:\Users\ekaya\Downloads\kpl\TUBESKPL_9\BukuKita\obj\Debug\net8.0\refint\BukuKit
 C:\Users\ekaya\Downloads\kpl\TUBESKPL_9\BukuKita\obj\Debug\net8.0\BukuKita.pdb
 C:\Users\ekaya\Downloads\kpl\TUBESKPL_9\BukuKita\obj\Debug\net8.0\BukuKita.genruntimeconfig.cache
 C:\Users\ekaya\Downloads\kpl\TUBESKPL_9\BukuKita\obj\Debug\net8.0\ref\BukuKita.dll
+C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita\bin\Debug\net8.0\BukuKita.exe
+C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita\bin\Debug\net8.0\BukuKita.deps.json
+C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita\bin\Debug\net8.0\BukuKita.runtimeconfig.json
+C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita\bin\Debug\net8.0\BukuKita.dll
+C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita\bin\Debug\net8.0\BukuKita.pdb
+C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita\bin\Debug\net8.0\BukuKita-LIB.dll
+C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita\bin\Debug\net8.0\BukuKita-LIB.pdb
+C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita\obj\Debug\net8.0\BukuKita.csproj.AssemblyReference.cache
+C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita\obj\Debug\net8.0\BukuKita.GeneratedMSBuildEditorConfig.editorconfig
+C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita\obj\Debug\net8.0\BukuKita.AssemblyInfoInputs.cache
+C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita\obj\Debug\net8.0\BukuKita.AssemblyInfo.cs
+C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita\obj\Debug\net8.0\BukuKita.csproj.CoreCompileInputs.cache
+C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita\obj\Debug\net8.0\BukuKita.sourcelink.json
+C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita\obj\Debug\net8.0\BukuKita.csproj.Up2Date
+C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita\obj\Debug\net8.0\BukuKita.dll
+C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita\obj\Debug\net8.0\refint\BukuKita.dll
+C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita\obj\Debug\net8.0\BukuKita.pdb
+C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita\obj\Debug\net8.0\BukuKita.genruntimeconfig.cache
+C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita\obj\Debug\net8.0\ref\BukuKita.dll
