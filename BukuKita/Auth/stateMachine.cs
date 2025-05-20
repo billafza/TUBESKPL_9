@@ -82,5 +82,10 @@ namespace BukuKita.Auth
                 }
             }
         }
+
+        public void MulaiLogin(List<BukuKita.Tests.StateMachineTests.User> users, List<Buku> bukus, List<Peminjaman> peminjamen, List<Pengembalian> pengembalians, List<Approval> approvals)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

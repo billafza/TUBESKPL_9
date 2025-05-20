@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BukuKita-LIB")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eb694bac41478141462d31a6b8f3df563a23b5d9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7265ae0aabad167d96e4c8ec44cc733b2100b2c9")]
 [assembly: System.Reflection.AssemblyProductAttribute("BukuKita-LIB")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BukuKita-LIB")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
