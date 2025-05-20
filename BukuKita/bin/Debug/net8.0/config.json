@@ -1,0 +1,26 @@
+{
+  "AppName": "BukuKita",
+  "Version": "1.0",
+  "MaxPeminjamanPerUser": 3,
+  "MaxDurasiPeminjaman": 14,
+  "DendaPerHari": 2000,
+  "RequireApproval": true,
+  "MenuItems": [
+    {
+      "Id": "1",
+      "Name": "Login"
+    },
+    {
+      "Id": "2",
+      "Name": "Register Mahasiswa"
+    },
+    {
+      "Id": "3",
+      "Name": "Pengaturan"
+    },
+    {
+      "Id": "4",
+      "Name": "Keluar"
+    }
+  ]
+}

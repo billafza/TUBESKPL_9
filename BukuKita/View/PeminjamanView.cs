@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using static BookLibrary.BookLib;
 using BukuKita.Model;
+using static System.Reflection.Metadata.BlobBuilder;
 
 namespace BukuKita.View
 {
@@ -12,34 +13,27 @@ namespace BukuKita.View
     {
         public static void PinjamBuku(List<Buku> book, List<Peminjaman> daftarPeminjaman)
         {
+            Console.Write("Masukkan ID buku yang ingin dipinjam: ");
+            string id = Console.ReadLine()?.Trim().ToUpper();
 
-            Console.WriteLine("Daftar Buku:");
-            foreach (var buku in book)
+            var buku = book.FirstOrDefault(b => b.idBuku == id);
+            if (book == null || !buku.IsAvailable)
             {
-                Console.WriteLine(buku);
+                Console.WriteLine("Buku tidak ditemukan atau sedang dipinjam.");
+                return;
             }
 
-            Console.Write("\nMasukkan ID buku yang ingin dipinjam: ");
-            string id = Console.ReadLine();
-            Buku bukuDipilih = book.FirstOrDefault(b => b.idBuku == id);
+            Console.Write("Masukkan nama peminjam: ");
+            string nama = Console.ReadLine()?.Trim();
 
-            if (bukuDipilih != null)
-            {
-                Console.Write("Masukkan nama peminjam: ");
-                string nama = Console.ReadLine();
+            Peminjaman pinjam = new Peminjaman(buku, nama);
+            daftarPeminjaman.Add(pinjam);
 
-                Peminjaman pinjam = new Peminjaman(bukuDipilih, nama);
-                daftarPeminjaman.Add(pinjam);
+            buku.Borrower = nama;
+            buku.BorrowedAt = DateTime.Now;
 
-                Console.WriteLine("\n--- Bukti Peminjaman ---");
-                Console.WriteLine(pinjam.Info());
-            }
-            else
-            {
-                Console.WriteLine("ID buku tidak ditemukan.");
-            }
+            Console.WriteLine("\n--- Bukti Peminjaman ---");
+            Console.WriteLine($"Judul: {buku.judul}, Dipinjam oleh: {nama}, Tanggal: {buku.BorrowedAt.Value.ToShortDateString()}");
         }
-
-       
     }
 }
