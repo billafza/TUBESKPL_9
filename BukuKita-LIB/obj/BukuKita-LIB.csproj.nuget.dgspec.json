@@ -1,30 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD:BukuKita-LIB/obj/BukuKita-LIB.csproj.nuget.dgspec.json
-    "D:\\TUBESKPL_9\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj": {}
-=======
-<<<<<<< Updated upstream:tubeskpl/obj/tubeskpl.csproj.nuget.dgspec.json
-<<<<<<< Updated upstream:tubeskpl/obj/tubeskpl.csproj.nuget.dgspec.json
-    "C:\\Users\\ekaya\\OneDrive\\Documents\\GitHub\\TUBESKPL_9\\tubeskpl\\tubeskpl.csproj": {}
->>>>>>> AlwinFahroziMarbun:tubeskpl/obj/tubeskpl.csproj.nuget.dgspec.json
-  },
-  "projects": {
-    "D:\\TUBESKPL_9\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\TUBESKPL_9\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj",
-        "projectName": "BukuKita-LIB",
-<<<<<<< HEAD:BukuKita-LIB/obj/BukuKita-LIB.csproj.nuget.dgspec.json
-        "projectPath": "D:\\TUBESKPL_9\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj",
-        "packagesPath": "C:\\Users\\Nadya Sekar\\.nuget\\packages\\",
-        "outputPath": "D:\\TUBESKPL_9\\TUBESKPL_9\\BukuKita-LIB\\obj\\",
-=======
-        "projectPath": "C:\\Users\\ekaya\\Downloads\\kpl\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj",
-        "packagesPath": "C:\\Users\\ekaya\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ekaya\\Downloads\\kpl\\TUBESKPL_9\\BukuKita-LIB\\obj\\",
->>>>>>> Stashed changes:BukuKita-LIB/obj/BukuKita-LIB.csproj.nuget.dgspec.json
-=======
     "C:\\Users\\Razhed\\Downloads\\TUBESKPL_9-main\\TUBESKPL_9-main\\BukuKita-LIB\\BukuKita-LIB.csproj": {}
   },
   "projects": {
@@ -36,22 +12,12 @@
         "projectPath": "C:\\Users\\Razhed\\Downloads\\TUBESKPL_9-main\\TUBESKPL_9-main\\BukuKita-LIB\\BukuKita-LIB.csproj",
         "packagesPath": "C:\\Users\\Razhed\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Razhed\\Downloads\\TUBESKPL_9-main\\TUBESKPL_9-main\\BukuKita-LIB\\obj\\",
->>>>>>> Stashed changes:BukuKita-LIB/obj/BukuKita-LIB.csproj.nuget.dgspec.json
->>>>>>> AlwinFahroziMarbun:tubeskpl/obj/tubeskpl.csproj.nuget.dgspec.json
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-<<<<<<< HEAD:BukuKita-LIB/obj/BukuKita-LIB.csproj.nuget.dgspec.json
-          "C:\\Users\\Nadya Sekar\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-<<<<<<< Updated upstream:tubeskpl/obj/tubeskpl.csproj.nuget.dgspec.json
-          "C:\\Users\\ekaya\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
           "C:\\Users\\Razhed\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> Stashed changes:BukuKita-LIB/obj/BukuKita-LIB.csproj.nuget.dgspec.json
->>>>>>> AlwinFahroziMarbun:tubeskpl/obj/tubeskpl.csproj.nuget.dgspec.json
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -100,15 +66,7 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD:BukuKita-LIB/obj/BukuKita-LIB.csproj.nuget.dgspec.json
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.204/PortableRuntimeIdentifierGraph.json"
-=======
-<<<<<<< Updated upstream:tubeskpl/obj/tubeskpl.csproj.nuget.dgspec.json
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
-=======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
->>>>>>> Stashed changes:BukuKita-LIB/obj/BukuKita-LIB.csproj.nuget.dgspec.json
->>>>>>> AlwinFahroziMarbun:tubeskpl/obj/tubeskpl.csproj.nuget.dgspec.json
         }
       }
     }

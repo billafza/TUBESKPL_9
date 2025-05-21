@@ -14,19 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BukuKita-LIB")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD:BukuKita-LIB/obj/Debug/net8.0/BukuKita-LIB.AssemblyInfo.cs
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ecb3c0ad889cccb8c6c877c2f8daf108c185702")]
-=======
-<<<<<<< Updated upstream
-<<<<<<<< Updated upstream:BukuKita-LIB/obj/Release/net8.0/BukuKita-LIB.AssemblyInfo.cs
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+766b326a5e8d8c24f397121b148d5062e33ac279")]
-========
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
->>>>>>>> Stashed changes:BukuKita-LIB/obj/Debug/net8.0/BukuKita-LIB.AssemblyInfo.cs
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
->>>>>>> Stashed changes
->>>>>>> AlwinFahroziMarbun:BukuKita-LIB/obj/Release/net8.0/BukuKita-LIB.AssemblyInfo.cs
 [assembly: System.Reflection.AssemblyProductAttribute("BukuKita-LIB")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BukuKita-LIB")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

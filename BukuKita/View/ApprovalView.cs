@@ -19,7 +19,7 @@ namespace BukuKita.View
         /// - Semua operasi approval harus menjaga konsistensi dalam daftar approval
         /// - Status approval harus selalu salah satu dari: "Pending", "Approved", atau "Rejected"
         /// </summary>
-        
+
         /// <summary>
         /// Menampilkan menu pengelolaan approval
         /// </summary>
@@ -32,7 +32,7 @@ namespace BukuKita.View
             Debug.Assert(daftarApproval != null, "daftarApproval tidak boleh null");
             Debug.Assert(daftarBuku != null, "daftarBuku tidak boleh null");
             Debug.Assert(admin != null, "admin tidak boleh null");
-            
+
             bool isRunning = true;
             while (isRunning)
             {
@@ -68,7 +68,7 @@ namespace BukuKita.View
                         break;
                 }
             }
-            
+
             // Postkondisi: Tidak ada nilai return karena ini adalah metode UI
         }
 
@@ -80,7 +80,7 @@ namespace BukuKita.View
         {
             // Prekondisi
             Debug.Assert(daftarApproval != null, "daftarApproval tidak boleh null");
-            
+
             if (daftarApproval.Count == 0)
             {
                 Console.WriteLine("Tidak ada data approval.");
@@ -93,11 +93,11 @@ namespace BukuKita.View
                 // Invariant: Setiap entri approval harus memiliki ID, status, dan properti yang valid
                 Debug.Assert(!string.IsNullOrEmpty(approval.idApproval), "ID Approval tidak boleh null atau kosong");
                 Debug.Assert(!string.IsNullOrEmpty(approval.status), "Status approval tidak boleh null atau kosong");
-                
+
                 approval.DisplayInfo();
                 Console.WriteLine("-----------------------------");
             }
-            
+
             // Postkondisi: Semua approval telah ditampilkan
         }
 
@@ -109,7 +109,7 @@ namespace BukuKita.View
         {
             // Prekondisi
             Debug.Assert(daftarApproval != null, "daftarApproval tidak boleh null");
-            
+
             var pendingApprovals = daftarApproval.Where(a => a.status == "Pending").ToList();
 
             if (pendingApprovals.Count == 0)
@@ -123,11 +123,11 @@ namespace BukuKita.View
             {
                 // Invariant: Setiap approval harus dalam status pending
                 Debug.Assert(approval.status == "Pending", "Hanya approval pending yang boleh ditampilkan");
-                
+
                 approval.DisplayInfo();
                 Console.WriteLine("-----------------------------");
             }
-            
+
             // Postkondisi: Semua approval pending telah ditampilkan
         }
 
@@ -143,7 +143,7 @@ namespace BukuKita.View
             Debug.Assert(daftarApproval != null, "daftarApproval tidak boleh null");
             Debug.Assert(daftarBuku != null, "daftarBuku tidak boleh null");
             Debug.Assert(admin != null, "admin tidak boleh null");
-            
+
             var pendingApprovals = daftarApproval.Where(a => a.status == "Pending").ToList();
 
             if (pendingApprovals.Count == 0)
@@ -162,7 +162,7 @@ namespace BukuKita.View
             if (int.TryParse(Console.ReadLine(), out int index) && index >= 1 && index <= pendingApprovals.Count)
             {
                 var approval = pendingApprovals[index - 1];
-                
+
                 // Invariant: Approval yang dipilih harus dalam status pending
                 Debug.Assert(approval.status == "Pending", "Hanya dapat menyetujui permintaan yang pending");
 
@@ -182,20 +182,20 @@ namespace BukuKita.View
                 {
                     // Invariant: Buku harus tersedia untuk dipinjam
                     Debug.Assert(string.IsNullOrEmpty(buku.Borrower), "Buku harus tersedia untuk dipinjam");
-                    
+
                     buku.Borrower = approval.namaPeminjam;
                     buku.BorrowedAt = DateTime.Now;
                     Console.WriteLine($"Buku '{buku.judul}' berhasil dipinjamkan kepada {approval.namaPeminjam}.");
                 }
 
                 Console.WriteLine("Approval berhasil disetujui!");
-                
+
                 // Postkondisi
                 Debug.Assert(approval.status == "Approved", "Status approval harus diubah menjadi Approved");
                 if (buku != null)
                 {
                     Debug.Assert(buku.Borrower == approval.namaPeminjam, "Peminjam buku harus sesuai dengan pemohon approval");
-                    Debug.Assert(buku.BorrowedAt?.Date == DateTime.Now.Date, "Tanggal peminjaman harus disetel ke tanggal sekarang");
+                    Debug.Assert(buku.BorrowedAt.Value.Date == DateTime.Now.Date, "Tanggal peminjaman harus disetel ke tanggal sekarang");
                 }
             }
             else
@@ -214,7 +214,7 @@ namespace BukuKita.View
             // Prekondisi
             Debug.Assert(daftarApproval != null, "daftarApproval tidak boleh null");
             Debug.Assert(admin != null, "admin tidak boleh null");
-            
+
             var pendingApprovals = daftarApproval.Where(a => a.status == "Pending").ToList();
 
             if (pendingApprovals.Count == 0)
@@ -233,7 +233,7 @@ namespace BukuKita.View
             if (int.TryParse(Console.ReadLine(), out int index) && index >= 1 && index <= pendingApprovals.Count)
             {
                 var approval = pendingApprovals[index - 1];
-                
+
                 // Invariant: Approval yang dipilih harus dalam status pending
                 Debug.Assert(approval.status == "Pending", "Hanya dapat menolak permintaan yang pending");
 
@@ -251,7 +251,7 @@ namespace BukuKita.View
                 approval.keterangan = alasan;
 
                 Console.WriteLine("Approval berhasil ditolak!");
-                
+
                 // Postkondisi
                 Debug.Assert(approval.status == "Rejected", "Status approval harus diubah menjadi Rejected");
                 Debug.Assert(!string.IsNullOrEmpty(approval.keterangan), "Alasan penolakan tidak boleh kosong");

@@ -101,17 +101,8 @@ namespace BukuKita
                     {
                         new MenuItem { Id = "1", Name = "Login" },
                         new MenuItem { Id = "2", Name = "Register Mahasiswa" },
-<<<<<<< HEAD:BukuKita/MainMenu.cs
-                        new MenuItem { Id = "3", Name = "Pengaturan" }, // Tambahkan menu pengaturan
-                        new MenuItem { Id = "4", Name = "Keluar" }
-=======
-<<<<<<< Updated upstream:tubeskpl/MainMenu.cs
-                        new MenuItem { Id = "3", Name = "Keluar" }
-=======
                         new MenuItem { Id = "3", Name = "Pengaturan" },
                         new MenuItem { Id = "4", Name = "Keluar" }
->>>>>>> Stashed changes:BukuKita/MainMenu.cs
->>>>>>> AlwinFahroziMarbun:tubeskpl/MainMenu.cs
                     }
                 }
             };
@@ -137,17 +128,10 @@ namespace BukuKita
             {
                 string jsonString = JsonSerializer.Serialize(_configuration, new JsonSerializerOptions { WriteIndented = true });
                 File.WriteAllText(_configFilePath, jsonString);
-<<<<<<< HEAD:BukuKita/MainMenu.cs
-                Console.WriteLine("Konfigurasi berhasil disimpan!");
-=======
-<<<<<<< Updated upstream:tubeskpl/MainMenu.cs
-=======
                 Console.WriteLine("Konfigurasi berhasil disimpan!");
 
                 // Postkondisi: File konfigurasi harus ada setelah disimpan
                 Debug.Assert(File.Exists(_configFilePath), "File konfigurasi harus ada setelah disimpan");
->>>>>>> Stashed changes:BukuKita/MainMenu.cs
->>>>>>> AlwinFahroziMarbun:tubeskpl/MainMenu.cs
             }
             catch (Exception ex)
             {
@@ -213,13 +197,6 @@ namespace BukuKita
             Debug.Assert(_configuration[key].Equals(value), "Nilai konfigurasi harus cocok dengan nilai yang ditetapkan");
         }
 
-<<<<<<< HEAD:BukuKita/MainMenu.cs
-        // Tambahkan menu konfigurasi
-        private void HandleConfigurationMenu()
-        {
-=======
-<<<<<<< Updated upstream:tubeskpl/MainMenu.cs
-=======
         /// <summary>
         /// Menampilkan dan menangani menu konfigurasi
         /// </summary>
@@ -228,7 +205,6 @@ namespace BukuKita
             // Prekondisi: Konfigurasi harus diinisialisasi
             Debug.Assert(_configuration != null, "Konfigurasi harus diinisialisasi");
 
->>>>>>> AlwinFahroziMarbun:tubeskpl/MainMenu.cs
             bool isRunning = true;
             while (isRunning)
             {
@@ -319,13 +295,6 @@ namespace BukuKita
                         break;
                 }
             }
-<<<<<<< HEAD:BukuKita/MainMenu.cs
-        }
-
-        // Menu untuk mengelola item menu
-        private void HandleMenuItemsConfiguration()
-        {
-=======
 
             // Postkondisi: Tidak ada nilai return karena ini adalah metode UI
         }
@@ -338,18 +307,14 @@ namespace BukuKita
             // Prekondisi: Konfigurasi harus diinisialisasi
             Debug.Assert(_configuration != null, "Konfigurasi harus diinisialisasi");
 
->>>>>>> AlwinFahroziMarbun:tubeskpl/MainMenu.cs
             bool isRunning = true;
             while (isRunning)
             {
                 var menuItems = GetConfigValue<List<MenuItem>>("MenuItems", new List<MenuItem>());
 
-<<<<<<< HEAD:BukuKita/MainMenu.cs
-=======
                 // Invariant: Daftar item menu harus diinisialisasi
                 Debug.Assert(menuItems != null, "Daftar item menu tidak boleh null");
 
->>>>>>> AlwinFahroziMarbun:tubeskpl/MainMenu.cs
                 Console.WriteLine("\n=== KELOLA ITEM MENU ===");
                 Console.WriteLine("Menu saat ini:");
 
@@ -379,13 +344,10 @@ namespace BukuKita
                         {
                             menuItems.Add(new MenuItem { Id = id, Name = name });
                             SetConfigValue("MenuItems", menuItems);
-<<<<<<< HEAD:BukuKita/MainMenu.cs
-=======
 
                             // Postkondisi untuk kasus ini: Menu items harus berisi item baru
                             Debug.Assert(menuItems.Any(m => m.Id == id && m.Name == name),
                                 "Daftar item menu harus berisi item yang baru ditambahkan");
->>>>>>> AlwinFahroziMarbun:tubeskpl/MainMenu.cs
                         }
                         else
                         {
@@ -412,15 +374,12 @@ namespace BukuKita
                             }
 
                             SetConfigValue("MenuItems", menuItems);
-<<<<<<< HEAD:BukuKita/MainMenu.cs
-=======
 
                             // Postkondisi untuk kasus ini: Item menu harus diperbarui
                             Debug.Assert(menuItems[editIndex - 1].Id == (!string.IsNullOrWhiteSpace(newId) ? newId : menuItems[editIndex - 1].Id),
                                 "ID item menu harus diperbarui jika nilai baru disediakan");
                             Debug.Assert(menuItems[editIndex - 1].Name == (!string.IsNullOrWhiteSpace(newName) ? newName : menuItems[editIndex - 1].Name),
                                 "Nama item menu harus diperbarui jika nilai baru disediakan");
->>>>>>> AlwinFahroziMarbun:tubeskpl/MainMenu.cs
                         }
                         else
                         {
@@ -434,11 +393,6 @@ namespace BukuKita
                             Console.Write($"Yakin ingin menghapus '{menuItems[deleteIndex - 1].Name}'? (y/n): ");
                             if (Console.ReadLine().ToLower() == "y")
                             {
-<<<<<<< HEAD:BukuKita/MainMenu.cs
-                                menuItems.RemoveAt(deleteIndex - 1);
-                                SetConfigValue("MenuItems", menuItems);
-                                Console.WriteLine("Item menu berhasil dihapus!");
-=======
                                 var deletedItem = menuItems[deleteIndex - 1];
                                 menuItems.RemoveAt(deleteIndex - 1);
                                 SetConfigValue("MenuItems", menuItems);
@@ -447,7 +401,6 @@ namespace BukuKita
                                 // Postkondisi untuk kasus ini: Item menu harus dihapus
                                 Debug.Assert(!menuItems.Any(m => m.Id == deletedItem.Id && m.Name == deletedItem.Name),
                                     "Item menu yang dihapus tidak boleh ada lagi dalam daftar menu items");
->>>>>>> AlwinFahroziMarbun:tubeskpl/MainMenu.cs
                             }
                         }
                         else
@@ -463,16 +416,10 @@ namespace BukuKita
                         break;
                 }
             }
-<<<<<<< HEAD:BukuKita/MainMenu.cs
-        }
-
-=======
 
             // Postkondisi: Tidak ada nilai return karena ini adalah metode UI
         }
 
->>>>>>> Stashed changes:BukuKita/MainMenu.cs
->>>>>>> AlwinFahroziMarbun:tubeskpl/MainMenu.cs
         #endregion
 
         #region API Methods
@@ -769,36 +716,11 @@ namespace BukuKita
                 Console.Write("Pilih opsi: ");
                 string pilihan = Console.ReadLine();
 
-<<<<<<< HEAD:BukuKita/MainMenu.cs
-                // Check if pilihan exists in menuItems
-                var selectedItem = menuItems?.FirstOrDefault(i => i.Id == pilihan);
-
-                if (selectedItem != null)
-                {
-=======
-<<<<<<< Updated upstream:tubeskpl/MainMenu.cs
-                switch (pilihan)
-                {
-                    case "1":
-                        HandleLogin();
-                        break;
-                    case "2":
-                        _auth.RegisterMahasiswa();
-                        break;
-                    case "3":
-                        isRunning = false;
-                        Console.WriteLine($"Terima kasih telah menggunakan {appName}!");
-                        break;
-                    default:
-                        Console.WriteLine("Opsi tidak valid.");
-                        break;
-=======
                 // Periksa apakah pilihan ada di menuItems
                 var selectedItem = menuItems?.FirstOrDefault(i => i.Id == pilihan);
 
                 if (selectedItem != null)
                 {
->>>>>>> AlwinFahroziMarbun:tubeskpl/MainMenu.cs
                     switch (selectedItem.Name.ToLower())
                     {
                         case "login":
@@ -821,11 +743,7 @@ namespace BukuKita
                 }
                 else
                 {
-<<<<<<< HEAD:BukuKita/MainMenu.cs
-                    // Fallback to standard menu if configuration-based menu fails
-=======
                     // Fallback ke menu standar jika menu berbasis konfigurasi gagal
->>>>>>> AlwinFahroziMarbun:tubeskpl/MainMenu.cs
                     switch (pilihan)
                     {
                         case "1":
@@ -845,10 +763,6 @@ namespace BukuKita
                             Console.WriteLine("Opsi tidak valid.");
                             break;
                     }
-<<<<<<< HEAD:BukuKita/MainMenu.cs
-=======
->>>>>>> Stashed changes:BukuKita/MainMenu.cs
->>>>>>> AlwinFahroziMarbun:tubeskpl/MainMenu.cs
                 }
 
                 if (isRunning)
@@ -916,11 +830,6 @@ namespace BukuKita
 
             AdminView adminView = new AdminView();
             adminView.displayMenu(_books, _peminjamans, _approvals);
-<<<<<<< HEAD:BukuKita/MainMenu.cs
-=======
-<<<<<<< Updated upstream:tubeskpl/MainMenu.cs
-=======
->>>>>>> AlwinFahroziMarbun:tubeskpl/MainMenu.cs
 
             // Tambahkan opsi untuk masuk ke menu konfigurasi
             bool showConfigMenu = true;
@@ -946,12 +855,8 @@ namespace BukuKita
                         break;
                 }
             }
-<<<<<<< HEAD:BukuKita/MainMenu.cs
-=======
 
             // Postkondisi: Tidak ada nilai return karena ini adalah metode UI
->>>>>>> Stashed changes:BukuKita/MainMenu.cs
->>>>>>> AlwinFahroziMarbun:tubeskpl/MainMenu.cs
         }
 
         /// <summary>
@@ -969,11 +874,6 @@ namespace BukuKita
 
             MahasiswaView mhsMenu = new MahasiswaView();
             mhsMenu.displayMenu(_books, _peminjamans, _pengembalians, _approvals);
-<<<<<<< HEAD:BukuKita/MainMenu.cs
-=======
-<<<<<<< Updated upstream:tubeskpl/MainMenu.cs
-=======
->>>>>>> AlwinFahroziMarbun:tubeskpl/MainMenu.cs
 
             // Tambahkan menu untuk melihat status approval peminjaman
             bool requireApproval = GetConfigValue<bool>("RequireApproval", true);
@@ -1007,12 +907,8 @@ namespace BukuKita
                     }
                 }
             }
-<<<<<<< HEAD:BukuKita/MainMenu.cs
-=======
 
             // Postkondisi: Tidak ada nilai return karena ini adalah metode UI
->>>>>>> Stashed changes:BukuKita/MainMenu.cs
->>>>>>> AlwinFahroziMarbun:tubeskpl/MainMenu.cs
         }
 
         /// <summary>
