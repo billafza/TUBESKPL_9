@@ -8,12 +8,17 @@
     "net8.0": []
   },
   "packageFolders": {
+<<<<<<< Updated upstream:tubeskpl/obj/project.assets.json
     "C:\\Users\\ekaya\\.nuget\\packages\\": {},
+=======
+    "C:\\Users\\Razhed\\.nuget\\packages\\": {},
+>>>>>>> Stashed changes:BukuKita-LIB/obj/project.assets.json
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< Updated upstream:tubeskpl/obj/project.assets.json
 <<<<<<< Updated upstream:tubeskpl/obj/project.assets.json
       "projectUniqueName": "C:\\Users\\ekaya\\OneDrive\\Documents\\GitHub\\TUBESKPL_9\\tubeskpl\\tubeskpl.csproj",
       "projectName": "tubeskpl",
@@ -27,12 +32,23 @@
       "packagesPath": "C:\\Users\\ekaya\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ekaya\\Downloads\\kpl\\TUBESKPL_9\\BukuKita-LIB\\obj\\",
 >>>>>>> Stashed changes:BukuKita-LIB/obj/project.assets.json
+=======
+      "projectUniqueName": "C:\\Users\\Razhed\\Downloads\\TUBESKPL_9-main\\TUBESKPL_9-main\\BukuKita-LIB\\BukuKita-LIB.csproj",
+      "projectName": "BukuKita-LIB",
+      "projectPath": "C:\\Users\\Razhed\\Downloads\\TUBESKPL_9-main\\TUBESKPL_9-main\\BukuKita-LIB\\BukuKita-LIB.csproj",
+      "packagesPath": "C:\\Users\\Razhed\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Razhed\\Downloads\\TUBESKPL_9-main\\TUBESKPL_9-main\\BukuKita-LIB\\obj\\",
+>>>>>>> Stashed changes:BukuKita-LIB/obj/project.assets.json
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
+<<<<<<< Updated upstream:tubeskpl/obj/project.assets.json
         "C:\\Users\\ekaya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\Razhed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> Stashed changes:BukuKita-LIB/obj/project.assets.json
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -41,6 +57,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -59,7 +76,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -80,7 +97,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< Updated upstream:tubeskpl/obj/project.assets.json
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+>>>>>>> Stashed changes:BukuKita-LIB/obj/project.assets.json
       }
     }
   }

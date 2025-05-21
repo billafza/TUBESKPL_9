@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "lcEYQYBG1s0=",
   "success": true,
   "projectFilePath": "C:\\Users\\ekaya\\Downloads\\kpl\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj",
+=======
+  "dgSpecHash": "n2rAIZw4FNQ=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Razhed\\Downloads\\TUBESKPL_9-main\\TUBESKPL_9-main\\BukuKita-LIB\\BukuKita-LIB.csproj",
+>>>>>>> Stashed changes
   "expectedPackageFiles": [],
   "logs": []
 }

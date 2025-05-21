@@ -15,11 +15,15 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 <<<<<<< Updated upstream:tubeskpl/obj/Debug/net8.0/tubeskpl.AssemblyInfo.cs
+<<<<<<< Updated upstream:tubeskpl/obj/Debug/net8.0/tubeskpl.AssemblyInfo.cs
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e965865876025afb6f013048704321e03464abf4")]
 [assembly: System.Reflection.AssemblyProductAttribute("tubeskpl")]
 [assembly: System.Reflection.AssemblyTitleAttribute("tubeskpl")]
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+766b326a5e8d8c24f397121b148d5062e33ac279")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+>>>>>>> Stashed changes:BukuKita/obj/Debug/net8.0/BukuKita.AssemblyInfo.cs
 [assembly: System.Reflection.AssemblyProductAttribute("BukuKita")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BukuKita")]
 >>>>>>> Stashed changes:BukuKita/obj/Debug/net8.0/BukuKita.AssemblyInfo.cs
