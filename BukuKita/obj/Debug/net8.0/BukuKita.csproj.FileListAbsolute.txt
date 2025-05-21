@@ -55,6 +55,11 @@ C:\Users\ekaya\Downloads\kpl\TUBESKPL_9\BukuKita\obj\Debug\net8.0\refint\BukuKit
 C:\Users\ekaya\Downloads\kpl\TUBESKPL_9\BukuKita\obj\Debug\net8.0\BukuKita.pdb
 C:\Users\ekaya\Downloads\kpl\TUBESKPL_9\BukuKita\obj\Debug\net8.0\BukuKita.genruntimeconfig.cache
 C:\Users\ekaya\Downloads\kpl\TUBESKPL_9\BukuKita\obj\Debug\net8.0\ref\BukuKita.dll
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+=======
+>>>>>>> AlwinFahroziMarbun
 C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita\bin\Debug\net8.0\BukuKita.exe
 C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita\bin\Debug\net8.0\BukuKita.deps.json
 C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita\bin\Debug\net8.0\BukuKita.runtimeconfig.json
@@ -74,3 +79,15 @@ C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita\obj\Debug\n
 C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita\obj\Debug\net8.0\BukuKita.pdb
 C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita\obj\Debug\net8.0\BukuKita.genruntimeconfig.cache
 C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita\obj\Debug\net8.0\ref\BukuKita.dll
+<<<<<<< HEAD
+=======
+C:\Users\Razhed\Downloads\TUBESKPL_9-main\TUBESKPL_9-main\BukuKita\obj\Debug\net8.0\BukuKita.csproj.AssemblyReference.cache
+C:\Users\Razhed\Downloads\TUBESKPL_9-main\TUBESKPL_9-main\BukuKita\obj\Debug\net8.0\BukuKita.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Razhed\Downloads\TUBESKPL_9-main\TUBESKPL_9-main\BukuKita\obj\Debug\net8.0\BukuKita.AssemblyInfoInputs.cache
+C:\Users\Razhed\Downloads\TUBESKPL_9-main\TUBESKPL_9-main\BukuKita\obj\Debug\net8.0\BukuKita.AssemblyInfo.cs
+C:\Users\Razhed\Downloads\TUBESKPL_9-main\TUBESKPL_9-main\BukuKita\obj\Debug\net8.0\BukuKita.csproj.CoreCompileInputs.cache
+C:\Users\Razhed\Downloads\TUBESKPL_9-main\TUBESKPL_9-main\BukuKita\obj\Debug\net8.0\BukuKita.dll
+C:\Users\Razhed\Downloads\TUBESKPL_9-main\TUBESKPL_9-main\BukuKita\obj\Debug\net8.0\refint\BukuKita.dll
+C:\Users\Razhed\Downloads\TUBESKPL_9-main\TUBESKPL_9-main\BukuKita\obj\Debug\net8.0\BukuKita.pdb
+>>>>>>> Stashed changes
+>>>>>>> AlwinFahroziMarbun

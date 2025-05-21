@@ -10,6 +10,11 @@ C:\Users\ekaya\Downloads\kpl\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\BukuKita-L
 C:\Users\ekaya\Downloads\kpl\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\refint\BukuKita-LIB.dll
 C:\Users\ekaya\Downloads\kpl\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\BukuKita-LIB.pdb
 C:\Users\ekaya\Downloads\kpl\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\ref\BukuKita-LIB.dll
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+=======
+>>>>>>> AlwinFahroziMarbun
 C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita-LIB\bin\Debug\net8.0\BukuKita-LIB.deps.json
 C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita-LIB\bin\Debug\net8.0\BukuKita-LIB.dll
 C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita-LIB\bin\Debug\net8.0\BukuKita-LIB.pdb
@@ -22,3 +27,18 @@ C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita-LIB\obj\Deb
 C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\refint\BukuKita-LIB.dll
 C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\BukuKita-LIB.pdb
 C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\ref\BukuKita-LIB.dll
+<<<<<<< HEAD
+=======
+C:\Users\Razhed\Downloads\TUBESKPL_9-main\TUBESKPL_9-main\BukuKita-LIB\bin\Debug\net8.0\BukuKita-LIB.deps.json
+C:\Users\Razhed\Downloads\TUBESKPL_9-main\TUBESKPL_9-main\BukuKita-LIB\bin\Debug\net8.0\BukuKita-LIB.dll
+C:\Users\Razhed\Downloads\TUBESKPL_9-main\TUBESKPL_9-main\BukuKita-LIB\bin\Debug\net8.0\BukuKita-LIB.pdb
+C:\Users\Razhed\Downloads\TUBESKPL_9-main\TUBESKPL_9-main\BukuKita-LIB\obj\Debug\net8.0\BukuKita-LIB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Razhed\Downloads\TUBESKPL_9-main\TUBESKPL_9-main\BukuKita-LIB\obj\Debug\net8.0\BukuKita-LIB.AssemblyInfoInputs.cache
+C:\Users\Razhed\Downloads\TUBESKPL_9-main\TUBESKPL_9-main\BukuKita-LIB\obj\Debug\net8.0\BukuKita-LIB.AssemblyInfo.cs
+C:\Users\Razhed\Downloads\TUBESKPL_9-main\TUBESKPL_9-main\BukuKita-LIB\obj\Debug\net8.0\BukuKita-LIB.csproj.CoreCompileInputs.cache
+C:\Users\Razhed\Downloads\TUBESKPL_9-main\TUBESKPL_9-main\BukuKita-LIB\obj\Debug\net8.0\BukuKita-LIB.dll
+C:\Users\Razhed\Downloads\TUBESKPL_9-main\TUBESKPL_9-main\BukuKita-LIB\obj\Debug\net8.0\refint\BukuKita-LIB.dll
+C:\Users\Razhed\Downloads\TUBESKPL_9-main\TUBESKPL_9-main\BukuKita-LIB\obj\Debug\net8.0\BukuKita-LIB.pdb
+C:\Users\Razhed\Downloads\TUBESKPL_9-main\TUBESKPL_9-main\BukuKita-LIB\obj\Debug\net8.0\ref\BukuKita-LIB.dll
+>>>>>>> Stashed changes
+>>>>>>> AlwinFahroziMarbun

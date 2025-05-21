@@ -5,12 +5,28 @@
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+<<<<<<< HEAD:BukuKita-LIB/obj/BukuKita-LIB.csproj.nuget.g.props
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Nadya Sekar\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
+=======
+<<<<<<< Updated upstream:tubeskpl/obj/tubeskpl.csproj.nuget.g.props
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\ekaya\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
+=======
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Razhed\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
+>>>>>>> Stashed changes:BukuKita-LIB/obj/BukuKita-LIB.csproj.nuget.g.props
+>>>>>>> AlwinFahroziMarbun:tubeskpl/obj/tubeskpl.csproj.nuget.g.props
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.13.2</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.14.0</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+<<<<<<< HEAD:BukuKita-LIB/obj/BukuKita-LIB.csproj.nuget.g.props
     <SourceRoot Include="C:\Users\Nadya Sekar\.nuget\packages\" />
+=======
+<<<<<<< Updated upstream:tubeskpl/obj/tubeskpl.csproj.nuget.g.props
+    <SourceRoot Include="C:\Users\ekaya\.nuget\packages\" />
+=======
+    <SourceRoot Include="C:\Users\Razhed\.nuget\packages\" />
+>>>>>>> Stashed changes:BukuKita-LIB/obj/BukuKita-LIB.csproj.nuget.g.props
+>>>>>>> AlwinFahroziMarbun:tubeskpl/obj/tubeskpl.csproj.nuget.g.props
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
 </Project>

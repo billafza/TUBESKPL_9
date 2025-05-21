@@ -1,7 +1,12 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "D:\\TUBESKPL_9\\TUBESKPL_9\\BukuKita\\BukuKita.csproj": {}
+=======
+<<<<<<< Updated upstream
+    "C:\\Users\\ekaya\\Downloads\\kpl\\TUBESKPL_9\\BukuKita\\BukuKita.csproj": {}
+>>>>>>> AlwinFahroziMarbun
   },
   "projects": {
     "D:\\TUBESKPL_9\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj": {
@@ -9,15 +14,42 @@
       "restore": {
         "projectUniqueName": "D:\\TUBESKPL_9\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj",
         "projectName": "BukuKita-LIB",
+<<<<<<< HEAD
         "projectPath": "D:\\TUBESKPL_9\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj",
         "packagesPath": "C:\\Users\\Nadya Sekar\\.nuget\\packages\\",
         "outputPath": "D:\\TUBESKPL_9\\TUBESKPL_9\\BukuKita-LIB\\obj\\",
+=======
+        "projectPath": "C:\\Users\\ekaya\\Downloads\\kpl\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj",
+        "packagesPath": "C:\\Users\\ekaya\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ekaya\\Downloads\\kpl\\TUBESKPL_9\\BukuKita-LIB\\obj\\",
+=======
+    "C:\\Users\\Razhed\\Downloads\\TUBESKPL_9-main\\TUBESKPL_9-main\\BukuKita\\BukuKita.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Razhed\\Downloads\\TUBESKPL_9-main\\TUBESKPL_9-main\\BukuKita-LIB\\BukuKita-LIB.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Razhed\\Downloads\\TUBESKPL_9-main\\TUBESKPL_9-main\\BukuKita-LIB\\BukuKita-LIB.csproj",
+        "projectName": "BukuKita-LIB",
+        "projectPath": "C:\\Users\\Razhed\\Downloads\\TUBESKPL_9-main\\TUBESKPL_9-main\\BukuKita-LIB\\BukuKita-LIB.csproj",
+        "packagesPath": "C:\\Users\\Razhed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Razhed\\Downloads\\TUBESKPL_9-main\\TUBESKPL_9-main\\BukuKita-LIB\\obj\\",
+>>>>>>> Stashed changes
+>>>>>>> AlwinFahroziMarbun
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\Nadya Sekar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+<<<<<<< Updated upstream
+          "C:\\Users\\ekaya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\Razhed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> Stashed changes
+>>>>>>> AlwinFahroziMarbun
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +58,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,7 +77,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -65,24 +98,53 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
+<<<<<<< HEAD
     "D:\\TUBESKPL_9\\TUBESKPL_9\\BukuKita\\BukuKita.csproj": {
+=======
+<<<<<<< Updated upstream
+    "C:\\Users\\ekaya\\Downloads\\kpl\\TUBESKPL_9\\BukuKita\\BukuKita.csproj": {
+>>>>>>> AlwinFahroziMarbun
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "D:\\TUBESKPL_9\\TUBESKPL_9\\BukuKita\\BukuKita.csproj",
         "projectName": "BukuKita",
+<<<<<<< HEAD
         "projectPath": "D:\\TUBESKPL_9\\TUBESKPL_9\\BukuKita\\BukuKita.csproj",
         "packagesPath": "C:\\Users\\Nadya Sekar\\.nuget\\packages\\",
         "outputPath": "D:\\TUBESKPL_9\\TUBESKPL_9\\BukuKita\\obj\\",
+=======
+        "projectPath": "C:\\Users\\ekaya\\Downloads\\kpl\\TUBESKPL_9\\BukuKita\\BukuKita.csproj",
+        "packagesPath": "C:\\Users\\ekaya\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ekaya\\Downloads\\kpl\\TUBESKPL_9\\BukuKita\\obj\\",
+=======
+    "C:\\Users\\Razhed\\Downloads\\TUBESKPL_9-main\\TUBESKPL_9-main\\BukuKita\\BukuKita.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Razhed\\Downloads\\TUBESKPL_9-main\\TUBESKPL_9-main\\BukuKita\\BukuKita.csproj",
+        "projectName": "BukuKita",
+        "projectPath": "C:\\Users\\Razhed\\Downloads\\TUBESKPL_9-main\\TUBESKPL_9-main\\BukuKita\\BukuKita.csproj",
+        "packagesPath": "C:\\Users\\Razhed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Razhed\\Downloads\\TUBESKPL_9-main\\TUBESKPL_9-main\\BukuKita\\obj\\",
+>>>>>>> Stashed changes
+>>>>>>> AlwinFahroziMarbun
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\Nadya Sekar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+<<<<<<< Updated upstream
+          "C:\\Users\\ekaya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\Razhed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> Stashed changes
+>>>>>>> AlwinFahroziMarbun
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -91,14 +153,25 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+<<<<<<< HEAD
               "D:\\TUBESKPL_9\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj": {
                 "projectPath": "D:\\TUBESKPL_9\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj"
+=======
+<<<<<<< Updated upstream
+              "C:\\Users\\ekaya\\Downloads\\kpl\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj": {
+                "projectPath": "C:\\Users\\ekaya\\Downloads\\kpl\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj"
+=======
+              "C:\\Users\\Razhed\\Downloads\\TUBESKPL_9-main\\TUBESKPL_9-main\\BukuKita-LIB\\BukuKita-LIB.csproj": {
+                "projectPath": "C:\\Users\\Razhed\\Downloads\\TUBESKPL_9-main\\TUBESKPL_9-main\\BukuKita-LIB\\BukuKita-LIB.csproj"
+>>>>>>> Stashed changes
+>>>>>>> AlwinFahroziMarbun
               }
             }
           }
@@ -113,7 +186,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -134,7 +207,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -14,7 +14,20 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BukuKita")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD:BukuKita/obj/Debug/net8.0/BukuKita.AssemblyInfo.cs
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ecb3c0ad889cccb8c6c877c2f8daf108c185702")]
+=======
+<<<<<<< Updated upstream:tubeskpl/obj/Debug/net8.0/tubeskpl.AssemblyInfo.cs
+<<<<<<< Updated upstream:tubeskpl/obj/Debug/net8.0/tubeskpl.AssemblyInfo.cs
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e965865876025afb6f013048704321e03464abf4")]
+[assembly: System.Reflection.AssemblyProductAttribute("tubeskpl")]
+[assembly: System.Reflection.AssemblyTitleAttribute("tubeskpl")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+766b326a5e8d8c24f397121b148d5062e33ac279")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+>>>>>>> Stashed changes:BukuKita/obj/Debug/net8.0/BukuKita.AssemblyInfo.cs
+>>>>>>> AlwinFahroziMarbun:tubeskpl/obj/Debug/net8.0/tubeskpl.AssemblyInfo.cs
 [assembly: System.Reflection.AssemblyProductAttribute("BukuKita")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BukuKita")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

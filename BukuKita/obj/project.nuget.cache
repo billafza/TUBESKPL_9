@@ -1,8 +1,20 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "qBT2L/Lt0u4=",
   "success": true,
   "projectFilePath": "D:\\TUBESKPL_9\\TUBESKPL_9\\BukuKita\\BukuKita.csproj",
+=======
+<<<<<<< Updated upstream
+  "dgSpecHash": "/I73IbCkp2Y=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ekaya\\Downloads\\kpl\\TUBESKPL_9\\BukuKita\\BukuKita.csproj",
+=======
+  "dgSpecHash": "tMs52U9QT+c=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Razhed\\Downloads\\TUBESKPL_9-main\\TUBESKPL_9-main\\BukuKita\\BukuKita.csproj",
+>>>>>>> Stashed changes
+>>>>>>> AlwinFahroziMarbun
   "expectedPackageFiles": [],
   "logs": []
 }
