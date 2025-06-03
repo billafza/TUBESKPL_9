@@ -74,3 +74,45 @@ C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita\obj\Debug\n
 C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita\obj\Debug\net8.0\BukuKita.pdb
 C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita\obj\Debug\net8.0\BukuKita.genruntimeconfig.cache
 C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita\obj\Debug\net8.0\ref\BukuKita.dll
+C:\Users\Razhed\Downloads\TUBESKPL_9-main\TUBESKPL_9-main\BukuKita\obj\Debug\net8.0\BukuKita.csproj.AssemblyReference.cache
+C:\Users\Razhed\Downloads\TUBESKPL_9-main\TUBESKPL_9-main\BukuKita\obj\Debug\net8.0\BukuKita.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Razhed\Downloads\TUBESKPL_9-main\TUBESKPL_9-main\BukuKita\obj\Debug\net8.0\BukuKita.AssemblyInfoInputs.cache
+C:\Users\Razhed\Downloads\TUBESKPL_9-main\TUBESKPL_9-main\BukuKita\obj\Debug\net8.0\BukuKita.AssemblyInfo.cs
+C:\Users\Razhed\Downloads\TUBESKPL_9-main\TUBESKPL_9-main\BukuKita\obj\Debug\net8.0\BukuKita.csproj.CoreCompileInputs.cache
+C:\Users\Razhed\Downloads\TUBESKPL_9-main\TUBESKPL_9-main\BukuKita\obj\Debug\net8.0\BukuKita.dll
+C:\Users\Razhed\Downloads\TUBESKPL_9-main\TUBESKPL_9-main\BukuKita\obj\Debug\net8.0\refint\BukuKita.dll
+C:\Users\Razhed\Downloads\TUBESKPL_9-main\TUBESKPL_9-main\BukuKita\obj\Debug\net8.0\BukuKita.pdb
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\obj\Debug\net8.0\BukuKita.csproj.AssemblyReference.cache
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\obj\Debug\net8.0\BukuKita.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\obj\Debug\net8.0\BukuKita.AssemblyInfoInputs.cache
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\obj\Debug\net8.0\BukuKita.AssemblyInfo.cs
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\obj\Debug\net8.0\BukuKita.csproj.CoreCompileInputs.cache
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\obj\Debug\net8.0\BukuKita.sourcelink.json
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\obj\Debug\net8.0\BukuKita.dll
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\obj\Debug\net8.0\refint\BukuKita.dll
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\obj\Debug\net8.0\BukuKita.pdb
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\obj\Debug\net8.0\BukuKita.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\obj\Debug\net8.0\BukuKita.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\bin\Debug\net8.0\BukuKita.staticwebassets.endpoints.json
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\bin\Debug\net8.0\BukuKita.exe
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\bin\Debug\net8.0\BukuKita.deps.json
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\bin\Debug\net8.0\BukuKita.runtimeconfig.json
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\bin\Debug\net8.0\BukuKita.dll
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\bin\Debug\net8.0\BukuKita.pdb
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\bin\Debug\net8.0\BukuKita.xml
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\bin\Debug\net8.0\Swashbuckle.AspNetCore.Annotations.dll
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\bin\Debug\net8.0\BukuKita-LIB.dll
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\bin\Debug\net8.0\BukuKita-LIB.pdb
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\obj\Debug\net8.0\scopedcss\bundle\BukuKita.styles.css
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\obj\Debug\net8.0\BukuKita.csproj.Up2Date
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\obj\Debug\net8.0\BukuKita.xml
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\obj\Debug\net8.0\BukuKita.genruntimeconfig.cache
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\obj\Debug\net8.0\ref\BukuKita.dll
