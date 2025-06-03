@@ -95,41 +95,70 @@ namespace BookLibrary
             }
 
             //Method untuk menampilkan menu kelola buku untuk Admin
+            public enum State
+            {
+                Menu,
+                LihatBuku,
+                TambahBuku,
+                HapusBuku,
+                Keluar
+            }
+
             public static void KelolaBuku(List<Buku> book)
             {
+                State currentState = State.Menu;
                 bool isRunning = true;
+
                 while (isRunning)
                 {
-
-                    Console.WriteLine("\n=== MENU KELOLA BUKU ===");
-                    Console.WriteLine("1. Melihat Buku");
-                    Console.WriteLine("2. Menambah Buku");
-                    Console.WriteLine("3. Menghapus Buku");
-                    Console.WriteLine("0. Kembali");
-                    Console.WriteLine("Pilih: ");
-                    int pilih = int.Parse(Console.ReadLine());
-                    Console.WriteLine();
-
-                    switch (pilih)
+                    switch (currentState)
                     {
-                        case 1:
+                        case State.Menu:
+                            Console.WriteLine("\n=== MENU KELOLA BUKU ===");
+                            Console.WriteLine("1. Melihat Buku");
+                            Console.WriteLine("2. Menambah Buku");
+                            Console.WriteLine("3. Menghapus Buku");
+                            Console.WriteLine("0. Kembali");
+                            Console.Write("Pilih: ");
+                            string input = Console.ReadLine();
+
+                            switch (input)
+                            {
+                                case "1":
+                                    currentState = State.LihatBuku;
+                                    break;
+                                case "2":
+                                    currentState = State.TambahBuku;
+                                    break;
+                                case "3":
+                                    currentState = State.HapusBuku;
+                                    break;
+                                case "0":
+                                    currentState = State.Keluar;
+                                    break;
+                                default:
+                                    Console.WriteLine("Pilihan tidak valid.");
+                                    break;
+                            }
+                            break;
+
+                        case State.LihatBuku:
                             DaftarBuku(book);
+                            currentState = State.Menu;
                             break;
 
-                        case 2:
+                        case State.TambahBuku:
                             TambahBuku(book);
+                            currentState = State.Menu;
                             break;
 
-                        case 3:
+                        case State.HapusBuku:
                             HapusBuku(book);
+                            currentState = State.Menu;
                             break;
 
-                        case 0:
+                        case State.Keluar:
                             isRunning = false;
-                            break;
-
-                        default:
-                            Console.WriteLine("\nPilih menu yang sesuai.");
                             break;
                     }
                 }

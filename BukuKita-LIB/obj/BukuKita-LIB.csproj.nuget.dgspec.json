@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj": {}
+    "C:\\NASHBILLA NURFAZZA\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj": {}
   },
   "projects": {
-    "C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj": {
+    "C:\\NASHBILLA NURFAZZA\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj",
+        "projectUniqueName": "C:\\NASHBILLA NURFAZZA\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj",
         "projectName": "BukuKita-LIB",
-        "projectPath": "C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj",
+        "projectPath": "C:\\NASHBILLA NURFAZZA\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\TUBESKPL_9\\BukuKita-LIB\\obj\\",
+        "outputPath": "C:\\NASHBILLA NURFAZZA\\TUBESKPL_9\\BukuKita-LIB\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
