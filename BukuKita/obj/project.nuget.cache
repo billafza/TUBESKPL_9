@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "tMs52U9QT+c=",
+  "dgSpecHash": "9mjQng4zLOs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Razhed\\Downloads\\TUBESKPL_9-main\\TUBESKPL_9-main\\BukuKita\\BukuKita.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Razhed\\Documents\\GitHub\\TUBESKPL_9\\BukuKita\\BukuKita.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Razhed\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\Razhed\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Razhed\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\Razhed\\.nuget\\packages\\swashbuckle.aspnetcore.annotations\\6.5.0\\swashbuckle.aspnetcore.annotations.6.5.0.nupkg.sha512",
+    "C:\\Users\\Razhed\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\Razhed\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\Razhed\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
   "logs": []
 }

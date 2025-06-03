@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Razhed\\Downloads\\TUBESKPL_9-main\\TUBESKPL_9-main\\BukuKita-LIB\\BukuKita-LIB.csproj",
+      "projectUniqueName": "C:\\Users\\Razhed\\Documents\\GitHub\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj",
       "projectName": "BukuKita-LIB",
-      "projectPath": "C:\\Users\\Razhed\\Downloads\\TUBESKPL_9-main\\TUBESKPL_9-main\\BukuKita-LIB\\BukuKita-LIB.csproj",
+      "projectPath": "C:\\Users\\Razhed\\Documents\\GitHub\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj",
       "packagesPath": "C:\\Users\\Razhed\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Razhed\\Downloads\\TUBESKPL_9-main\\TUBESKPL_9-main\\BukuKita-LIB\\obj\\",
+      "outputPath": "C:\\Users\\Razhed\\Documents\\GitHub\\TUBESKPL_9\\BukuKita-LIB\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

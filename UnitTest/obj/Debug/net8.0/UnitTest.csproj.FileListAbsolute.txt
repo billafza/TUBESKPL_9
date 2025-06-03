@@ -175,3 +175,6 @@ C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\UnitTest\obj\Debug\n
 C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\UnitTest\obj\Debug\net8.0\UnitTest.pdb
 C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\UnitTest\obj\Debug\net8.0\UnitTest.genruntimeconfig.cache
 C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\UnitTest\obj\Debug\net8.0\ref\UnitTest.dll
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\UnitTest\obj\Debug\net8.0\UnitTest.dll
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\UnitTest\obj\Debug\net8.0\refint\UnitTest.dll
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\UnitTest\obj\Debug\net8.0\UnitTest.pdb

@@ -40,19 +40,16 @@ namespace BukuKita.Auth
                         Console.WriteLine("\n--- LOGIN ---");
                         currentState = LoginState.InputEmail;
                         break;
-
                     case LoginState.InputEmail:
                         Console.Write("Masukkan Email: ");
                         email = Console.ReadLine();
                         currentState = LoginState.InputPassword;
                         break;
-
                     case LoginState.InputPassword:
                         Console.Write("Masukkan Password: ");
                         password = Console.ReadLine();
                         currentState = LoginState.Validasi;
                         break;
-
                     case LoginState.Validasi:
                         userLogin = daftarUser.FirstOrDefault(u => u.email == email && u.ValidasiPass(password));
                         if (userLogin != null)
@@ -60,7 +57,6 @@ namespace BukuKita.Auth
                             Console.WriteLine($"Login berhasil sebagai {userLogin.role}!\n");
                             userLogin.DisplayUser();
                             currentState = LoginState.Berhasil;
-
                             // Di method MulaiLogin
                             if (userLogin.role.ToLower() == "admin")
                             {
@@ -83,9 +79,10 @@ namespace BukuKita.Auth
             }
         }
 
-        public void MulaiLogin(List<BukuKita.Tests.StateMachineTests.User> users, List<Buku> bukus, List<Peminjaman> peminjamen, List<Pengembalian> pengembalians, List<Approval> approvals)
-        {
-            throw new NotImplementedException();
-        }
+        // HAPUS method overload yang bermasalah ini:
+        // public void MulaiLogin(List<BukuKita.Tests.StateMachineTests.User> users, List<Buku> bukus, List<Peminjaman> peminjamen, List<Pengembalian> pengembalians, List<Approval> approvals)
+        // {
+        //     throw new NotImplementedException();
+        // }
     }
 }

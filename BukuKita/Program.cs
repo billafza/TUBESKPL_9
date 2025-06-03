@@ -1,21 +1,67 @@
-﻿using System;
-using static BookLibrary.BookLib;
-using BukuKita.Model;
-using BukuKita.View;
-using BukuKita.Auth;
+﻿using BukuKita;
 
-namespace BukuKita
+var builder = WebApplication.CreateBuilder(args);
+
+// Check if running in console mode
+if (args.Length == 0 || args[0].ToLower() != "api")
 {
-    class Program // Ubah nama kelas dari 'program' ke 'Program' (huruf besar)
-    {
-        static void Main()
-        {
-            // Gunakan MainMenu dan runtime configuration
-            MainMenu mainMenu = new MainMenu();
-            mainMenu.DisplayMainMenu();
+    // Run console mode
+    Console.WriteLine("=== BukuKita Console Mode ===");
+    Console.WriteLine("Gunakan 'dotnet run api' untuk menjalankan mode Web API");
+    Console.WriteLine();
 
-            // Setelah keluar dari DisplayMainMenu, program akan berakhir
-            Console.WriteLine("Terima kasih telah menggunakan BukuKita!");
-        }
-    }
+    MainMenu mainMenu = new MainMenu();
+    mainMenu.DisplayMainMenu();
+
+    Console.WriteLine("Terima kasih telah menggunakan BukuKita!");
+    return;
 }
+
+// Configure Web API services
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
+    {
+        Title = "BukuKita Approval API",
+        Version = "v1",
+        Description = "API untuk mengelola Approval peminjaman buku dalam sistem BukuKita"
+    });
+
+    // Enable annotations
+    c.EnableAnnotations();
+});
+builder.Services.AddSingleton<MainMenu>();
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "BukuKita Approval API v1");
+    });
+}
+
+app.UseHttpsRedirection();
+app.UseAuthorization();
+app.MapControllers();
+
+// Add health check endpoint
+app.MapGet("/health", () => new
+{
+    status = "healthy",
+    timestamp = DateTime.Now,
+    application = "BukuKita API",
+    version = "1.0"
+});
+
+Console.WriteLine("=== BukuKita Web API Mode ===");
+Console.WriteLine("Swagger UI: https://localhost:5001/swagger");
+Console.WriteLine("Health Check: /health");
+Console.WriteLine();
+
+app.Run();

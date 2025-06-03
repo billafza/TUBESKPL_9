@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Razhed\\Downloads\\TUBESKPL_9-main\\TUBESKPL_9-main\\BukuKita\\BukuKita.csproj": {}
+    "C:\\Users\\Razhed\\Documents\\GitHub\\TUBESKPL_9\\BukuKita\\BukuKita.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Razhed\\Downloads\\TUBESKPL_9-main\\TUBESKPL_9-main\\BukuKita-LIB\\BukuKita-LIB.csproj": {
+    "C:\\Users\\Razhed\\Documents\\GitHub\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Razhed\\Downloads\\TUBESKPL_9-main\\TUBESKPL_9-main\\BukuKita-LIB\\BukuKita-LIB.csproj",
+        "projectUniqueName": "C:\\Users\\Razhed\\Documents\\GitHub\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj",
         "projectName": "BukuKita-LIB",
-        "projectPath": "C:\\Users\\Razhed\\Downloads\\TUBESKPL_9-main\\TUBESKPL_9-main\\BukuKita-LIB\\BukuKita-LIB.csproj",
+        "projectPath": "C:\\Users\\Razhed\\Documents\\GitHub\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj",
         "packagesPath": "C:\\Users\\Razhed\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Razhed\\Downloads\\TUBESKPL_9-main\\TUBESKPL_9-main\\BukuKita-LIB\\obj\\",
+        "outputPath": "C:\\Users\\Razhed\\Documents\\GitHub\\TUBESKPL_9\\BukuKita-LIB\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -70,14 +70,14 @@
         }
       }
     },
-    "C:\\Users\\Razhed\\Downloads\\TUBESKPL_9-main\\TUBESKPL_9-main\\BukuKita\\BukuKita.csproj": {
+    "C:\\Users\\Razhed\\Documents\\GitHub\\TUBESKPL_9\\BukuKita\\BukuKita.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Razhed\\Downloads\\TUBESKPL_9-main\\TUBESKPL_9-main\\BukuKita\\BukuKita.csproj",
+        "projectUniqueName": "C:\\Users\\Razhed\\Documents\\GitHub\\TUBESKPL_9\\BukuKita\\BukuKita.csproj",
         "projectName": "BukuKita",
-        "projectPath": "C:\\Users\\Razhed\\Downloads\\TUBESKPL_9-main\\TUBESKPL_9-main\\BukuKita\\BukuKita.csproj",
+        "projectPath": "C:\\Users\\Razhed\\Documents\\GitHub\\TUBESKPL_9\\BukuKita\\BukuKita.csproj",
         "packagesPath": "C:\\Users\\Razhed\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Razhed\\Downloads\\TUBESKPL_9-main\\TUBESKPL_9-main\\BukuKita\\obj\\",
+        "outputPath": "C:\\Users\\Razhed\\Documents\\GitHub\\TUBESKPL_9\\BukuKita\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -99,8 +99,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Razhed\\Downloads\\TUBESKPL_9-main\\TUBESKPL_9-main\\BukuKita-LIB\\BukuKita-LIB.csproj": {
-                "projectPath": "C:\\Users\\Razhed\\Downloads\\TUBESKPL_9-main\\TUBESKPL_9-main\\BukuKita-LIB\\BukuKita-LIB.csproj"
+              "C:\\Users\\Razhed\\Documents\\GitHub\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj": {
+                "projectPath": "C:\\Users\\Razhed\\Documents\\GitHub\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj"
               }
             }
           }
@@ -120,6 +120,16 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -132,6 +142,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
