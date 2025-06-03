@@ -1,9 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\TUBESKPL_9\\",
+  "WorkspaceRootPath": "C:\\NASHBILLA NURFAZZA\\TUBESKPL_9\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E7513D30-5776-4ED3-ACB6-8557BBC80142}|UnitTest\\UnitTest.csproj|c:\\nashbilla nurfazza\\konstruksi perangkat lunak\\tubeskpl_9\\unittest\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{29E0F991-B3DB-49ED-B038-4BCAFA1F4DC6}|BukuKita-LIB\\BukuKita-LIB.csproj|c:\\nashbilla nurfazza\\tubeskpl_9\\bukukita-lib\\book-lib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29E0F991-B3DB-49ED-B038-4BCAFA1F4DC6}|BukuKita-LIB\\BukuKita-LIB.csproj|solutionrelative:bukukita-lib\\book-lib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7513D30-5776-4ED3-ACB6-8557BBC80142}|UnitTest\\UnitTest.csproj|c:\\nashbilla nurfazza\\tubeskpl_9\\unittest\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7513D30-5776-4ED3-ACB6-8557BBC80142}|UnitTest\\UnitTest.csproj|solutionrelative:unittest\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -19,10 +23,23 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Book-LIB.cs",
+              "DocumentMoniker": "C:\\NASHBILLA NURFAZZA\\TUBESKPL_9\\BukuKita-LIB\\Book-LIB.cs",
+              "RelativeDocumentMoniker": "BukuKita-LIB\\Book-LIB.cs",
+              "ToolTip": "C:\\NASHBILLA NURFAZZA\\TUBESKPL_9\\BukuKita-LIB\\Book-LIB.cs",
+              "RelativeToolTip": "BukuKita-LIB\\Book-LIB.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T07:51:02.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "MSTestSettings.cs",
-              "DocumentMoniker": "C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\TUBESKPL_9\\UnitTest\\MSTestSettings.cs",
+              "DocumentMoniker": "C:\\NASHBILLA NURFAZZA\\TUBESKPL_9\\UnitTest\\MSTestSettings.cs",
               "RelativeDocumentMoniker": "UnitTest\\MSTestSettings.cs",
-              "ToolTip": "C:\\NASHBILLA NURFAZZA\\KONSTRUKSI PERANGKAT LUNAK\\TUBESKPL_9\\UnitTest\\MSTestSettings.cs",
+              "ToolTip": "C:\\NASHBILLA NURFAZZA\\TUBESKPL_9\\UnitTest\\MSTestSettings.cs",
               "RelativeToolTip": "UnitTest\\MSTestSettings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

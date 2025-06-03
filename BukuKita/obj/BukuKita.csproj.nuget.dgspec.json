@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\NASHBILLA NURFAZZA\\TUBESKPL_9\\BukuKita\\BukuKita.csproj": {}
+    "D:\\TUBESKPL_9\\TUBESKPL_9\\BukuKita\\BukuKita.csproj": {}
   },
   "projects": {
-    "C:\\NASHBILLA NURFAZZA\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj": {
+    "D:\\TUBESKPL_9\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\NASHBILLA NURFAZZA\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj",
+        "projectUniqueName": "D:\\TUBESKPL_9\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj",
         "projectName": "BukuKita-LIB",
-        "projectPath": "C:\\NASHBILLA NURFAZZA\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj",
-        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\NASHBILLA NURFAZZA\\TUBESKPL_9\\BukuKita-LIB\\obj\\",
+        "projectPath": "D:\\TUBESKPL_9\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj",
+        "packagesPath": "C:\\Users\\Nadya Sekar\\.nuget\\packages\\",
+        "outputPath": "D:\\TUBESKPL_9\\TUBESKPL_9\\BukuKita-LIB\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nadya Sekar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -65,24 +65,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\NASHBILLA NURFAZZA\\TUBESKPL_9\\BukuKita\\BukuKita.csproj": {
+    "D:\\TUBESKPL_9\\TUBESKPL_9\\BukuKita\\BukuKita.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\NASHBILLA NURFAZZA\\TUBESKPL_9\\BukuKita\\BukuKita.csproj",
+        "projectUniqueName": "D:\\TUBESKPL_9\\TUBESKPL_9\\BukuKita\\BukuKita.csproj",
         "projectName": "BukuKita",
-        "projectPath": "C:\\NASHBILLA NURFAZZA\\TUBESKPL_9\\BukuKita\\BukuKita.csproj",
-        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\NASHBILLA NURFAZZA\\TUBESKPL_9\\BukuKita\\obj\\",
+        "projectPath": "D:\\TUBESKPL_9\\TUBESKPL_9\\BukuKita\\BukuKita.csproj",
+        "packagesPath": "C:\\Users\\Nadya Sekar\\.nuget\\packages\\",
+        "outputPath": "D:\\TUBESKPL_9\\TUBESKPL_9\\BukuKita\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nadya Sekar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -97,8 +97,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\NASHBILLA NURFAZZA\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj": {
-                "projectPath": "C:\\NASHBILLA NURFAZZA\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj"
+              "D:\\TUBESKPL_9\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj": {
+                "projectPath": "D:\\TUBESKPL_9\\TUBESKPL_9\\BukuKita-LIB\\BukuKita-LIB.csproj"
               }
             }
           }
@@ -147,7 +147,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
