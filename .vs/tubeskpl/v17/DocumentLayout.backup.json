@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{29E0F991-B3DB-49ED-B038-4BCAFA1F4DC6}|BukuKita-LIB\\BukuKita-LIB.csproj|solutionrelative:bukukita-lib\\book-lib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{9D9CF0AF-6976-48A5-8E4B-E6F39292FAC0}|BukuKita\\BukuKita.csproj|c:\\nashbilla nurfazza\\tubeskpl_9\\bukukita\\view\\pengembalianview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9CF0AF-6976-48A5-8E4B-E6F39292FAC0}|BukuKita\\BukuKita.csproj|solutionrelative:bukukita\\view\\pengembalianview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9CF0AF-6976-48A5-8E4B-E6F39292FAC0}|BukuKita\\BukuKita.csproj|c:\\nashbilla nurfazza\\tubeskpl_9\\bukukita\\view\\peminjamanview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9CF0AF-6976-48A5-8E4B-E6F39292FAC0}|BukuKita\\BukuKita.csproj|solutionrelative:bukukita\\view\\peminjamanview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E7513D30-5776-4ED3-ACB6-8557BBC80142}|UnitTest\\UnitTest.csproj|c:\\nashbilla nurfazza\\tubeskpl_9\\unittest\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7513D30-5776-4ED3-ACB6-8557BBC80142}|UnitTest\\UnitTest.csproj|solutionrelative:unittest\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -18,8 +26,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PengembalianView.cs",
+              "DocumentMoniker": "C:\\NASHBILLA NURFAZZA\\TUBESKPL_9\\BukuKita\\View\\PengembalianView.cs",
+              "RelativeDocumentMoniker": "BukuKita\\View\\PengembalianView.cs",
+              "ToolTip": "C:\\NASHBILLA NURFAZZA\\TUBESKPL_9\\BukuKita\\View\\PengembalianView.cs",
+              "RelativeToolTip": "BukuKita\\View\\PengembalianView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T08:33:35.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PeminjamanView.cs",
+              "DocumentMoniker": "C:\\NASHBILLA NURFAZZA\\TUBESKPL_9\\BukuKita\\View\\PeminjamanView.cs",
+              "RelativeDocumentMoniker": "BukuKita\\View\\PeminjamanView.cs",
+              "ToolTip": "C:\\NASHBILLA NURFAZZA\\TUBESKPL_9\\BukuKita\\View\\PeminjamanView.cs",
+              "RelativeToolTip": "BukuKita\\View\\PeminjamanView.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T08:33:24.654Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -28,14 +60,14 @@
               "RelativeDocumentMoniker": "BukuKita-LIB\\Book-LIB.cs",
               "ToolTip": "C:\\NASHBILLA NURFAZZA\\TUBESKPL_9\\BukuKita-LIB\\Book-LIB.cs",
               "RelativeToolTip": "BukuKita-LIB\\Book-LIB.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGcAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA7wB8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-03T07:51:02.292Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "MSTestSettings.cs",
               "DocumentMoniker": "C:\\NASHBILLA NURFAZZA\\TUBESKPL_9\\UnitTest\\MSTestSettings.cs",
               "RelativeDocumentMoniker": "UnitTest\\MSTestSettings.cs",
@@ -43,8 +75,7 @@
               "RelativeToolTip": "UnitTest\\MSTestSettings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T08:30:33.354Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-01T08:30:33.354Z"
             }
           ]
         }

@@ -6,6 +6,7 @@ namespace BookLibrary
     {
         public class Buku
         {
+            // Properti
             public string idBuku { get; set; }
             public string judul { get; set; }
             public string penulis { get; set; }
@@ -15,6 +16,7 @@ namespace BookLibrary
             public string Borrower { get; set; }
             public DateTime? BorrowedAt { get; set; }
 
+            // Konstruktor
             public Buku() { }
             public Buku(string idBuku, string judul, string penulis, string kategori, int tahunTerbit)
             {
@@ -25,13 +27,13 @@ namespace BookLibrary
                 this.tahunTerbit = tahunTerbit;
             }
 
-            //Method untuk menampilkan sebuah buku
+            // Method untuk menampilkan sebuah buku
             public static void displayBuku(Buku b)
             {
                 Console.WriteLine($"\nID Buku: {b.idBuku} \nJudul: {b.judul} oleh {b.penulis} \nKategori: {b.kategori} \nTahun Terbit: {b.tahunTerbit}");
             }
 
-            //Method untuk menampilkan semua buku
+            // Method untuk menampilkan semua buku
             public static void DaftarBuku(List<Buku> book)
             {
                 Console.WriteLine("\n=== Katalog Buku ===");
@@ -41,7 +43,7 @@ namespace BookLibrary
                 }
             }
 
-            //Method untuk menambah atau mengunggah buku
+            // Method untuk menambah buku dari inputan user
             public static void TambahBuku(List<Buku> book)
             {
                 Console.WriteLine("ID Buku: ");
@@ -64,7 +66,7 @@ namespace BookLibrary
                 Console.WriteLine($"Buku {judul} berhasil ditambahkan.");
             }
 
-            //Method untuk menghapus buku berdasarkan ID
+            // Method untuk menghapus buku berdasarkan ID
             public static void HapusBuku(List<Buku> book)
             {
                 Console.WriteLine("Masukkan ID Buku yang ingin dihapus: ");
@@ -83,7 +85,7 @@ namespace BookLibrary
                 }
             }
 
-            //Method untuk mencari buku berdasarkan ID/Judul/Penulis/Kategori
+            // Method filter pencarian buku berdasarkan ID/Judul/Penulis/Kategori
             public static List<Buku> FilterBuku(List<Buku> daftarBuku, string keyword)
             {
                 return daftarBuku
@@ -94,7 +96,7 @@ namespace BookLibrary
                     .ToList();
             }
 
-            //Method untuk menampilkan menu kelola buku untuk Admin
+            // Method untuk menampilkan menu kelola buku untuk Admin
             public enum State
             {
                 Menu,
