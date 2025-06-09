@@ -10,7 +10,7 @@ namespace BukuKita.View
 {
     class MahasiswaView
     {
-        public void displayMenu(List<Buku> book, List<Peminjaman> daftarPeminjaman, List<Pengembalian> daftarPengembalian, List<Approval> daftarApproval)
+        public void DisplayMenu(List<Buku> book, List<Peminjaman> daftarPeminjaman, List<Pengembalian> daftarPengembalian, List<Approval> daftarApproval)
         {
             bool isRunning = true;
             while (isRunning)

@@ -4,6 +4,21 @@
         <name>BukuKita</name>
     </assembly>
     <members>
+        <member name="M:BukuKita.Auth.AuthSystem.Login(System.String,System.String)">
+            <summary>
+            Melakukan login berdasarkan email dan password
+            </summary>
+        </member>
+        <member name="M:BukuKita.Auth.AuthSystem.RegisterMahasiswa">
+            <summary>
+            Registrasi Mahasiswa baru menggunakan state machine
+            </summary>
+        </member>
+        <member name="M:BukuKita.Auth.AuthSystem.GetUsers">
+            <summary>
+            Mengembalikan daftar seluruh user.
+            </summary>
+        </member>
         <member name="M:BukuKita.Controllers.ApprovalsController.GetAllApprovals">
             <summary>
             Get all approvals

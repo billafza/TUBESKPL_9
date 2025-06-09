@@ -22,11 +22,17 @@ namespace BukuKita.Auth
         };
         }
 
+        /// <summary>
+        /// Melakukan login berdasarkan email dan password
+        /// </summary>
         public User Login(string email, string password)
         {
             return daftarUser.FirstOrDefault(u => u.email == email && u.password == password);
         }
 
+        /// <summary>
+        /// Registrasi Mahasiswa baru menggunakan state machine
+        /// </summary>
         public void RegisterMahasiswa()
         {
             string currentState = "NAMA";
@@ -111,7 +117,9 @@ namespace BukuKita.Auth
             newUser.DisplayUser();
         }
 
-
+        /// <summary>
+        /// Mengembalikan daftar seluruh user.
+        /// </summary>
         public List<User> GetUsers() => daftarUser;
     }
 
