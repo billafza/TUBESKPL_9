@@ -61,12 +61,12 @@ namespace BukuKita.Auth
                             if (userLogin.role.ToLower() == "admin")
                             {
                                 AdminView adminMenu = new AdminView();
-                                adminMenu.displayMenu(bukuList, daftarPeminjaman, daftarApproval);
+                                adminMenu.DisplayMenu(bukuList, daftarPeminjaman, daftarApproval);
                             }
                             else if (userLogin.role.ToLower() == "mahasiswa")
                             {
                                 MahasiswaView mhsMenu = new MahasiswaView();
-                                mhsMenu.displayMenu(bukuList, daftarPeminjaman, daftarPengembalian, daftarApproval);
+                                mhsMenu.DisplayMenu(bukuList, daftarPeminjaman, daftarPengembalian, daftarApproval);
                             }
                         }
                         else
@@ -78,11 +78,5 @@ namespace BukuKita.Auth
                 }
             }
         }
-
-        // HAPUS method overload yang bermasalah ini:
-        // public void MulaiLogin(List<BukuKita.Tests.StateMachineTests.User> users, List<Buku> bukus, List<Peminjaman> peminjamen, List<Pengembalian> pengembalians, List<Approval> approvals)
-        // {
-        //     throw new NotImplementedException();
-        // }
     }
 }

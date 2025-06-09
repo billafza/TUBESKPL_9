@@ -1005,7 +1005,7 @@ namespace BukuKita
             Debug.Assert(_approvals != null, "Daftar approval harus diinisialisasi");
 
             AdminView adminView = new AdminView();
-            adminView.displayMenu(_books, _peminjamans, _approvals);
+            adminView.DisplayMenu(_books, _peminjamans, _approvals);
 
             // Tambahkan opsi untuk masuk ke menu konfigurasi
             bool showConfigMenu = true;
@@ -1049,7 +1049,7 @@ namespace BukuKita
             Debug.Assert(_approvals != null, "Daftar approval harus diinisialisasi");
 
             MahasiswaView mhsMenu = new MahasiswaView();
-            mhsMenu.displayMenu(_books, _peminjamans, _pengembalians, _approvals);
+            mhsMenu.DisplayMenu(_books, _peminjamans, _pengembalians, _approvals);
 
             // Tambahkan menu untuk melihat status approval peminjaman
             bool requireApproval = GetConfigValue<bool>("RequireApproval", true);
