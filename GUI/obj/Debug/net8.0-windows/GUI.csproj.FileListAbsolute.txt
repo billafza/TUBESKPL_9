@@ -27,3 +27,9 @@ C:\NASHBILLA NURFAZZA\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.csproj.Up2Date
 C:\NASHBILLA NURFAZZA\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.MenuAdm.resources
 C:\NASHBILLA NURFAZZA\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.Properties.Resources.resources
 C:\NASHBILLA NURFAZZA\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.TambahBuku.resources
+C:\NASHBILLA NURFAZZA\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.MenuAdmin.KelolaBuku.KelolaBuku.resources
+C:\NASHBILLA NURFAZZA\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.MenuAdmin.KelolaPengguna.KelolaPengguna.resources
+C:\NASHBILLA NURFAZZA\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.MenuAdmin.KelolaBuku.HapusBuku.resources
+C:\NASHBILLA NURFAZZA\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.MenuMahasiswa.Peminjaman.resources
+C:\NASHBILLA NURFAZZA\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.MenuMahasiswa.Pengembalian.resources
+C:\NASHBILLA NURFAZZA\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.MenuAdmin.KelolaBuku.ManajemenPeminjaman.resources
