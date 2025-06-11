@@ -52,6 +52,7 @@
             button1.TabIndex = 1;
             button1.Text = "Kelola Pengguna";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // pictureBox1
             // 
@@ -72,6 +73,7 @@
             button2.TabIndex = 3;
             button2.Text = "Kelola Buku";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 

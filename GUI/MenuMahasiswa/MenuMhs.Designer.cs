@@ -76,6 +76,7 @@
             button2.TabIndex = 3;
             button2.Text = "Pinjam Buku";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -85,6 +86,7 @@
             button3.TabIndex = 4;
             button3.Text = "Kembalikan Buku";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -144,7 +146,7 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.bg;
-            ClientSize = new Size(800, 565);
+            ClientSize = new Size(800, 644);
             Controls.Add(pictureBox1);
             Controls.Add(button6);
             Controls.Add(dataGridView1);

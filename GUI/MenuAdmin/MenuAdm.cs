@@ -1,4 +1,6 @@
-﻿using System;
+﻿using GUI.MenuAdmin.KelolaBuku;
+using GUI.MenuAdmin.KelolaPengguna;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,6 +28,18 @@ namespace GUI
                 Form1 login = new Form1();
                 login.Show();
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            KelolaBuku kelola = new KelolaBuku();
+            kelola.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            KelolaPengguna kelola = new KelolaPengguna();
+            kelola.Show();
         }
     }
 }

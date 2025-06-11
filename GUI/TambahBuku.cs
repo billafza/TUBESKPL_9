@@ -37,7 +37,7 @@ namespace GUI
             }
             else
             {
-                cmd.CommandText = "insert into Buku (id_buku, judul, penulis, kategori, tahun_terbit) values ('" + textBox1.Text + "', '" + textBox2.Text + "', '" + textBox3.Text + "', '" + textBox4.Text + "', " + textBox5.Text + ")";
+                cmd.CommandText = "insert into Buku (id_buku, judul, penulis, kategori, tahun_terbit) values ('" + textBox1.Text + "', '" + textBox2.Text + "', '" + textBox3.Text + "', '" + textBox4.Text + "', " + textBox5.Text + ", 'Tersedia')";
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Buku berhasil ditambahkan");
             }

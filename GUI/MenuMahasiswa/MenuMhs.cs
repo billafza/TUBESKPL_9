@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.ComponentModel.Design.Serialization;
+using GUI.MenuMahasiswa;
 
 namespace GUI
 {
@@ -84,6 +85,18 @@ namespace GUI
         {
             TambahBuku tambah = new TambahBuku();
             tambah.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Peminjaman pinjam = new Peminjaman();
+            pinjam.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Pengembalian kembali = new Pengembalian();
+            kembali.Show();
         }
     }
 }

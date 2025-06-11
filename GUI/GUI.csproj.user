@@ -4,10 +4,28 @@
     <Compile Update="Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="MenuAdm.cs">
+    <Compile Update="MenuAdmin\KelolaBuku\HapusBuku.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="MenuMhs.cs">
+    <Compile Update="MenuAdmin\KelolaBuku\KelolaBuku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MenuAdmin\KelolaBuku\ManajemenPeminjaman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MenuAdmin\KelolaPengguna\KelolaPengguna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MenuAdmin\MenuAdm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MenuMahasiswa\MenuMhs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MenuMahasiswa\Peminjaman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MenuMahasiswa\Pengembalian.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="TambahBuku.cs">
