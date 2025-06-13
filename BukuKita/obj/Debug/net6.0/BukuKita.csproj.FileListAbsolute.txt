@@ -1,8 +1,0 @@
-C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\obj\Debug\net6.0\BukuKita.csproj.AssemblyReference.cache
-C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\obj\Debug\net6.0\BukuKita.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\obj\Debug\net6.0\BukuKita.AssemblyInfoInputs.cache
-C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\obj\Debug\net6.0\BukuKita.AssemblyInfo.cs
-C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\obj\Debug\net6.0\BukuKita.csproj.CoreCompileInputs.cache
-C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\obj\Debug\net6.0\BukuKita.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\obj\Debug\net6.0\BukuKita.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita\obj\Debug\net6.0\BukuKita.sourcelink.json
