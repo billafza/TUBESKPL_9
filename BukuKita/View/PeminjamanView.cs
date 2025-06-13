@@ -8,55 +8,71 @@ namespace BukuKita.View
 {
     public class PeminjamanView
     {
-        public static void PinjamBuku(List<Buku> book, List<Peminjaman> daftarPeminjaman)
+        public static void PinjamBuku(List<Buku> daftarBuku, List<Peminjaman> daftarPeminjaman)
         {
+            // Meminta input ID buku dari pengguna
             Console.Write("Masukkan ID buku yang ingin dipinjam: ");
-            string id = Console.ReadLine()?.Trim().ToUpper();
+            string? idBuku = Console.ReadLine()?.Trim().ToUpper();
 
-            var buku = book.FirstOrDefault(b => b.idBuku == id);
-
-            // Table-driven validation: dictionary berisi kondisi dan pesan error
-            var validationTable = new Dictionary<Func<bool>, string>
+            // Validasi: pastikan ID buku tidak kosong
+            if (string.IsNullOrEmpty(idBuku))
             {
-                { () => buku == null, "Buku tidak ditemukan." },
-                { () => buku != null && !buku.IsAvailable, "Buku sedang dipinjam." }
+                Console.WriteLine("❌ ID buku tidak boleh kosong.");
+                return;
+            }
+
+            // Cari buku berdasarkan ID
+            Buku? bukuDipilih = daftarBuku.FirstOrDefault(b => b.idBuku == idBuku);
+
+            // Validasi kondisi buku dengan pendekatan table-driven
+            var validasi = new Dictionary<Func<bool>, string>
+            {
+                { () => bukuDipilih == null, "❌ Buku tidak ditemukan." },
+                { () => bukuDipilih != null && !bukuDipilih.IsAvailable, "❌ Buku sedang dipinjam." }
             };
 
-            // Loop cek validasi
-            foreach (var check in validationTable)
+            // Jalankan setiap validasi, jika ada yang gagal, tampilkan pesan dan hentikan proses
+            foreach (var cek in validasi)
             {
-                if (check.Key())
+                if (cek.Key())
                 {
-                    Console.WriteLine(check.Value);
+                    Console.WriteLine(cek.Value);
                     return;
                 }
             }
 
+            // Meminta input nama peminjam
             Console.Write("Masukkan nama peminjam: ");
-            string nama = Console.ReadLine()?.Trim();
+            string? namaPeminjam = Console.ReadLine()?.Trim();
 
-            // Membuat objek Peminjaman dan menambah ke daftar peminjaman
-            Peminjaman pinjam = new Peminjaman(buku, nama);
-            daftarPeminjaman.Add(pinjam);
-
-            // Update status buku
-            buku.Borrower = nama;
-            buku.BorrowedAt = DateTime.Now;
-
-            // Table-driven output: dictionary dengan key nama output dan aksi output
-            var outputTable = new Dictionary<string, Action>
+            // Validasi: pastikan nama tidak kosong
+            if (string.IsNullOrEmpty(namaPeminjam))
             {
-                {
-                    "BuktiPeminjaman", () =>
-                    {
-                        Console.WriteLine("\n--- Bukti Peminjaman ---");
-                        Console.WriteLine($"Judul: {buku.judul}, Dipinjam oleh: {nama}, Tanggal: {buku.BorrowedAt.Value.ToShortDateString()}");
-                    }
-                }
-            };
+                Console.WriteLine("❌ Nama peminjam tidak boleh kosong.");
+                return;
+            }
 
-            // Jalankan output bukti peminjaman
-            outputTable["BuktiPeminjaman"]();
+            // Buat objek peminjaman baru dan tambahkan ke daftar
+            var peminjamanBaru = new Peminjaman(bukuDipilih, namaPeminjam);
+            daftarPeminjaman.Add(peminjamanBaru);
+
+            // Update status buku (dipinjam)
+            bukuDipilih.Borrower = namaPeminjam;
+            bukuDipilih.BorrowedAt = DateTime.Now;
+
+            // Tampilkan bukti peminjaman kepada pengguna
+            TampilkanBuktiPeminjaman(bukuDipilih, namaPeminjam);
+        }
+
+        /// <summary>
+        /// Menampilkan bukti peminjaman buku ke layar
+        /// </summary>
+        private static void TampilkanBuktiPeminjaman(Buku buku, string namaPeminjam)
+        {
+            Console.WriteLine("\n--- Bukti Peminjaman ---");
+            Console.WriteLine($"Judul        : {buku.judul}");
+            Console.WriteLine($"Dipinjam oleh: {namaPeminjam}");
+            Console.WriteLine($"Tanggal      : {buku.BorrowedAt?.ToShortDateString()}");
         }
     }
 }

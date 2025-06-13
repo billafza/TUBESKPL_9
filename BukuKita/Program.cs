@@ -2,21 +2,6 @@
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Check if running in console mode
-if (args.Length == 0 || args[0].ToLower() != "api")
-{
-    // Run console mode
-    Console.WriteLine("=== BukuKita Console Mode ===");
-    Console.WriteLine("Gunakan 'dotnet run api' untuk menjalankan mode Web API");
-    Console.WriteLine();
-
-    MainMenu mainMenu = new MainMenu();
-    mainMenu.DisplayMainMenu();
-
-    Console.WriteLine("Terima kasih telah menggunakan BukuKita!");
-    return;
-}
-
 // Configure Web API services
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

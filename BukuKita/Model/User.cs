@@ -17,10 +17,10 @@ namespace BukuKita.Model
         public string password { get; set; }
         public string role { get; set; }
 
-        //Default konstruktor
+        // Default konstruktor
         public User() { }
 
-        //Konstruktor
+        // Konstruktor
         public User(string nama, EnumJenisKelamin jnsKelamin, string email, string password, string role)
         {
             this.nama = nama;
