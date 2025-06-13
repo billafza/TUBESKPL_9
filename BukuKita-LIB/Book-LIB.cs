@@ -27,7 +27,7 @@ namespace BookLibrary
             }
 
             // Menampilkan sebuah buku
-            public static void displayBuku(Buku b)
+            public static void DisplayBuku(Buku b)
             {
                 Console.WriteLine($"\nID Buku: {b.idBuku} \nJudul: {b.judul} oleh {b.penulis} \nKategori: {b.kategori} \nTahun Terbit: {b.tahunTerbit}");
             }
@@ -38,7 +38,7 @@ namespace BookLibrary
                 Console.WriteLine("\n=== Katalog Buku ===");
                 foreach (var buku in book)
                 {
-                    Buku.displayBuku(buku);
+                    Buku.DisplayBuku(buku);
                 }
             }
 
