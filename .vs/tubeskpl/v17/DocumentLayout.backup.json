@@ -1,5 +1,80 @@
 {
   "Version": 1,
+<<<<<<< HEAD
+  "WorkspaceRootPath": "C:\\Users\\KhansaAulia\\TUBESKPL_9\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9CF0AF-6976-48A5-8E4B-E6F39292FAC0}|BukuKita\\BukuKita.csproj|c:\\users\\khansaaulia\\tubeskpl_9\\bukukita\\auth\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9CF0AF-6976-48A5-8E4B-E6F39292FAC0}|BukuKita\\BukuKita.csproj|solutionrelative:bukukita\\auth\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7513D30-5776-4ED3-ACB6-8557BBC80142}|UnitTest\\UnitTest.csproj|c:\\users\\khansaaulia\\tubeskpl_9\\unittest\\khansaaulia_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7513D30-5776-4ED3-ACB6-8557BBC80142}|UnitTest\\UnitTest.csproj|solutionrelative:unittest\\khansaaulia_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9CF0AF-6976-48A5-8E4B-E6F39292FAC0}|BukuKita\\BukuKita.csproj|c:\\users\\khansaaulia\\tubeskpl_9\\bukukita\\auth\\statemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9CF0AF-6976-48A5-8E4B-E6F39292FAC0}|BukuKita\\BukuKita.csproj|solutionrelative:bukukita\\auth\\statemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9CF0AF-6976-48A5-8E4B-E6F39292FAC0}|BukuKita\\BukuKita.csproj|c:\\users\\khansaaulia\\tubeskpl_9\\bukukita\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9CF0AF-6976-48A5-8E4B-E6F39292FAC0}|BukuKita\\BukuKita.csproj|solutionrelative:bukukita\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9CF0AF-6976-48A5-8E4B-E6F39292FAC0}|BukuKita\\BukuKita.csproj|c:\\users\\khansaaulia\\tubeskpl_9\\bukukita\\model\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9CF0AF-6976-48A5-8E4B-E6F39292FAC0}|BukuKita\\BukuKita.csproj|solutionrelative:bukukita\\model\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9CF0AF-6976-48A5-8E4B-E6F39292FAC0}|BukuKita\\BukuKita.csproj|c:\\users\\khansaaulia\\tubeskpl_9\\bukukita\\model\\peminjaman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9CF0AF-6976-48A5-8E4B-E6F39292FAC0}|BukuKita\\BukuKita.csproj|solutionrelative:bukukita\\model\\peminjaman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7513D30-5776-4ED3-ACB6-8557BBC80142}|UnitTest\\UnitTest.csproj|c:\\users\\khansaaulia\\tubeskpl_9\\unittest\\nashbillanurfazza_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7513D30-5776-4ED3-ACB6-8557BBC80142}|UnitTest\\UnitTest.csproj|solutionrelative:unittest\\nashbillanurfazza_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7513D30-5776-4ED3-ACB6-8557BBC80142}|UnitTest\\UnitTest.csproj|c:\\users\\khansaaulia\\tubeskpl_9\\unittest\\unittest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E7513D30-5776-4ED3-ACB6-8557BBC80142}|UnitTest\\UnitTest.csproj|solutionrelative:unittest\\unittest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9CF0AF-6976-48A5-8E4B-E6F39292FAC0}|BukuKita\\BukuKita.csproj|c:\\users\\khansaaulia\\tubeskpl_9\\bukukita\\view\\adminview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9CF0AF-6976-48A5-8E4B-E6F39292FAC0}|BukuKita\\BukuKita.csproj|solutionrelative:bukukita\\view\\adminview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7513D30-5776-4ED3-ACB6-8557BBC80142}|UnitTest\\UnitTest.csproj|c:\\users\\khansaaulia\\tubeskpl_9\\unittest\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7513D30-5776-4ED3-ACB6-8557BBC80142}|UnitTest\\UnitTest.csproj|solutionrelative:unittest\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9CF0AF-6976-48A5-8E4B-E6F39292FAC0}|BukuKita\\BukuKita.csproj|c:\\users\\khansaaulia\\tubeskpl_9\\bukukita\\model\\mahasiswa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9CF0AF-6976-48A5-8E4B-E6F39292FAC0}|BukuKita\\BukuKita.csproj|solutionrelative:bukukita\\model\\mahasiswa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9CF0AF-6976-48A5-8E4B-E6F39292FAC0}|BukuKita\\BukuKita.csproj|c:\\users\\khansaaulia\\tubeskpl_9\\bukukita\\model\\pengembalian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9CF0AF-6976-48A5-8E4B-E6F39292FAC0}|BukuKita\\BukuKita.csproj|solutionrelative:bukukita\\model\\pengembalian.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9CF0AF-6976-48A5-8E4B-E6F39292FAC0}|BukuKita\\BukuKita.csproj|c:\\users\\khansaaulia\\tubeskpl_9\\bukukita\\view\\mahasiswaview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9CF0AF-6976-48A5-8E4B-E6F39292FAC0}|BukuKita\\BukuKita.csproj|solutionrelative:bukukita\\view\\mahasiswaview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9CF0AF-6976-48A5-8E4B-E6F39292FAC0}|BukuKita\\BukuKita.csproj|c:\\users\\khansaaulia\\tubeskpl_9\\bukukita\\view\\peminjamanview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9CF0AF-6976-48A5-8E4B-E6F39292FAC0}|BukuKita\\BukuKita.csproj|solutionrelative:bukukita\\view\\peminjamanview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9CF0AF-6976-48A5-8E4B-E6F39292FAC0}|BukuKita\\BukuKita.csproj|c:\\users\\khansaaulia\\tubeskpl_9\\bukukita\\view\\pengembalianview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9CF0AF-6976-48A5-8E4B-E6F39292FAC0}|BukuKita\\BukuKita.csproj|solutionrelative:bukukita\\view\\pengembalianview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29E0F991-B3DB-49ED-B038-4BCAFA1F4DC6}|BukuKita-LIB\\BukuKita-LIB.csproj|c:\\users\\khansaaulia\\tubeskpl_9\\bukukita-lib\\book-lib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29E0F991-B3DB-49ED-B038-4BCAFA1F4DC6}|BukuKita-LIB\\BukuKita-LIB.csproj|solutionrelative:bukukita-lib\\book-lib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9CF0AF-6976-48A5-8E4B-E6F39292FAC0}|BukuKita\\BukuKita.csproj|c:\\users\\khansaaulia\\tubeskpl_9\\bukukita\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9CF0AF-6976-48A5-8E4B-E6F39292FAC0}|BukuKita\\BukuKita.csproj|solutionrelative:bukukita\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D9CF0AF-6976-48A5-8E4B-E6F39292FAC0}|BukuKita\\BukuKita.csproj|c:\\users\\khansaaulia\\tubeskpl_9\\bukukita\\bukukita.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9D9CF0AF-6976-48A5-8E4B-E6F39292FAC0}|BukuKita\\BukuKita.csproj|solutionrelative:bukukita\\bukukita.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+=======
   "WorkspaceRootPath": "C:\\NASHBILLA NURFAZZA\\TUBESKPL_9\\",
   "Documents": [
     {
@@ -55,6 +130,7 @@
     {
       "AbsoluteMoniker": "D:0:0:{B8139339-D950-4DEB-88C7-06EB9878474A}|GUI\\GUI.csproj|C:\\NASHBILLA NURFAZZA\\TUBESKPL_9\\gui\\menuadmin\\kelolabuku\\manajemenpeminjaman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B8139339-D950-4DEB-88C7-06EB9878474A}|GUI\\GUI.csproj|solutionrelative:gui\\menuadmin\\kelolabuku\\manajemenpeminjaman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+>>>>>>> 2e47ecb4aed622cc13e1c93dcb0bf1f2fc3e340d
     }
   ],
   "DocumentGroupContainers": [
@@ -64,6 +140,25 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Auth.cs",
+              "DocumentMoniker": "C:\\Users\\KhansaAulia\\TUBESKPL_9\\BukuKita\\Auth\\Auth.cs",
+              "RelativeDocumentMoniker": "BukuKita\\Auth\\Auth.cs",
+              "ToolTip": "C:\\Users\\KhansaAulia\\TUBESKPL_9\\BukuKita\\Auth\\Auth.cs",
+              "RelativeToolTip": "BukuKita\\Auth\\Auth.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T04:47:06.794Z",
+=======
           "SelectedChildIndex": 13,
           "Children": [
             {
@@ -105,11 +200,22 @@
               "ViewState": "AgIAABkAAAAAAAAAAAAjwCkAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-11T03:00:33.815Z",
+>>>>>>> 2e47ecb4aed622cc13e1c93dcb0bf1f2fc3e340d
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+<<<<<<< HEAD
+              "Title": "KhansaAulia_Test.cs",
+              "DocumentMoniker": "C:\\Users\\KhansaAulia\\TUBESKPL_9\\UnitTest\\KhansaAulia_Test.cs",
+              "RelativeDocumentMoniker": "UnitTest\\KhansaAulia_Test.cs",
+              "ToolTip": "C:\\Users\\KhansaAulia\\TUBESKPL_9\\UnitTest\\KhansaAulia_Test.cs",
+              "RelativeToolTip": "UnitTest\\KhansaAulia_Test.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T04:38:25.143Z",
+=======
               "Title": "KelolaPengguna.cs",
               "DocumentMoniker": "C:\\NASHBILLA NURFAZZA\\TUBESKPL_9\\GUI\\MenuAdmin\\KelolaPengguna\\KelolaPengguna.cs",
               "RelativeDocumentMoniker": "GUI\\MenuAdmin\\KelolaPengguna\\KelolaPengguna.cs",
@@ -118,10 +224,104 @@
               "ViewState": "AgIAABwAAAAAAAAAAAAWwCQAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-11T02:58:55.063Z",
+>>>>>>> 2e47ecb4aed622cc13e1c93dcb0bf1f2fc3e340d
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 2,
+              "Title": "stateMachine.cs",
+              "DocumentMoniker": "C:\\Users\\KhansaAulia\\TUBESKPL_9\\BukuKita\\Auth\\stateMachine.cs",
+              "RelativeDocumentMoniker": "BukuKita\\Auth\\stateMachine.cs",
+              "ToolTip": "C:\\Users\\KhansaAulia\\TUBESKPL_9\\BukuKita\\Auth\\stateMachine.cs",
+              "RelativeToolTip": "BukuKita\\Auth\\stateMachine.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAwwEkAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T04:26:55.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NashbillaNurfazza_Test.cs",
+              "DocumentMoniker": "C:\\Users\\KhansaAulia\\TUBESKPL_9\\UnitTest\\NashbillaNurfazza_Test.cs",
+              "RelativeDocumentMoniker": "UnitTest\\NashbillaNurfazza_Test.cs",
+              "ToolTip": "C:\\Users\\KhansaAulia\\TUBESKPL_9\\UnitTest\\NashbillaNurfazza_Test.cs",
+              "RelativeToolTip": "UnitTest\\NashbillaNurfazza_Test.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T03:58:13.716Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UnitTest.csproj",
+              "DocumentMoniker": "C:\\Users\\KhansaAulia\\TUBESKPL_9\\UnitTest\\UnitTest.csproj",
+              "RelativeDocumentMoniker": "UnitTest\\UnitTest.csproj",
+              "ToolTip": "C:\\Users\\KhansaAulia\\TUBESKPL_9\\UnitTest\\UnitTest.csproj",
+              "RelativeToolTip": "UnitTest\\UnitTest.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-20T03:58:03.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MSTestSettings.cs",
+              "DocumentMoniker": "C:\\Users\\KhansaAulia\\TUBESKPL_9\\UnitTest\\MSTestSettings.cs",
+              "RelativeDocumentMoniker": "UnitTest\\MSTestSettings.cs",
+              "ToolTip": "C:\\Users\\KhansaAulia\\TUBESKPL_9\\UnitTest\\MSTestSettings.cs",
+              "RelativeToolTip": "UnitTest\\MSTestSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T03:57:43.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AdminView.cs",
+              "DocumentMoniker": "C:\\Users\\KhansaAulia\\TUBESKPL_9\\BukuKita\\View\\AdminView.cs",
+              "RelativeDocumentMoniker": "BukuKita\\View\\AdminView.cs",
+              "ToolTip": "C:\\Users\\KhansaAulia\\TUBESKPL_9\\BukuKita\\View\\AdminView.cs",
+              "RelativeToolTip": "BukuKita\\View\\AdminView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T06:17:37.391Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MahasiswaView.cs",
+              "DocumentMoniker": "C:\\Users\\KhansaAulia\\TUBESKPL_9\\BukuKita\\View\\MahasiswaView.cs",
+              "RelativeDocumentMoniker": "BukuKita\\View\\MahasiswaView.cs",
+              "ToolTip": "C:\\Users\\KhansaAulia\\TUBESKPL_9\\BukuKita\\View\\MahasiswaView.cs",
+              "RelativeToolTip": "BukuKita\\View\\MahasiswaView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T06:10:01.34Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PeminjamanView.cs",
+              "DocumentMoniker": "C:\\Users\\KhansaAulia\\TUBESKPL_9\\BukuKita\\View\\PeminjamanView.cs",
+              "RelativeDocumentMoniker": "BukuKita\\View\\PeminjamanView.cs",
+              "ToolTip": "C:\\Users\\KhansaAulia\\TUBESKPL_9\\BukuKita\\View\\PeminjamanView.cs",
+              "RelativeToolTip": "BukuKita\\View\\PeminjamanView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T05:55:20.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Pengembalian.cs",
+              "DocumentMoniker": "C:\\Users\\KhansaAulia\\TUBESKPL_9\\BukuKita\\Model\\Pengembalian.cs",
+              "RelativeDocumentMoniker": "BukuKita\\Model\\Pengembalian.cs",
+              "ToolTip": "C:\\Users\\KhansaAulia\\TUBESKPL_9\\BukuKita\\Model\\Pengembalian.cs",
+              "RelativeToolTip": "BukuKita\\Model\\Pengembalian.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+=======
               "DocumentIndex": 5,
               "Title": "HapusBuku.cs",
               "DocumentMoniker": "C:\\NASHBILLA NURFAZZA\\TUBESKPL_9\\GUI\\MenuAdmin\\KelolaBuku\\HapusBuku.cs",
@@ -142,24 +342,104 @@
               "ToolTip": "C:\\NASHBILLA NURFAZZA\\TUBESKPL_9\\GUI\\Login.cs",
               "RelativeToolTip": "GUI\\Login.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+>>>>>>> 2e47ecb4aed622cc13e1c93dcb0bf1f2fc3e340d
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-11T02:49:45.286Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\KhansaAulia\\TUBESKPL_9\\BukuKita\\Model\\User.cs",
+              "RelativeDocumentMoniker": "BukuKita\\Model\\User.cs",
+              "ToolTip": "C:\\Users\\KhansaAulia\\TUBESKPL_9\\BukuKita\\Model\\User.cs",
+              "RelativeToolTip": "BukuKita\\Model\\User.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAuwC8AAAAAAAAAAAAAAA==",
+=======
               "DocumentIndex": 8,
               "Title": "TambahBuku.cs [Design]",
               "DocumentMoniker": "C:\\NASHBILLA NURFAZZA\\TUBESKPL_9\\GUI\\TambahBuku.cs",
               "RelativeDocumentMoniker": "GUI\\TambahBuku.cs",
               "ToolTip": "C:\\NASHBILLA NURFAZZA\\TUBESKPL_9\\GUI\\TambahBuku.cs [Design]",
               "RelativeToolTip": "GUI\\TambahBuku.cs [Design]",
+>>>>>>> 2e47ecb4aed622cc13e1c93dcb0bf1f2fc3e340d
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-11T02:41:08.564Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 5,
+              "Title": "Peminjaman.cs",
+              "DocumentMoniker": "C:\\Users\\KhansaAulia\\TUBESKPL_9\\BukuKita\\Model\\Peminjaman.cs",
+              "RelativeDocumentMoniker": "BukuKita\\Model\\Peminjaman.cs",
+              "ToolTip": "C:\\Users\\KhansaAulia\\TUBESKPL_9\\BukuKita\\Model\\Peminjaman.cs",
+              "RelativeToolTip": "BukuKita\\Model\\Peminjaman.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T05:53:07.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Mahasiswa.cs",
+              "DocumentMoniker": "C:\\Users\\KhansaAulia\\TUBESKPL_9\\BukuKita\\Model\\Mahasiswa.cs",
+              "RelativeDocumentMoniker": "BukuKita\\Model\\Mahasiswa.cs",
+              "ToolTip": "C:\\Users\\KhansaAulia\\TUBESKPL_9\\BukuKita\\Model\\Mahasiswa.cs",
+              "RelativeToolTip": "BukuKita\\Model\\Mahasiswa.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T05:50:52.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PengembalianView.cs",
+              "DocumentMoniker": "C:\\Users\\KhansaAulia\\TUBESKPL_9\\BukuKita\\View\\PengembalianView.cs",
+              "RelativeDocumentMoniker": "BukuKita\\View\\PengembalianView.cs",
+              "ToolTip": "C:\\Users\\KhansaAulia\\TUBESKPL_9\\BukuKita\\View\\PengembalianView.cs",
+              "RelativeToolTip": "BukuKita\\View\\PengembalianView.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwBkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T06:26:00.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Book-LIB.cs",
+              "DocumentMoniker": "C:\\Users\\KhansaAulia\\TUBESKPL_9\\BukuKita-LIB\\Book-LIB.cs",
+              "RelativeDocumentMoniker": "BukuKita-LIB\\Book-LIB.cs",
+              "ToolTip": "C:\\Users\\KhansaAulia\\TUBESKPL_9\\BukuKita-LIB\\Book-LIB.cs",
+              "RelativeToolTip": "BukuKita-LIB\\Book-LIB.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAiwCUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T02:55:09.459Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\KhansaAulia\\TUBESKPL_9\\BukuKita\\Program.cs",
+              "RelativeDocumentMoniker": "BukuKita\\Program.cs",
+              "ToolTip": "C:\\Users\\KhansaAulia\\TUBESKPL_9\\BukuKita\\Program.cs",
+              "RelativeToolTip": "BukuKita\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T10:02:45.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "C:\\Users\\KhansaAulia\\TUBESKPL_9\\BukuKita\\Model\\Admin.cs",
+              "RelativeDocumentMoniker": "BukuKita\\Model\\Admin.cs",
+              "ToolTip": "C:\\Users\\KhansaAulia\\TUBESKPL_9\\BukuKita\\Model\\Admin.cs",
+              "RelativeToolTip": "BukuKita\\Model\\Admin.cs",
+              "ViewState": "AgIAAKkAAAAAAAAAAAAwwMEAAAARAAAAAAAAAA==",
+=======
               "DocumentIndex": 11,
               "Title": "dbo.Buku [Data]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/NASHBILLA/BukuKita/True/SqlTable/dbo.Buku.sql",
@@ -187,12 +467,24 @@
               "ToolTip": "C:\\NASHBILLA NURFAZZA\\TUBESKPL_9\\GUI\\MenuAdmin\\KelolaBuku\\ManajemenPeminjaman.cs",
               "RelativeToolTip": "GUI\\MenuAdmin\\KelolaBuku\\ManajemenPeminjaman.cs",
               "ViewState": "AgIAAEUAAAAAAAAAAAAAAFEAAAANAAAAAAAAAA==",
+>>>>>>> 2e47ecb4aed622cc13e1c93dcb0bf1f2fc3e340d
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-11T02:32:15.626Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 17,
+              "Title": "BukuKita.csproj",
+              "DocumentMoniker": "C:\\Users\\KhansaAulia\\TUBESKPL_9\\BukuKita\\BukuKita.csproj",
+              "RelativeDocumentMoniker": "BukuKita\\BukuKita.csproj",
+              "ToolTip": "C:\\Users\\KhansaAulia\\TUBESKPL_9\\BukuKita\\BukuKita.csproj",
+              "RelativeToolTip": "BukuKita\\BukuKita.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-14T05:46:01.045Z"
+=======
               "DocumentIndex": 9,
               "Title": "Pengembalian.cs [Design]",
               "DocumentMoniker": "C:\\NASHBILLA NURFAZZA\\TUBESKPL_9\\GUI\\MenuMahasiswa\\Pengembalian.cs",
@@ -238,6 +530,7 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-10T12:03:51.869Z",
               "EditorCaption": " [Design]"
+>>>>>>> 2e47ecb4aed622cc13e1c93dcb0bf1f2fc3e340d
             }
           ]
         }
