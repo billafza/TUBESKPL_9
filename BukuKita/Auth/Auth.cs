@@ -129,9 +129,6 @@ namespace BukuKita.Auth
             newUser.DisplayUser();
         }
 
-<<<<<<< HEAD
-        public List<User> GetUsers() => daftarUser; // 🧼 Fungsi ringkas dan jelas
-
         // 🔐 Secure Coding: Fungsi hashing password menggunakan SHA256
         private string HashPassword(string password)
         {
@@ -147,11 +144,10 @@ namespace BukuKita.Auth
         {
             return HashPassword(inputPassword) == storedHash;
         }
-=======
+
         /// <summary>
         /// Mengembalikan daftar seluruh user.
         /// </summary>
-        public List<User> GetUsers() => daftarUser;
->>>>>>> 2e47ecb4aed622cc13e1c93dcb0bf1f2fc3e340d
+        public List<User> GetUsers() => daftarUser; // 🧼 Fungsi ringkas dan jelas
     }
 }
