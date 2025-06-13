@@ -1,14 +1,8 @@
 {
   "ExpandedNodes": [
-<<<<<<< Updated upstream
-    ""
-  ],
-=======
     "",
-    "\\BukuKita",
-    "\\BukuKita\\View"
+    "\\UnitTest"
   ],
-  "SelectedNode": "\\BukuKita\\View\\PengembalianView.cs",
->>>>>>> Stashed changes
+  "SelectedNode": "\\UnitTest\\AlwinMarbun_Test.cs",
   "PreviewInSolutionExplorer": false
 }

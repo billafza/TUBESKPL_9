@@ -23,12 +23,18 @@ namespace BukuKita.Auth
             };
         }
 
+        /// <summary>
+        /// Melakukan login berdasarkan email dan password
+        /// </summary>
         public User Login(string email, string password)
         {
             // 🔐 Bandingkan password dengan versi hash-nya, bukan langsung teks
             return daftarUser.FirstOrDefault(u => u.email == email && VerifyPassword(password, u.password));
         }
 
+        /// <summary>
+        /// Registrasi Mahasiswa baru menggunakan state machine
+        /// </summary>
         public void RegisterMahasiswa()
         {
             string currentState = "NAMA"; // 🧼 Menggunakan state machine sederhana
@@ -123,6 +129,7 @@ namespace BukuKita.Auth
             newUser.DisplayUser();
         }
 
+<<<<<<< HEAD
         public List<User> GetUsers() => daftarUser; // 🧼 Fungsi ringkas dan jelas
 
         // 🔐 Secure Coding: Fungsi hashing password menggunakan SHA256
@@ -140,5 +147,11 @@ namespace BukuKita.Auth
         {
             return HashPassword(inputPassword) == storedHash;
         }
+=======
+        /// <summary>
+        /// Mengembalikan daftar seluruh user.
+        /// </summary>
+        public List<User> GetUsers() => daftarUser;
+>>>>>>> 2e47ecb4aed622cc13e1c93dcb0bf1f2fc3e340d
     }
 }

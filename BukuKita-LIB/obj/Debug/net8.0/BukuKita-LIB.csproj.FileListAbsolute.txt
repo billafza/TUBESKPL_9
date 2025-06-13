@@ -22,3 +22,38 @@ C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita-LIB\obj\Deb
 C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\refint\BukuKita-LIB.dll
 C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\BukuKita-LIB.pdb
 C:\NASHBILLA NURFAZZA\KONSTRUKSI PERANGKAT LUNAK\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\ref\BukuKita-LIB.dll
+C:\Users\Razhed\Downloads\TUBESKPL_9-main\TUBESKPL_9-main\BukuKita-LIB\bin\Debug\net8.0\BukuKita-LIB.deps.json
+C:\Users\Razhed\Downloads\TUBESKPL_9-main\TUBESKPL_9-main\BukuKita-LIB\bin\Debug\net8.0\BukuKita-LIB.dll
+C:\Users\Razhed\Downloads\TUBESKPL_9-main\TUBESKPL_9-main\BukuKita-LIB\bin\Debug\net8.0\BukuKita-LIB.pdb
+C:\Users\Razhed\Downloads\TUBESKPL_9-main\TUBESKPL_9-main\BukuKita-LIB\obj\Debug\net8.0\BukuKita-LIB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Razhed\Downloads\TUBESKPL_9-main\TUBESKPL_9-main\BukuKita-LIB\obj\Debug\net8.0\BukuKita-LIB.AssemblyInfoInputs.cache
+C:\Users\Razhed\Downloads\TUBESKPL_9-main\TUBESKPL_9-main\BukuKita-LIB\obj\Debug\net8.0\BukuKita-LIB.AssemblyInfo.cs
+C:\Users\Razhed\Downloads\TUBESKPL_9-main\TUBESKPL_9-main\BukuKita-LIB\obj\Debug\net8.0\BukuKita-LIB.csproj.CoreCompileInputs.cache
+C:\Users\Razhed\Downloads\TUBESKPL_9-main\TUBESKPL_9-main\BukuKita-LIB\obj\Debug\net8.0\BukuKita-LIB.dll
+C:\Users\Razhed\Downloads\TUBESKPL_9-main\TUBESKPL_9-main\BukuKita-LIB\obj\Debug\net8.0\refint\BukuKita-LIB.dll
+C:\Users\Razhed\Downloads\TUBESKPL_9-main\TUBESKPL_9-main\BukuKita-LIB\obj\Debug\net8.0\BukuKita-LIB.pdb
+C:\Users\Razhed\Downloads\TUBESKPL_9-main\TUBESKPL_9-main\BukuKita-LIB\obj\Debug\net8.0\ref\BukuKita-LIB.dll
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita-LIB\bin\Debug\net8.0\BukuKita-LIB.deps.json
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita-LIB\bin\Debug\net8.0\BukuKita-LIB.dll
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita-LIB\bin\Debug\net8.0\BukuKita-LIB.pdb
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\BukuKita-LIB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\BukuKita-LIB.AssemblyInfoInputs.cache
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\BukuKita-LIB.AssemblyInfo.cs
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\BukuKita-LIB.csproj.CoreCompileInputs.cache
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\BukuKita-LIB.sourcelink.json
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\BukuKita-LIB.dll
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\refint\BukuKita-LIB.dll
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\BukuKita-LIB.pdb
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\ref\BukuKita-LIB.dll
+C:\NASHBILLA NURFAZZA\TUBESKPL_9\BukuKita-LIB\bin\Debug\net8.0\BukuKita-LIB.deps.json
+C:\NASHBILLA NURFAZZA\TUBESKPL_9\BukuKita-LIB\bin\Debug\net8.0\BukuKita-LIB.dll
+C:\NASHBILLA NURFAZZA\TUBESKPL_9\BukuKita-LIB\bin\Debug\net8.0\BukuKita-LIB.pdb
+C:\NASHBILLA NURFAZZA\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\BukuKita-LIB.GeneratedMSBuildEditorConfig.editorconfig
+C:\NASHBILLA NURFAZZA\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\BukuKita-LIB.AssemblyInfoInputs.cache
+C:\NASHBILLA NURFAZZA\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\BukuKita-LIB.AssemblyInfo.cs
+C:\NASHBILLA NURFAZZA\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\BukuKita-LIB.csproj.CoreCompileInputs.cache
+C:\NASHBILLA NURFAZZA\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\BukuKita-LIB.sourcelink.json
+C:\NASHBILLA NURFAZZA\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\BukuKita-LIB.dll
+C:\NASHBILLA NURFAZZA\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\refint\BukuKita-LIB.dll
+C:\NASHBILLA NURFAZZA\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\BukuKita-LIB.pdb
+C:\NASHBILLA NURFAZZA\TUBESKPL_9\BukuKita-LIB\obj\Debug\net8.0\ref\BukuKita-LIB.dll

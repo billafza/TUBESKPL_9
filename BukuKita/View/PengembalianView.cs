@@ -3,10 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using static BookLibrary.BookLib;
-using static System.Reflection.Metadata.BlobBuilder;
 
 namespace BukuKita.View
 {
@@ -65,7 +62,6 @@ namespace BukuKita.View
                 Console.WriteLine("Nomor yang dimasukkan tidak valid.");
             }
 
-            // Mencoba mengubah input tanggal ke DateTime
             DateTime returnDate;
             bool isValidDate = TryParseFlexibleDate(inputDate, out returnDate);
 
@@ -83,7 +79,6 @@ namespace BukuKita.View
             Console.WriteLine($"Judul: {book.judul}, Dikembalikan oleh: {nama}, Tanggal: {returnDate.ToShortDateString()}");
             Console.WriteLine(statusPengembalian);
 
-            // Reset status peminjaman
             book.Borrower = null;
             book.BorrowedAt = null;
         }
@@ -92,7 +87,7 @@ namespace BukuKita.View
         {
             string[] formats = new string[]
             {
-            "dd/MM/yyyy"
+                "dd/MM/yyyy"
             };
 
             result = DateTime.MinValue;

@@ -9,8 +9,7 @@ namespace BukuKita.View
 {
     class AdminView
     {
-        //Method untuk menampilkan menu Admin
-        public void displayMenu(List<Buku> book, List<Peminjaman> daftarPeminjaman, List<Approval> daftarApproval)
+        public void DisplayMenu(List<Buku> book, List<Peminjaman> daftarPeminjaman, List<Approval> daftarApproval)
         {
             bool isRunning = true;
             while (isRunning)
