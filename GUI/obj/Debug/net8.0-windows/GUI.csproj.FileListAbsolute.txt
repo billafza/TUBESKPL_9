@@ -33,3 +33,38 @@ C:\NASHBILLA NURFAZZA\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.MenuAdmin.Kelo
 C:\NASHBILLA NURFAZZA\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.MenuMahasiswa.Peminjaman.resources
 C:\NASHBILLA NURFAZZA\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.MenuMahasiswa.Pengembalian.resources
 C:\NASHBILLA NURFAZZA\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.MenuAdmin.KelolaBuku.ManajemenPeminjaman.resources
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\bin\Debug\net8.0-windows\GUI.exe
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\bin\Debug\net8.0-windows\GUI.deps.json
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\bin\Debug\net8.0-windows\GUI.runtimeconfig.json
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\bin\Debug\net8.0-windows\GUI.dll
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\bin\Debug\net8.0-windows\GUI.pdb
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.csproj.AssemblyReference.cache
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.Form1.resources
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.MenuAdmin.KelolaBuku.HapusBuku.resources
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.MenuAdmin.KelolaBuku.KelolaBuku.resources
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.MenuAdmin.KelolaBuku.ManajemenPeminjaman.resources
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.MenuAdmin.KelolaPengguna.KelolaPengguna.resources
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.MenuAdm.resources
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.MenuMhs.resources
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.MenuMahasiswa.Peminjaman.resources
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.MenuMahasiswa.Pengembalian.resources
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.Properties.Resources.resources
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.TambahBuku.resources
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.csproj.GenerateResource.cache
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.AssemblyInfoInputs.cache
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.AssemblyInfo.cs
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.csproj.CoreCompileInputs.cache
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.sourcelink.json
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.csproj.Up2Date
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.dll
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\refint\GUI.dll
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.pdb
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.genruntimeconfig.cache
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\ref\GUI.dll
