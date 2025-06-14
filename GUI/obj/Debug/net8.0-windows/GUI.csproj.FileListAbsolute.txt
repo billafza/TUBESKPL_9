@@ -68,3 +68,4 @@ C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\refint\
 C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.pdb
 C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.genruntimeconfig.cache
 C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\ref\GUI.dll
+C:\Users\Razhed\Documents\GitHub\TUBESKPL_9\GUI\obj\Debug\net8.0-windows\GUI.MenuAdmin.Approval.Approval.resources
