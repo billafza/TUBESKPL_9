@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using API.Models;
+using BukuKita.Model;
 using API.Models.DTOs;
 using API.Services;
 using Swashbuckle.AspNetCore.Annotations;
@@ -20,7 +20,7 @@ namespace API.Controllers
 
         [HttpGet]
         [SwaggerOperation(Summary = "Get all approvals")]
-        public ActionResult<IEnumerable<Approval>> GetAllApprovals()
+        public ActionResult GetAllApprovals()
         {
             try
             {
@@ -40,7 +40,7 @@ namespace API.Controllers
 
         [HttpGet("pending")]
         [SwaggerOperation(Summary = "Get pending approvals")]
-        public ActionResult<IEnumerable<Approval>> GetPendingApprovals()
+        public ActionResult GetPendingApprovals()
         {
             try
             {
@@ -60,7 +60,7 @@ namespace API.Controllers
 
         [HttpGet("{id}")]
         [SwaggerOperation(Summary = "Get approval by ID")]
-        public ActionResult<Approval> GetApprovalById(string id)
+        public ActionResult GetApprovalById(string id)
         {
             try
             {
@@ -76,29 +76,9 @@ namespace API.Controllers
             }
         }
 
-        [HttpGet("user/{userName}")]
-        [SwaggerOperation(Summary = "Get approvals by user")]
-        public ActionResult<IEnumerable<Approval>> GetApprovalsByUser(string userName)
-        {
-            try
-            {
-                var approvals = _approvalService.GetApprovalsByUser(userName);
-                return Ok(new
-                {
-                    success = true,
-                    data = approvals,
-                    count = approvals.Count
-                });
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, new { success = false, error = ex.Message });
-            }
-        }
-
         [HttpPost]
         [SwaggerOperation(Summary = "Create new approval")]
-        public ActionResult<Approval> CreateApproval([FromBody] CreateApprovalRequest request)
+        public ActionResult CreateApproval([FromBody] CreateApprovalRequest request)
         {
             try
             {
@@ -110,7 +90,7 @@ namespace API.Controllers
                 if (!result.IsSuccess)
                     return BadRequest(new { success = false, message = result.ErrorMessage });
 
-                return CreatedAtAction(nameof(GetApprovalById), new { id = result.Data.IdApproval },
+                return CreatedAtAction(nameof(GetApprovalById), new { id = result.Data.idApproval },
                     new { success = true, data = result.Data, message = result.Message });
             }
             catch (Exception ex)
@@ -121,7 +101,7 @@ namespace API.Controllers
 
         [HttpPut("{id}/process")]
         [SwaggerOperation(Summary = "Process approval")]
-        public ActionResult<Approval> ProcessApproval(string id, [FromBody] ProcessApprovalRequest request)
+        public ActionResult ProcessApproval(string id, [FromBody] ProcessApprovalRequest request)
         {
             try
             {

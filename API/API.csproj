@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
@@ -12,6 +12,9 @@
 		<PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.4.0" />
 	</ItemGroup>
 
-	<!-- PASTIKAN TIDAK ADA PROJECT REFERENCE KE BukuKita -->
+	<!-- TAMBAHKAN REFERENCE INI -->
+	<ItemGroup>
+		<ProjectReference Include="../BukuKita/BukuKita.csproj" />
+	</ItemGroup>
 
 </Project>
