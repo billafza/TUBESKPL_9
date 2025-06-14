@@ -14,7 +14,7 @@ using static BookLibrary.BookLib;
 namespace BukuKita
 {
     /// <summary>
-    /// Kelas MainMenu yang menangani fungsionalitas utama aplikasi dan konfigurasi
+    /// Kelas MainMenu yang menangani fungsionalitas utama aplikasi konsol dan konfigurasi
     /// </summary>
     public class MainMenu
     {
@@ -173,8 +173,6 @@ namespace BukuKita
                 return (T)value;
             }
             return defaultValue;
-
-            // Postkondisi: Nilai pengembalian harus dari tipe T atau default
         }
 
         /// <summary>
@@ -295,8 +293,6 @@ namespace BukuKita
                         break;
                 }
             }
-
-            // Postkondisi: Tidak ada nilai return karena ini adalah metode UI
         }
 
         /// <summary>
@@ -374,12 +370,6 @@ namespace BukuKita
                             }
 
                             SetConfigValue("MenuItems", menuItems);
-
-                            // Postkondisi untuk kasus ini: Item menu harus diperbarui
-                            Debug.Assert(menuItems[editIndex - 1].Id == (!string.IsNullOrWhiteSpace(newId) ? newId : menuItems[editIndex - 1].Id),
-                                "ID item menu harus diperbarui jika nilai baru disediakan");
-                            Debug.Assert(menuItems[editIndex - 1].Name == (!string.IsNullOrWhiteSpace(newName) ? newName : menuItems[editIndex - 1].Name),
-                                "Nama item menu harus diperbarui jika nilai baru disediakan");
                         }
                         else
                         {
@@ -397,10 +387,6 @@ namespace BukuKita
                                 menuItems.RemoveAt(deleteIndex - 1);
                                 SetConfigValue("MenuItems", menuItems);
                                 Console.WriteLine("Item menu berhasil dihapus!");
-
-                                // Postkondisi untuk kasus ini: Item menu harus dihapus
-                                Debug.Assert(!menuItems.Any(m => m.Id == deletedItem.Id && m.Name == deletedItem.Name),
-                                    "Item menu yang dihapus tidak boleh ada lagi dalam daftar menu items");
                             }
                         }
                         else
@@ -416,36 +402,29 @@ namespace BukuKita
                         break;
                 }
             }
-
-            // Postkondisi: Tidak ada nilai return karena ini adalah metode UI
         }
 
         #endregion
 
-        #region API Methods - Enhanced for Approval API
+        #region Console Application Methods
 
         /// <summary>
-        /// Mendapatkan semua buku dalam sistem
+        /// Mendapatkan semua buku dalam sistem (untuk console application)
         /// </summary>
         /// <returns>Daftar semua buku</returns>
         public List<Buku> GetAllBooks()
         {
-            // Prekondisi: Daftar buku harus diinisialisasi
             Debug.Assert(_books != null, "Daftar buku harus diinisialisasi");
-
-            // Postkondisi: Harus mengembalikan daftar yang tidak null
-            Debug.Assert(_books != null, "GetAllBooks harus mengembalikan daftar yang tidak null");
-            return _books.ToList(); // Return copy untuk safety
+            return _books.ToList();
         }
 
         /// <summary>
-        /// Mencari buku yang cocok dengan kata kunci yang ditentukan
+        /// Mencari buku berdasarkan kata kunci
         /// </summary>
-        /// <param name="keyword">Kata kunci pencarian yang tidak boleh null</param>
-        /// <returns>Daftar buku yang cocok dengan kriteria pencarian</returns>
+        /// <param name="keyword">Kata kunci pencarian</param>
+        /// <returns>Daftar buku yang cocok</returns>
         public List<Buku> SearchBooks(string keyword)
         {
-            // Prekondisi: Daftar buku harus diinisialisasi dan kata kunci tidak boleh null
             Debug.Assert(_books != null, "Daftar buku harus diinisialisasi");
             Debug.Assert(keyword != null, "Kata kunci pencarian tidak boleh null");
 
@@ -457,65 +436,30 @@ namespace BukuKita
                 b.penulis.Contains(keyword, StringComparison.OrdinalIgnoreCase) ||
                 b.kategori.Contains(keyword, StringComparison.OrdinalIgnoreCase)).ToList();
 
-            // Postkondisi: Harus mengembalikan daftar yang tidak null
-            Debug.Assert(result != null, "SearchBooks harus mengembalikan daftar yang tidak null");
             return result;
         }
 
         /// <summary>
-        /// Mendapatkan buku berdasarkan ID-nya
+        /// Mendapatkan buku berdasarkan ID
         /// </summary>
-        /// <param name="id">ID buku yang tidak boleh null atau kosong</param>
-        /// <returns>Buku dengan ID yang ditentukan atau null jika tidak ditemukan</returns>
+        /// <param name="id">ID buku</param>
+        /// <returns>Buku atau null jika tidak ditemukan</returns>
         public Buku GetBookById(string id)
         {
-            // Prekondisi: Daftar buku harus diinisialisasi dan id tidak boleh null atau kosong
             Debug.Assert(_books != null, "Daftar buku harus diinisialisasi");
             Debug.Assert(!string.IsNullOrEmpty(id), "ID buku tidak boleh null atau kosong");
 
-            var book = _books.FirstOrDefault(b => b.idBuku == id);
-
-            // Postkondisi: Tidak ada jaminan pada nilai return karena bergantung pada keberadaan buku
-            return book;
-        }
-
-        /// <summary>
-        /// Mendapatkan semua catatan peminjaman
-        /// </summary>
-        /// <returns>Daftar semua catatan peminjaman</returns>
-        public List<Peminjaman> GetAllPeminjaman()
-        {
-            // Prekondisi: Daftar peminjaman harus diinisialisasi
-            Debug.Assert(_peminjamans != null, "Daftar peminjaman harus diinisialisasi");
-
-            // Postkondisi: Harus mengembalikan daftar yang tidak null
-            Debug.Assert(_peminjamans != null, "GetAllPeminjaman harus mengembalikan daftar yang tidak null");
-            return _peminjamans.ToList();
-        }
-
-        /// <summary>
-        /// Mendapatkan semua catatan pengembalian
-        /// </summary>
-        /// <returns>Daftar semua catatan pengembalian</returns>
-        public List<Pengembalian> GetAllPengembalian()
-        {
-            // Prekondisi: Daftar pengembalian harus diinisialisasi
-            Debug.Assert(_pengembalians != null, "Daftar pengembalian harus diinisialisasi");
-
-            // Postkondisi: Harus mengembalikan daftar yang tidak null
-            Debug.Assert(_pengembalians != null, "GetAllPengembalian harus mengembalikan daftar yang tidak null");
-            return _pengembalians.ToList();
+            return _books.FirstOrDefault(b => b.idBuku == id);
         }
 
         /// <summary>
         /// Membuat catatan peminjaman baru
         /// </summary>
-        /// <param name="buku">Buku yang akan dipinjam, tidak boleh null</param>
-        /// <param name="namaPeminjam">Nama peminjam, tidak boleh null atau kosong</param>
-        /// <returns>Catatan peminjaman yang dibuat</returns>
+        /// <param name="buku">Buku yang akan dipinjam</param>
+        /// <param name="namaPeminjam">Nama peminjam</param>
+        /// <returns>Catatan peminjaman</returns>
         public Peminjaman CreatePeminjaman(Buku buku, string namaPeminjam)
         {
-            // Prekondisi
             Debug.Assert(buku != null, "Buku tidak boleh null");
             Debug.Assert(!string.IsNullOrEmpty(namaPeminjam), "Nama peminjam tidak boleh null atau kosong");
             Debug.Assert(_peminjamans != null, "Daftar peminjaman harus diinisialisasi");
@@ -523,24 +467,18 @@ namespace BukuKita
             var peminjaman = new Peminjaman(buku, namaPeminjam);
             _peminjamans.Add(peminjaman);
 
-            // Postkondisi
-            Debug.Assert(_peminjamans.Contains(peminjaman), "Peminjaman yang dibuat harus ditambahkan ke daftar");
-            Debug.Assert(peminjaman.BukuDipinjam.idBuku == buku.idBuku, "Peminjaman harus mereferensikan buku yang benar");
-            Debug.Assert(peminjaman.NamaPeminjam == namaPeminjam, "Peminjaman harus memiliki nama peminjam yang benar");
-
             return peminjaman;
         }
 
         /// <summary>
-        /// Membuat catatan approval baru (Method asli untuk kompatibilitas)
+        /// Membuat catatan approval baru
         /// </summary>
-        /// <param name="idBuku">ID buku, tidak boleh null atau kosong</param>
-        /// <param name="judulBuku">Judul buku, tidak boleh null atau kosong</param>
-        /// <param name="namaPeminjam">Nama peminjam, tidak boleh null atau kosong</param>
-        /// <returns>Catatan approval yang dibuat</returns>
+        /// <param name="idBuku">ID buku</param>
+        /// <param name="judulBuku">Judul buku</param>
+        /// <param name="namaPeminjam">Nama peminjam</param>
+        /// <returns>Approval yang dibuat</returns>
         public Approval CreateApproval(string idBuku, string judulBuku, string namaPeminjam)
         {
-            // Prekondisi
             Debug.Assert(!string.IsNullOrEmpty(idBuku), "ID buku tidak boleh null atau kosong");
             Debug.Assert(!string.IsNullOrEmpty(judulBuku), "Judul buku tidak boleh null atau kosong");
             Debug.Assert(!string.IsNullOrEmpty(namaPeminjam), "Nama peminjam tidak boleh null atau kosong");
@@ -549,141 +487,18 @@ namespace BukuKita
             string idApproval = $"APV{_approvals.Count + 1:D3}";
             var approval = new Approval(idApproval, idBuku, judulBuku, namaPeminjam);
             _approvals.Add(approval);
-
-            // Postkondisi
-            Debug.Assert(_approvals.Contains(approval), "Approval yang dibuat harus ditambahkan ke daftar");
-            Debug.Assert(approval.idBuku == idBuku, "Approval harus mereferensikan ID buku yang benar");
-            Debug.Assert(approval.judulBuku == judulBuku, "Approval harus memiliki judul buku yang benar");
-            Debug.Assert(approval.namaPeminjam == namaPeminjam, "Approval harus memiliki nama peminjam yang benar");
-            Debug.Assert(approval.status == "Pending", "Approval baru harus memiliki status 'Pending'");
 
             return approval;
         }
 
         /// <summary>
-        /// Membuat catatan approval baru dengan validasi enhanced untuk API
+        /// Memproses approval (approve/reject)
         /// </summary>
-        /// <param name="idBuku">ID buku, tidak boleh null atau kosong</param>
-        /// <param name="judulBuku">Judul buku, tidak boleh null atau kosong</param>
-        /// <param name="namaPeminjam">Nama peminjam, tidak boleh null atau kosong</param>
-        /// <returns>Result dengan approval yang dibuat atau error message</returns>
-        public ApiResult<Approval> CreateApprovalWithValidation(string idBuku, string judulBuku, string namaPeminjam)
-        {
-            Debug.Assert(!string.IsNullOrEmpty(idBuku), "ID buku tidak boleh null atau kosong");
-            Debug.Assert(!string.IsNullOrEmpty(judulBuku), "Judul buku tidak boleh null atau kosong");
-            Debug.Assert(!string.IsNullOrEmpty(namaPeminjam), "Nama peminjam tidak boleh null atau kosong");
-            Debug.Assert(_approvals != null, "Daftar approval harus diinisialisasi");
-
-            // Check if user already has pending approval for this book
-            bool hasPendingApproval = _approvals.Any(a =>
-                a.idBuku == idBuku &&
-                a.namaPeminjam.Equals(namaPeminjam, StringComparison.OrdinalIgnoreCase) &&
-                a.status == "Pending");
-
-            if (hasPendingApproval)
-            {
-                return ApiResult<Approval>.Error("Anda sudah memiliki approval pending untuk buku ini");
-            }
-
-            // Check if book exists and is available
-            var buku = GetBookById(idBuku);
-            if (buku == null)
-            {
-                return ApiResult<Approval>.Error("Buku tidak ditemukan");
-            }
-
-            if (!string.IsNullOrEmpty(buku.Borrower))
-            {
-                return ApiResult<Approval>.Error("Buku sedang dipinjam oleh orang lain");
-            }
-
-            // Check maximum approvals per user
-            int maxPeminjaman = GetConfigValue<int>("MaxPeminjamanPerUser", 3);
-            var userPendingApprovals = _approvals.Count(a =>
-                a.namaPeminjam.Equals(namaPeminjam, StringComparison.OrdinalIgnoreCase) &&
-                a.status == "Pending");
-
-            if (userPendingApprovals >= maxPeminjaman)
-            {
-                return ApiResult<Approval>.Error($"Maksimum {maxPeminjaman} approval pending per user sudah tercapai");
-            }
-
-            string idApproval = $"APV{_approvals.Count + 1:D3}";
-            var approval = new Approval(idApproval, idBuku, judulBuku, namaPeminjam);
-            _approvals.Add(approval);
-
-            Debug.Assert(_approvals.Contains(approval), "Approval yang dibuat harus ditambahkan ke daftar");
-
-            return ApiResult<Approval>.Success(approval, "Approval berhasil dibuat");
-        }
-
-        /// <summary>
-        /// Mendapatkan semua catatan approval
-        /// </summary>
-        /// <returns>Daftar semua catatan approval</returns>
-        public List<Approval> GetAllApprovals()
-        {
-            // Prekondisi: Daftar approval harus diinisialisasi
-            Debug.Assert(_approvals != null, "Daftar approval harus diinisialisasi");
-
-            // Postkondisi: Harus mengembalikan daftar yang tidak null
-            Debug.Assert(_approvals != null, "GetAllApprovals harus mengembalikan daftar yang tidak null");
-            return _approvals.ToList();
-        }
-
-        /// <summary>
-        /// Mendapatkan approval berdasarkan ID
-        /// </summary>
-        /// <param name="idApproval">ID approval</param>
-        /// <returns>Approval atau null jika tidak ditemukan</returns>
-        public Approval GetApprovalById(string idApproval)
-        {
-            Debug.Assert(_approvals != null, "Daftar approval harus diinisialisasi");
-            Debug.Assert(!string.IsNullOrEmpty(idApproval), "ID approval tidak boleh null atau kosong");
-
-            return _approvals.FirstOrDefault(a => a.idApproval == idApproval);
-        }
-
-        /// <summary>
-        /// Mendapatkan approval berdasarkan nama peminjam
-        /// </summary>
-        /// <param name="namaPeminjam">Nama peminjam</param>
-        /// <returns>Daftar approval dari peminjam tersebut</returns>
-        public List<Approval> GetApprovalsByUser(string namaPeminjam)
-        {
-            Debug.Assert(_approvals != null, "Daftar approval harus diinisialisasi");
-            Debug.Assert(!string.IsNullOrEmpty(namaPeminjam), "Nama peminjam tidak boleh null atau kosong");
-
-            return _approvals.Where(a => a.namaPeminjam.Equals(namaPeminjam, StringComparison.OrdinalIgnoreCase)).ToList();
-        }
-
-        /// <summary>
-        /// Mendapatkan semua catatan approval yang statusnya pending
-        /// </summary>
-        /// <returns>Daftar catatan approval pending</returns>
-        public List<Approval> GetPendingApprovals()
-        {
-            // Prekondisi: Daftar approval harus diinisialisasi
-            Debug.Assert(_approvals != null, "Daftar approval harus diinisialisasi");
-
-            var pendingApprovals = _approvals.Where(a => a.status == "Pending").ToList();
-
-            // Postkondisi: Harus mengembalikan daftar yang tidak null
-            Debug.Assert(pendingApprovals != null, "GetPendingApprovals harus mengembalikan daftar yang tidak null");
-            Debug.Assert(pendingApprovals.All(a => a.status == "Pending"), "Semua approval yang dikembalikan harus memiliki status 'Pending'");
-
-            return pendingApprovals;
-        }
-
-        /// <summary>
-        /// Memproses permintaan approval dengan memperbarui statusnya (Method asli untuk kompatibilitas)
-        /// </summary>
-        /// <param name="approval">Approval yang akan diproses, tidak boleh null</param>
-        /// <param name="newStatus">Status baru yang akan ditetapkan, harus 'Approved' atau 'Rejected'</param>
-        /// <param name="keterangan">Komentar/catatan opsional</param>
+        /// <param name="approval">Approval yang akan diproses</param>
+        /// <param name="newStatus">Status baru</param>
+        /// <param name="keterangan">Keterangan</param>
         public void ProcessApproval(Approval approval, string newStatus, string keterangan = "")
         {
-            // Prekondisi
             Debug.Assert(approval != null, "Approval tidak boleh null");
             Debug.Assert(newStatus == "Approved" || newStatus == "Rejected", "Status baru harus 'Approved' atau 'Rejected'");
             Debug.Assert(_approvals.Contains(approval), "Approval harus ada dalam daftar approval");
@@ -702,119 +517,50 @@ namespace BukuKita
                 var buku = GetBookById(approval.idBuku);
                 if (buku != null)
                 {
-                    // Invariant: Buku harus tersedia untuk dipinjam
-                    Debug.Assert(string.IsNullOrEmpty(buku.Borrower), "Buku harus tersedia untuk dipinjam");
-
                     buku.Borrower = approval.namaPeminjam;
                     buku.BorrowedAt = DateTime.Now;
-                }
-            }
-
-            // Postkondisi
-            Debug.Assert(approval.status == newStatus, "Status approval harus diperbarui ke status baru");
-            if (!string.IsNullOrEmpty(keterangan))
-            {
-                Debug.Assert(approval.keterangan == keterangan, "Komentar approval harus diperbarui jika disediakan");
-            }
-
-            if (newStatus == "Approved")
-            {
-                var buku = GetBookById(approval.idBuku);
-                if (buku != null)
-                {
-                    Debug.Assert(buku.Borrower == approval.namaPeminjam, "Peminjam buku harus disetel ke pemohon approval");
                 }
             }
         }
 
         /// <summary>
-        /// Memproses permintaan approval dengan memperbarui statusnya (Enhanced untuk API)
+        /// Mendapatkan semua peminjaman
         /// </summary>
-        /// <param name="idApproval">ID approval yang akan diproses</param>
-        /// <param name="newStatus">Status baru yang akan ditetapkan, harus 'Approved' atau 'Rejected'</param>
-        /// <param name="keterangan">Komentar/catatan opsional</param>
-        /// <returns>Result dari pemrosesan approval</returns>
-        public ApiResult<Approval> ProcessApprovalWithValidation(string idApproval, string newStatus, string keterangan = "")
+        /// <returns>Daftar peminjaman</returns>
+        public List<Peminjaman> GetAllPeminjaman()
         {
-            Debug.Assert(!string.IsNullOrEmpty(idApproval), "ID approval tidak boleh null atau kosong");
-            Debug.Assert(newStatus == "Approved" || newStatus == "Rejected", "Status baru harus 'Approved' atau 'Rejected'");
-
-            var approval = GetApprovalById(idApproval);
-            if (approval == null)
-            {
-                return ApiResult<Approval>.Error("Approval tidak ditemukan");
-            }
-
-            if (approval.status != "Pending")
-            {
-                return ApiResult<Approval>.Error("Hanya dapat memproses approval dengan status 'Pending'");
-            }
-
-            approval.status = newStatus;
-            if (!string.IsNullOrEmpty(keterangan))
-            {
-                approval.keterangan = keterangan;
-            }
-
-            // Jika disetujui, perbarui status buku dan buat peminjaman
-            if (newStatus == "Approved")
-            {
-                var buku = GetBookById(approval.idBuku);
-                if (buku != null)
-                {
-                    if (!string.IsNullOrEmpty(buku.Borrower))
-                    {
-                        // Rollback approval status
-                        approval.status = "Pending";
-                        approval.keterangan = "";
-                        return ApiResult<Approval>.Error("Buku sudah dipinjam oleh orang lain");
-                    }
-
-                    // Update book status
-                    buku.Borrower = approval.namaPeminjam;
-                    buku.BorrowedAt = DateTime.Now;
-
-                    // Create peminjaman record
-                    var peminjaman = CreatePeminjaman(buku, approval.namaPeminjam);
-                }
-            }
-
-            Debug.Assert(approval.status == newStatus, "Status approval harus diperbarui ke status baru");
-
-            string message = newStatus == "Approved" ? "Approval berhasil disetujui" : "Approval berhasil ditolak";
-            return ApiResult<Approval>.Success(approval, message);
+            Debug.Assert(_peminjamans != null, "Daftar peminjaman harus diinisialisasi");
+            return _peminjamans.ToList();
         }
 
         /// <summary>
-        /// Menghapus approval (hanya yang masih pending)
+        /// Mendapatkan semua pengembalian
         /// </summary>
-        /// <param name="idApproval">ID approval yang akan dihapus</param>
-        /// <returns>Result dari penghapusan approval</returns>
-        public ApiResult<bool> DeleteApproval(string idApproval)
+        /// <returns>Daftar pengembalian</returns>
+        public List<Pengembalian> GetAllPengembalian()
         {
-            Debug.Assert(!string.IsNullOrEmpty(idApproval), "ID approval tidak boleh null atau kosong");
+            Debug.Assert(_pengembalians != null, "Daftar pengembalian harus diinisialisasi");
+            return _pengembalians.ToList();
+        }
+
+        /// <summary>
+        /// Mendapatkan semua approval
+        /// </summary>
+        /// <returns>Daftar approval</returns>
+        public List<Approval> GetAllApprovals()
+        {
             Debug.Assert(_approvals != null, "Daftar approval harus diinisialisasi");
+            return _approvals.ToList();
+        }
 
-            var approval = GetApprovalById(idApproval);
-            if (approval == null)
-            {
-                return ApiResult<bool>.Error("Approval tidak ditemukan");
-            }
-
-            if (approval.status != "Pending")
-            {
-                return ApiResult<bool>.Error("Hanya dapat menghapus approval dengan status 'Pending'");
-            }
-
-            bool removed = _approvals.Remove(approval);
-            if (removed)
-            {
-                return ApiResult<bool>.Success(true, "Approval berhasil dihapus");
-            }
-            else
-            {
-                return ApiResult<bool>.Error("Gagal menghapus approval");
-            }
+        /// <summary>
+        /// Mendapatkan approval pending
+        /// </summary>
+        /// <returns>Daftar approval pending</returns>
+        public List<Approval> GetPendingApprovals()
+        {
+            Debug.Assert(_approvals != null, "Daftar approval harus diinisialisasi");
+            return _approvals.Where(a => a.status == "Pending").ToList();
         }
 
         #endregion
@@ -827,8 +573,6 @@ namespace BukuKita
         /// <returns>Daftar buku yang diinisialisasi</returns>
         private List<Buku> InitializeBooks()
         {
-            // Prekondisi: Tidak ada untuk metode ini
-                
             var books = new List<Buku>
             {
                 new Buku {idBuku = "B01", judul = "Kancil Cerdik", kategori = "Dongeng", penulis = "Cecylia", tahunTerbit = 2010},
@@ -838,14 +582,7 @@ namespace BukuKita
                 new Buku {idBuku = "B05", judul = "Sejarah Umum Indonesia", kategori = "Sejarah", penulis = "Sri Suryani", tahunTerbit = 2011}
             };
 
-            // Postkondisi
             Debug.Assert(books != null && books.Count > 0, "Harus mengembalikan daftar buku yang tidak kosong");
-            Debug.Assert(books.All(b => !string.IsNullOrEmpty(b.idBuku)), "Semua buku harus memiliki ID yang tidak kosong");
-            Debug.Assert(books.All(b => !string.IsNullOrEmpty(b.judul)), "Semua buku harus memiliki judul yang tidak kosong");
-            Debug.Assert(books.All(b => !string.IsNullOrEmpty(b.kategori)), "Semua buku harus memiliki kategori yang tidak kosong");
-            Debug.Assert(books.All(b => !string.IsNullOrEmpty(b.penulis)), "Semua buku harus memiliki nama penulis yang tidak kosong");
-            Debug.Assert(books.All(b => b.tahunTerbit > 0), "Semua buku harus memiliki tahun terbit yang valid");
-
             return books;
         }
 
@@ -854,11 +591,10 @@ namespace BukuKita
         #region Main Menu
 
         /// <summary>
-        /// Menampilkan menu utama dan menangani interaksi pengguna
+        /// Menampilkan menu utama aplikasi console
         /// </summary>
         public void DisplayMainMenu()
         {
-            // Prekondisi: Konfigurasi, auth, dan daftar buku harus diinisialisasi
             Debug.Assert(_configuration != null, "Konfigurasi harus diinisialisasi");
             Debug.Assert(_auth != null, "Sistem autentikasi harus diinisialisasi");
             Debug.Assert(_books != null && _books.Count > 0, "Daftar buku harus diinisialisasi dan tidak kosong");
@@ -948,8 +684,6 @@ namespace BukuKita
                     if (lanjut.ToLower() != "y") isRunning = false;
                 }
             }
-
-            // Postkondisi: Tidak ada nilai return karena ini adalah metode UI
         }
 
         /// <summary>
@@ -957,7 +691,6 @@ namespace BukuKita
         /// </summary>
         private void HandleLogin()
         {
-            // Prekondisi: Sistem autentikasi harus diinisialisasi
             Debug.Assert(_auth != null, "Sistem autentikasi harus diinisialisasi");
 
             Console.WriteLine("\n=== LOGIN ===");
@@ -966,7 +699,6 @@ namespace BukuKita
             Console.Write("Password: ");
             string password = Console.ReadLine();
 
-            // Invariant: Email dan password tidak boleh null
             Debug.Assert(email != null, "Email tidak boleh null");
             Debug.Assert(password != null, "Password tidak boleh null");
 
@@ -988,17 +720,14 @@ namespace BukuKita
             {
                 Console.WriteLine("\nEmail atau password salah.");
             }
-
-            // Postkondisi: Tidak ada nilai return karena ini adalah metode UI
         }
 
         /// <summary>
-        /// Menangani menu admin dan fungsionalitas khusus admin
+        /// Menangani menu admin untuk aplikasi console
         /// </summary>
-        /// <param name="admin">Pengguna admin, tidak boleh null</param>
+        /// <param name="admin">Pengguna admin</param>
         private void HandleAdminMenu(Admin admin)
         {
-            // Prekondisi: Admin tidak boleh null
             Debug.Assert(admin != null, "Pengguna admin tidak boleh null");
             Debug.Assert(_books != null, "Daftar buku harus diinisialisasi");
             Debug.Assert(_peminjamans != null, "Daftar peminjaman harus diinisialisasi");
@@ -1031,17 +760,14 @@ namespace BukuKita
                         break;
                 }
             }
-
-            // Postkondisi: Tidak ada nilai return karena ini adalah metode UI
         }
 
         /// <summary>
-        /// Menangani menu mahasiswa dan fungsionalitas khusus mahasiswa
+        /// Menangani menu mahasiswa untuk aplikasi console
         /// </summary>
-        /// <param name="mahasiswa">Pengguna mahasiswa, tidak boleh null</param>
+        /// <param name="mahasiswa">Pengguna mahasiswa</param>
         private void HandleMahasiswaMenu(Mahasiswa mahasiswa)
         {
-            // Prekondisi: Mahasiswa tidak boleh null
             Debug.Assert(mahasiswa != null, "Pengguna mahasiswa tidak boleh null");
             Debug.Assert(_books != null, "Daftar buku harus diinisialisasi");
             Debug.Assert(_peminjamans != null, "Daftar peminjaman harus diinisialisasi");
@@ -1083,17 +809,14 @@ namespace BukuKita
                     }
                 }
             }
-
-            // Postkondisi: Tidak ada nilai return karena ini adalah metode UI
         }
 
         /// <summary>
         /// Menampilkan status approval untuk pengguna tertentu
         /// </summary>
-        /// <param name="namaPeminjam">Nama peminjam, tidak boleh null atau kosong</param>
+        /// <param name="namaPeminjam">Nama peminjam</param>
         private void ShowUserApprovals(string namaPeminjam)
         {
-            // Prekondisi: namaPeminjam tidak boleh null atau kosong dan daftar approval harus diinisialisasi
             Debug.Assert(!string.IsNullOrEmpty(namaPeminjam), "Nama peminjam tidak boleh null atau kosong");
             Debug.Assert(_approvals != null, "Daftar approval harus diinisialisasi");
 
@@ -1123,17 +846,14 @@ namespace BukuKita
 
                 Console.WriteLine("-----------------------------");
             }
-
-            // Postkondisi: Tidak ada nilai return karena ini adalah metode UI
         }
 
         /// <summary>
         /// Menangani permintaan approval peminjaman buku baru
         /// </summary>
-        /// <param name="namaPeminjam">Nama peminjam, tidak boleh null atau kosong</param>
+        /// <param name="namaPeminjam">Nama peminjam</param>
         private void RequestNewApproval(string namaPeminjam)
         {
-            // Prekondisi: namaPeminjam tidak boleh null atau kosong dan daftar buku harus diinisialisasi
             Debug.Assert(!string.IsNullOrEmpty(namaPeminjam), "Nama peminjam tidak boleh null atau kosong");
             Debug.Assert(_books != null, "Daftar buku harus diinisialisasi");
             Debug.Assert(_approvals != null, "Daftar approval harus diinisialisasi");
@@ -1180,7 +900,6 @@ namespace BukuKita
                 Console.WriteLine($"ID Approval: {newApproval.idApproval}");
                 Console.WriteLine("Silakan tunggu approval dari admin.");
 
-                // Postkondisi
                 Debug.Assert(_approvals.Contains(newApproval), "Approval baru harus ditambahkan ke daftar approval");
                 Debug.Assert(newApproval.status == "Pending", "Approval baru harus memiliki status 'Pending'");
                 Debug.Assert(newApproval.idBuku == selectedBook.idBuku, "Approval harus mereferensikan buku yang benar");
@@ -1190,42 +909,9 @@ namespace BukuKita
             {
                 Console.WriteLine("Nomor tidak valid!");
             }
-
-            // Tidak ada nilai return karena ini adalah metode UI
         }
 
         #endregion
-    }
-
-    /// <summary>
-    /// Generic result class untuk API responses
-    /// </summary>
-    /// <typeparam name="T">Tipe data yang dikembalikan</typeparam>
-    public class ApiResult<T>
-    {
-        public bool IsSuccess { get; set; }
-        public T Data { get; set; } = default(T);
-        public string Message { get; set; } = string.Empty;
-        public string ErrorMessage { get; set; } = string.Empty;
-
-        public static ApiResult<T> Success(T data, string message = "")
-        {
-            return new ApiResult<T>
-            {
-                IsSuccess = true,
-                Data = data,
-                Message = message
-            };
-        }
-
-        public static ApiResult<T> Error(string errorMessage)
-        {
-            return new ApiResult<T>
-            {
-                IsSuccess = false,
-                ErrorMessage = errorMessage
-            };
-        }
     }
 
     /// <summary>
@@ -1233,12 +919,6 @@ namespace BukuKita
     /// </summary>
     public class MenuItem
     {
-        /// <summary>
-        /// Invariant kelas:
-        /// - Id tidak boleh null atau kosong
-        /// - Name tidak boleh null atau kosong
-        /// </summary>
-
         private string _id = string.Empty;
         private string _name = string.Empty;
 
@@ -1250,7 +930,6 @@ namespace BukuKita
             get { return _id; }
             set
             {
-                // Prekondisi: Id tidak boleh null atau kosong
                 Debug.Assert(!string.IsNullOrEmpty(value), "ID item menu tidak boleh null atau kosong");
                 _id = value ?? string.Empty;
             }
@@ -1264,7 +943,6 @@ namespace BukuKita
             get { return _name; }
             set
             {
-                // Prekondisi: Name tidak boleh null atau kosong
                 Debug.Assert(!string.IsNullOrEmpty(value), "Nama item menu tidak boleh null atau kosong");
                 _name = value ?? string.Empty;
             }
