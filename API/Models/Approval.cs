@@ -1,51 +1,21 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static BookLibrary.BookLib;
-
-namespace BukuKita.Model
+namespace API.Models
 {
     public class Approval
     {
-        public string idApproval { get; set; }
-        public string idBuku { get; set; }
-        public string judulBuku { get; set; }
-        public string namaPeminjam { get; set; }
-        public DateTime tanggalPengajuan { get; set; }
-        public string status { get; set; } // "Pending", "Approved", "Rejected"
-        public string keterangan { get; set; }
+        public string IdApproval { get; set; } = "";
+        public string IdBuku { get; set; } = "";
+        public string JudulBuku { get; set; } = "";
+        public string NamaPeminjam { get; set; } = "";
+        public DateTime TanggalPengajuan { get; set; } = DateTime.Now;
+        public string Status { get; set; } = "Pending"; // "Pending", "Approved", "Rejected"
+        public string Keterangan { get; set; } = "";
 
-        public Approval()
+        public void UpdateStatus(string newStatus, string keterangan = "")
         {
-            tanggalPengajuan = DateTime.Now;
-            status = "Pending";
-            keterangan = "";
-        }
-
-        public Approval(string idApproval, string idBuku, string judulBuku, string namaPeminjam)
-        {
-            this.idApproval = idApproval;
-            this.idBuku = idBuku;
-            this.judulBuku = judulBuku;
-            this.namaPeminjam = namaPeminjam;
-            this.tanggalPengajuan = DateTime.Now;
-            this.status = "Pending";
-            this.keterangan = "";
-        }
-
-        public void DisplayInfo()
-        {
-            Console.WriteLine($"ID Approval: {idApproval}");
-            Console.WriteLine($"ID Buku: {idBuku}");
-            Console.WriteLine($"Judul Buku: {judulBuku}");
-            Console.WriteLine($"Nama Peminjam: {namaPeminjam}");
-            Console.WriteLine($"Tanggal Pengajuan: {tanggalPengajuan.ToString("dd/MM/yyyy HH:mm")}");
-            Console.WriteLine($"Status: {status}");
+            Status = newStatus;
             if (!string.IsNullOrEmpty(keterangan))
             {
-                Console.WriteLine($"Keterangan: {keterangan}");
+                Keterangan = keterangan;
             }
         }
     }

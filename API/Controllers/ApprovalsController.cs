@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using BukuKita.Model;
+using API.Models;
 using API.Models.DTOs;
 using API.Services;
 using Swashbuckle.AspNetCore.Annotations;
@@ -18,14 +18,8 @@ namespace API.Controllers
             _approvalService = approvalService;
         }
 
-        /// <summary>
-        /// Get all approvals
-        /// </summary>
-        /// <returns>List of all approvals</returns>
         [HttpGet]
-        [SwaggerOperation(Summary = "Get all approvals", Description = "Retrieves all approval records in the system")]
-        [SwaggerResponse(200, "Successfully retrieved all approvals")]
-        [SwaggerResponse(500, "Internal server error")]
+        [SwaggerOperation(Summary = "Get all approvals")]
         public ActionResult<IEnumerable<Approval>> GetAllApprovals()
         {
             try
@@ -35,8 +29,7 @@ namespace API.Controllers
                 {
                     success = true,
                     data = approvals,
-                    count = approvals.Count,
-                    message = "Successfully retrieved all approvals"
+                    count = approvals.Count
                 });
             }
             catch (Exception ex)
@@ -45,14 +38,8 @@ namespace API.Controllers
             }
         }
 
-        /// <summary>
-        /// Get pending approvals
-        /// </summary>
-        /// <returns>List of pending approvals</returns>
         [HttpGet("pending")]
-        [SwaggerOperation(Summary = "Get pending approvals", Description = "Retrieves all approval records with pending status")]
-        [SwaggerResponse(200, "Successfully retrieved pending approvals")]
-        [SwaggerResponse(500, "Internal server error")]
+        [SwaggerOperation(Summary = "Get pending approvals")]
         public ActionResult<IEnumerable<Approval>> GetPendingApprovals()
         {
             try
@@ -62,8 +49,7 @@ namespace API.Controllers
                 {
                     success = true,
                     data = approvals,
-                    count = approvals.Count,
-                    message = "Successfully retrieved pending approvals"
+                    count = approvals.Count
                 });
             }
             catch (Exception ex)
@@ -72,16 +58,8 @@ namespace API.Controllers
             }
         }
 
-        /// <summary>
-        /// Get approval by ID
-        /// </summary>
-        /// <param name="id">Approval ID</param>
-        /// <returns>Approval details</returns>
         [HttpGet("{id}")]
-        [SwaggerOperation(Summary = "Get approval by ID", Description = "Retrieves a specific approval by its ID")]
-        [SwaggerResponse(200, "Approval found")]
-        [SwaggerResponse(404, "Approval not found")]
-        [SwaggerResponse(500, "Internal server error")]
+        [SwaggerOperation(Summary = "Get approval by ID")]
         public ActionResult<Approval> GetApprovalById(string id)
         {
             try
@@ -90,12 +68,7 @@ namespace API.Controllers
                 if (approval == null)
                     return NotFound(new { success = false, message = "Approval not found" });
 
-                return Ok(new
-                {
-                    success = true,
-                    data = approval,
-                    message = "Approval found successfully"
-                });
+                return Ok(new { success = true, data = approval });
             }
             catch (Exception ex)
             {
@@ -103,15 +76,8 @@ namespace API.Controllers
             }
         }
 
-        /// <summary>
-        /// Get approvals by user
-        /// </summary>
-        /// <param name="userName">User name</param>
-        /// <returns>List of user's approvals</returns>
         [HttpGet("user/{userName}")]
-        [SwaggerOperation(Summary = "Get approvals by user", Description = "Retrieves all approvals for a specific user")]
-        [SwaggerResponse(200, "Successfully retrieved user approvals")]
-        [SwaggerResponse(500, "Internal server error")]
+        [SwaggerOperation(Summary = "Get approvals by user")]
         public ActionResult<IEnumerable<Approval>> GetApprovalsByUser(string userName)
         {
             try
@@ -121,8 +87,7 @@ namespace API.Controllers
                 {
                     success = true,
                     data = approvals,
-                    count = approvals.Count,
-                    message = $"Successfully retrieved approvals for user: {userName}"
+                    count = approvals.Count
                 });
             }
             catch (Exception ex)
@@ -131,17 +96,8 @@ namespace API.Controllers
             }
         }
 
-        /// <summary>
-        /// Create new approval
-        /// </summary>
-        /// <param name="request">Approval creation request</param>
-        /// <returns>Created approval</returns>
         [HttpPost]
-        [SwaggerOperation(Summary = "Create new approval", Description = "Creates a new approval request for book borrowing")]
-        [SwaggerResponse(201, "Approval created successfully")]
-        [SwaggerResponse(400, "Invalid request data")]
-        [SwaggerResponse(404, "Book not found")]
-        [SwaggerResponse(500, "Internal server error")]
+        [SwaggerOperation(Summary = "Create new approval")]
         public ActionResult<Approval> CreateApproval([FromBody] CreateApprovalRequest request)
         {
             try
@@ -154,8 +110,8 @@ namespace API.Controllers
                 if (!result.IsSuccess)
                     return BadRequest(new { success = false, message = result.ErrorMessage });
 
-                return CreatedAtAction(nameof(GetApprovalById), new { id = result.Data.idApproval },
-                    new { success = true, data = result.Data, message = "Approval created successfully" });
+                return CreatedAtAction(nameof(GetApprovalById), new { id = result.Data.IdApproval },
+                    new { success = true, data = result.Data, message = result.Message });
             }
             catch (Exception ex)
             {
@@ -163,18 +119,8 @@ namespace API.Controllers
             }
         }
 
-        /// <summary>
-        /// Process approval (approve/reject)
-        /// </summary>
-        /// <param name="id">Approval ID</param>
-        /// <param name="request">Processing request</param>
-        /// <returns>Processed approval</returns>
         [HttpPut("{id}/process")]
-        [SwaggerOperation(Summary = "Process approval", Description = "Approve or reject an approval request")]
-        [SwaggerResponse(200, "Approval processed successfully")]
-        [SwaggerResponse(400, "Invalid request data")]
-        [SwaggerResponse(404, "Approval not found")]
-        [SwaggerResponse(500, "Internal server error")]
+        [SwaggerOperation(Summary = "Process approval")]
         public ActionResult<Approval> ProcessApproval(string id, [FromBody] ProcessApprovalRequest request)
         {
             try
@@ -187,7 +133,7 @@ namespace API.Controllers
                 if (!result.IsSuccess)
                     return BadRequest(new { success = false, message = result.ErrorMessage });
 
-                return Ok(new { success = true, data = result.Data, message = "Approval processed successfully" });
+                return Ok(new { success = true, data = result.Data, message = result.Message });
             }
             catch (Exception ex)
             {
@@ -195,17 +141,8 @@ namespace API.Controllers
             }
         }
 
-        /// <summary>
-        /// Delete approval
-        /// </summary>
-        /// <param name="id">Approval ID</param>
-        /// <returns>Deletion result</returns>
         [HttpDelete("{id}")]
-        [SwaggerOperation(Summary = "Delete approval", Description = "Delete a pending approval request")]
-        [SwaggerResponse(200, "Approval deleted successfully")]
-        [SwaggerResponse(400, "Cannot delete non-pending approval")]
-        [SwaggerResponse(404, "Approval not found")]
-        [SwaggerResponse(500, "Internal server error")]
+        [SwaggerOperation(Summary = "Delete approval")]
         public ActionResult DeleteApproval(string id)
         {
             try
@@ -215,7 +152,7 @@ namespace API.Controllers
                 if (!result.IsSuccess)
                     return BadRequest(new { success = false, message = result.ErrorMessage });
 
-                return Ok(new { success = true, message = "Approval deleted successfully" });
+                return Ok(new { success = true, message = result.Message });
             }
             catch (Exception ex)
             {

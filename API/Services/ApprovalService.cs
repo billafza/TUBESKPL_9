@@ -1,66 +1,46 @@
-using BukuKita;
-using BukuKita.Model;
 using API.Models;
+using API.Repositories;
 
 namespace API.Services
 {
     public class ApprovalService
     {
-        private readonly MainMenu _mainMenu;
+        private readonly IApprovalRepository _approvalRepository;
+        private readonly IBookRepository _bookRepository;
+        private readonly int _maxPeminjamanPerUser = 3;
 
-        public ApprovalService(MainMenu mainMenu)
+        public ApprovalService(IApprovalRepository approvalRepository, IBookRepository bookRepository)
         {
-            _mainMenu = mainMenu;
+            _approvalRepository = approvalRepository;
+            _bookRepository = bookRepository;
         }
 
         public List<Approval> GetAllApprovals()
         {
-            return _mainMenu.GetAllApprovals();
+            return _approvalRepository.GetAll();
         }
 
         public List<Approval> GetPendingApprovals()
         {
-            return _mainMenu.GetPendingApprovals();
+            return _approvalRepository.GetPending();
         }
 
         public Approval? GetApprovalById(string id)
         {
-            return _mainMenu.GetApprovalById(id);
+            return _approvalRepository.GetById(id);
         }
 
         public List<Approval> GetApprovalsByUser(string userName)
         {
-            return _mainMenu.GetApprovalsByUser(userName);
+            return _approvalRepository.GetByUser(userName);
         }
 
         public ApiResult<Approval> CreateApproval(string idBuku, string namaPeminjam)
         {
-            var book = _mainMenu.GetBookById(idBuku);
-            if (book == null)
-                return ApiResult<Approval>.Error("Book not found");
-
-            return CreateApprovalWithValidation(idBuku, book.judul, namaPeminjam);
-        }
-
-        public ApiResult<Approval> ProcessApproval(string id, string status, string keterangan = "")
-        {
-            return ProcessApprovalWithValidation(id, status, keterangan);
-        }
-
-        public ApiResult<bool> DeleteApproval(string id)
-        {
-            return DeleteApprovalWithValidation(id);
-        }
-
-        private ApiResult<Approval> CreateApprovalWithValidation(string idBuku, string judulBuku, string namaPeminjam)
-        {
-            var approvals = _mainMenu.GetAllApprovals();
-
             // Check if user already has pending approval for this book
-            bool hasPendingApproval = approvals.Any(a =>
-                a.idBuku == idBuku &&
-                a.namaPeminjam.Equals(namaPeminjam, StringComparison.OrdinalIgnoreCase) &&
-                a.status == "Pending");
+            var userApprovals = _approvalRepository.GetByUser(namaPeminjam);
+            bool hasPendingApproval = userApprovals.Any(a =>
+                a.IdBuku == idBuku && a.Status == "Pending");
 
             if (hasPendingApproval)
             {
@@ -68,94 +48,88 @@ namespace API.Services
             }
 
             // Check if book exists and is available
-            var buku = _mainMenu.GetBookById(idBuku);
-            if (buku == null)
+            var book = _bookRepository.GetById(idBuku);
+            if (book == null)
             {
                 return ApiResult<Approval>.Error("Buku tidak ditemukan");
             }
 
-            if (!string.IsNullOrEmpty(buku.Borrower))
+            if (!book.IsAvailable)
             {
                 return ApiResult<Approval>.Error("Buku sedang dipinjam oleh orang lain");
             }
 
             // Check maximum approvals per user
-            int maxPeminjaman = _mainMenu.GetConfigValue<int>("MaxPeminjamanPerUser", 3);
-            var userPendingApprovals = approvals.Count(a =>
-                a.namaPeminjam.Equals(namaPeminjam, StringComparison.OrdinalIgnoreCase) &&
-                a.status == "Pending");
-
-            if (userPendingApprovals >= maxPeminjaman)
+            var userPendingApprovals = userApprovals.Count(a => a.Status == "Pending");
+            if (userPendingApprovals >= _maxPeminjamanPerUser)
             {
-                return ApiResult<Approval>.Error($"Maksimum {maxPeminjaman} approval pending per user sudah tercapai");
+                return ApiResult<Approval>.Error($"Maksimum {_maxPeminjamanPerUser} approval pending per user sudah tercapai");
             }
 
-            var approval = _mainMenu.CreateApproval(idBuku, judulBuku, namaPeminjam);
+            // Create approval
+            var approval = new Approval
+            {
+                IdApproval = _approvalRepository.GenerateNewId(),
+                IdBuku = idBuku,
+                JudulBuku = book.Judul,
+                NamaPeminjam = namaPeminjam,
+                TanggalPengajuan = DateTime.Now,
+                Status = "Pending",
+                Keterangan = ""
+            };
+
+            _approvalRepository.Add(approval);
             return ApiResult<Approval>.Success(approval, "Approval berhasil dibuat");
         }
 
-        private ApiResult<Approval> ProcessApprovalWithValidation(string idApproval, string newStatus, string keterangan = "")
+        public ApiResult<Approval> ProcessApproval(string id, string status, string keterangan = "")
         {
-            var approval = GetApprovalById(idApproval);
+            var approval = _approvalRepository.GetById(id);
             if (approval == null)
             {
                 return ApiResult<Approval>.Error("Approval tidak ditemukan");
             }
 
-            if (approval.status != "Pending")
+            if (approval.Status != "Pending")
             {
                 return ApiResult<Approval>.Error("Hanya dapat memproses approval dengan status 'Pending'");
             }
 
-            approval.status = newStatus;
-            if (!string.IsNullOrEmpty(keterangan))
+            // If approved, check if book is still available
+            if (status == "Approved")
             {
-                approval.keterangan = keterangan;
-            }
-
-            // Jika disetujui, perbarui status buku dan buat peminjaman
-            if (newStatus == "Approved")
-            {
-                var buku = _mainMenu.GetBookById(approval.idBuku);
-                if (buku != null)
+                var book = _bookRepository.GetById(approval.IdBuku);
+                if (book != null && !book.IsAvailable)
                 {
-                    if (!string.IsNullOrEmpty(buku.Borrower))
-                    {
-                        // Rollback approval status
-                        approval.status = "Pending";
-                        approval.keterangan = "";
-                        return ApiResult<Approval>.Error("Buku sudah dipinjam oleh orang lain");
-                    }
-
-                    // Update book status
-                    buku.Borrower = approval.namaPeminjam;
-                    buku.BorrowedAt = DateTime.Now;
-
-                    // Create peminjaman record
-                    var peminjaman = _mainMenu.CreatePeminjaman(buku, approval.namaPeminjam);
+                    return ApiResult<Approval>.Error("Buku sudah dipinjam oleh orang lain");
                 }
+
+                // Update book borrower
+                _bookRepository.UpdateBorrower(approval.IdBuku, approval.NamaPeminjam);
             }
 
-            string message = newStatus == "Approved" ? "Approval berhasil disetujui" : "Approval berhasil ditolak";
+            // Update approval
+            approval.UpdateStatus(status, keterangan);
+            _approvalRepository.Update(approval);
+
+            string message = status == "Approved" ? "Approval berhasil disetujui" : "Approval berhasil ditolak";
             return ApiResult<Approval>.Success(approval, message);
         }
 
-        private ApiResult<bool> DeleteApprovalWithValidation(string idApproval)
+        public ApiResult<bool> DeleteApproval(string id)
         {
-            var approval = GetApprovalById(idApproval);
+            var approval = _approvalRepository.GetById(id);
             if (approval == null)
             {
                 return ApiResult<bool>.Error("Approval tidak ditemukan");
             }
 
-            if (approval.status != "Pending")
+            if (approval.Status != "Pending")
             {
                 return ApiResult<bool>.Error("Hanya dapat menghapus approval dengan status 'Pending'");
             }
 
-            var approvals = _mainMenu.GetAllApprovals();
-            bool removed = approvals.Remove(approval);
-
+            bool removed = _approvalRepository.Delete(id);
             if (removed)
             {
                 return ApiResult<bool>.Success(true, "Approval berhasil dihapus");
