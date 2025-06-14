@@ -33,6 +33,7 @@
             pictureBox1 = new PictureBox();
             button2 = new Button();
             button3 = new Button();
+            button4 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -85,12 +86,24 @@
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
+            // button4
+            // 
+            button4.BackColor = Color.LightBlue;
+            button4.Location = new Point(12, 238);
+            button4.Name = "button4";
+            button4.Size = new Size(776, 57);
+            button4.TabIndex = 5;
+            button4.Text = "Kelola Approval";
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
+            // 
             // MenuAdm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.bg;
             ClientSize = new Size(800, 450);
+            Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(pictureBox1);
@@ -111,5 +124,6 @@
         private PictureBox pictureBox1;
         private Button button2;
         private Button button3;
+        private Button button4;
     }
 }

@@ -1,5 +1,6 @@
 ﻿using GUI.MenuAdmin.KelolaBuku;
 using GUI.MenuAdmin.KelolaPengguna;
+using GUI.MenuAdmin.Approval;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -40,6 +41,12 @@ namespace GUI
         {
             KelolaPengguna kelola = new KelolaPengguna();
             kelola.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e) // Button untuk Approval
+        {
+            Approval approval = new Approval();
+            approval.Show();
         }
     }
 }

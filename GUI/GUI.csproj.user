@@ -4,6 +4,9 @@
     <Compile Update="Login.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="MenuAdmin\Approval\Approval.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="MenuAdmin\KelolaBuku\HapusBuku.cs">
       <SubType>Form</SubType>
     </Compile>
