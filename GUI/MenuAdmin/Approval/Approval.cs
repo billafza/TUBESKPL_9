@@ -1,28 +1,52 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Data.SqlClient;
+using System.Data; // PENTING: Untuk DataTable
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using API.Services;
+using BukuKita;
+using BukuKita.Model;
 
 namespace GUI.MenuAdmin.Approval
 {
     public partial class Approval : Form
     {
-        SqlConnection koneksi = new SqlConnection(@"Data Source=NASHBILLA;Initial Catalog=BukuKita;Integrated Security=True;TrustServerCertificate=True");
+        private readonly ApprovalService _approvalService;
+        private readonly MainMenu _mainMenu;
+        private List<BukuKita.Model.Approval> _currentApprovals = new List<BukuKita.Model.Approval>();
 
         public Approval()
         {
             InitializeComponent();
+
+            try
+            {
+                // Initialize MainMenu dan ApprovalService
+                _mainMenu = new MainMenu();
+                _approvalService = new ApprovalService(_mainMenu);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error initializing services: {ex.Message}", "Initialization Error",
+                              MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void Approval_Load(object sender, EventArgs e)
         {
+            // Test service connection
+            if (_approvalService == null)
+            {
+                MessageBox.Show("ApprovalService tidak berhasil diinisialisasi!", "Error",
+                              MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Load pending approvals by default
             DisplayPendingApprovals();
         }
 
@@ -30,26 +54,19 @@ namespace GUI.MenuAdmin.Approval
         {
             try
             {
-                koneksi.Open();
-                SqlCommand cmd = koneksi.CreateCommand();
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = @"SELECT p.id_peminjaman, p.nama, p.id_buku, b.judul, 
-                                   p.tanggal_peminjaman, p.status 
-                                   FROM Peminjaman p 
-                                   INNER JOIN Buku b ON p.id_buku = b.id_buku 
-                                   WHERE p.status = 'Menunggu Approve'";
-                cmd.ExecuteNonQuery();
-                DataTable dt = new DataTable();
-                SqlDataAdapter sqlDA = new SqlDataAdapter(cmd);
-                sqlDA.Fill(dt);
-                dataGridView1.DataSource = dt;
-                koneksi.Close();
+                var approvals = _approvalService.GetPendingApprovals();
+                _currentApprovals = approvals;
+
+                var dataTable = ConvertApprovalsToDataTable(approvals);
+                dataGridView1.DataSource = dataTable;
+
+                FormatDataGridView();
+                UpdateStatusLabel();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message);
-                if (koneksi.State == ConnectionState.Open)
-                    koneksi.Close();
+                MessageBox.Show($"Error loading pending approvals: {ex.Message}",
+                              "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -57,26 +74,92 @@ namespace GUI.MenuAdmin.Approval
         {
             try
             {
-                koneksi.Open();
-                SqlCommand cmd = koneksi.CreateCommand();
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = @"SELECT p.id_peminjaman, p.nama, p.id_buku, b.judul, 
-                                   p.tanggal_peminjaman, p.status 
-                                   FROM Peminjaman p 
-                                   INNER JOIN Buku b ON p.id_buku = b.id_buku 
-                                   ORDER BY p.tanggal_peminjaman DESC";
-                cmd.ExecuteNonQuery();
-                DataTable dt = new DataTable();
-                SqlDataAdapter sqlDA = new SqlDataAdapter(cmd);
-                sqlDA.Fill(dt);
-                dataGridView1.DataSource = dt;
-                koneksi.Close();
+                var approvals = _approvalService.GetAllApprovals();
+                _currentApprovals = approvals;
+
+                var dataTable = ConvertApprovalsToDataTable(approvals);
+                dataGridView1.DataSource = dataTable;
+
+                FormatDataGridView();
+                UpdateStatusLabel();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message);
-                if (koneksi.State == ConnectionState.Open)
-                    koneksi.Close();
+                MessageBox.Show($"Error loading all approvals: {ex.Message}",
+                              "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        // Explicitly specify System.Data.DataTable to avoid ambiguity
+        private System.Data.DataTable ConvertApprovalsToDataTable(List<BukuKita.Model.Approval> approvals)
+        {
+            var dataTable = new System.Data.DataTable();
+
+            // Add columns
+            dataTable.Columns.Add("id_approval", typeof(string));
+            dataTable.Columns.Add("nama", typeof(string));
+            dataTable.Columns.Add("id_buku", typeof(string));
+            dataTable.Columns.Add("judul", typeof(string));
+            dataTable.Columns.Add("tanggal_peminjaman", typeof(DateTime));
+            dataTable.Columns.Add("status", typeof(string));
+            dataTable.Columns.Add("keterangan", typeof(string));
+
+            // Add rows
+            foreach (var approval in approvals)
+            {
+                dataTable.Rows.Add(
+                    approval.idApproval,
+                    approval.namaPeminjam,
+                    approval.idBuku,
+                    approval.judulBuku,
+                    approval.tanggalPengajuan,
+                    approval.status,
+                    approval.keterangan ?? ""
+                );
+            }
+
+            return dataTable;
+        }
+
+        private void FormatDataGridView()
+        {
+            if (dataGridView1.Columns.Count > 0)
+            {
+                // Set column headers
+                dataGridView1.Columns["id_approval"].HeaderText = "ID Approval";
+                dataGridView1.Columns["nama"].HeaderText = "Nama Peminjam";
+                dataGridView1.Columns["id_buku"].HeaderText = "ID Buku";
+                dataGridView1.Columns["judul"].HeaderText = "Judul Buku";
+                dataGridView1.Columns["tanggal_peminjaman"].HeaderText = "Tanggal Pengajuan";
+                dataGridView1.Columns["status"].HeaderText = "Status";
+                dataGridView1.Columns["keterangan"].HeaderText = "Keterangan";
+
+                // Set column widths
+                dataGridView1.Columns["id_approval"].Width = 100;
+                dataGridView1.Columns["nama"].Width = 150;
+                dataGridView1.Columns["id_buku"].Width = 80;
+                dataGridView1.Columns["judul"].Width = 200;
+                dataGridView1.Columns["tanggal_peminjaman"].Width = 140;
+                dataGridView1.Columns["status"].Width = 120;
+                dataGridView1.Columns["keterangan"].Width = 150;
+
+                // Format tanggal
+                dataGridView1.Columns["tanggal_peminjaman"].DefaultCellStyle.Format = "dd/MM/yyyy HH:mm";
+            }
+        }
+
+        private void UpdateStatusLabel()
+        {
+            try
+            {
+                var statusCounts = _currentApprovals.GroupBy(a => a.status)
+                                                  .ToDictionary(g => g.Key, g => g.Count());
+                var statusText = string.Join(" | ", statusCounts.Select(kv => $"{kv.Key}: {kv.Value}"));
+                this.Text = $"Kelola Approval Peminjaman - {statusText}";
+            }
+            catch
+            {
+                this.Text = "Kelola Approval Peminjaman";
             }
         }
 
@@ -95,15 +178,15 @@ namespace GUI.MenuAdmin.Approval
             if (dataGridView1.SelectedRows.Count > 0)
             {
                 DataGridViewRow selectedRow = dataGridView1.SelectedRows[0];
-                string idPeminjaman = selectedRow.Cells["id_peminjaman"].Value.ToString();
-                string nama = selectedRow.Cells["nama"].Value.ToString();
-                string idBuku = selectedRow.Cells["id_buku"].Value.ToString();
-                string judul = selectedRow.Cells["judul"].Value.ToString();
-                string status = selectedRow.Cells["status"].Value.ToString();
+                string idApproval = selectedRow.Cells["id_approval"].Value?.ToString() ?? "";
+                string nama = selectedRow.Cells["nama"].Value?.ToString() ?? "";
+                string judul = selectedRow.Cells["judul"].Value?.ToString() ?? "";
+                string status = selectedRow.Cells["status"].Value?.ToString() ?? "";
 
-                if (status != "Menunggu Approve")
+                if (!status.Equals("Pending", StringComparison.OrdinalIgnoreCase) &&
+                    !status.Equals("Menunggu Approve", StringComparison.OrdinalIgnoreCase))
                 {
-                    MessageBox.Show("Hanya peminjaman dengan status 'Menunggu Approve' yang dapat disetujui!");
+                    MessageBox.Show("Hanya approval dengan status 'Pending' yang dapat disetujui!");
                     return;
                 }
 
@@ -116,33 +199,30 @@ namespace GUI.MenuAdmin.Approval
                 {
                     try
                     {
-                        koneksi.Open();
-                        SqlCommand cmd = koneksi.CreateCommand();
-                        cmd.CommandType = CommandType.Text;
+                        var approvalResult = _approvalService.ProcessApproval(idApproval, "Approved", "Disetujui melalui GUI Admin");
 
-                        // Update status peminjaman
-                        cmd.CommandText = "UPDATE Peminjaman SET status = 'Disetujui' WHERE id_peminjaman = " + idPeminjaman;
-                        cmd.ExecuteNonQuery();
-
-                        // Update status buku menjadi Dipinjam
-                        cmd.CommandText = "UPDATE Buku SET status = 'Dipinjam' WHERE id_buku = '" + idBuku + "'";
-                        cmd.ExecuteNonQuery();
-
-                        koneksi.Close();
-                        MessageBox.Show("Peminjaman berhasil disetujui!");
-                        DisplayPendingApprovals();
+                        if (approvalResult.IsSuccess)
+                        {
+                            MessageBox.Show("Peminjaman berhasil disetujui!", "Sukses",
+                                          MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            DisplayPendingApprovals(); // Refresh
+                        }
+                        else
+                        {
+                            MessageBox.Show($"Gagal menyetujui: {approvalResult.Message}", "Error",
+                                          MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show("Error: " + ex.Message);
-                        if (koneksi.State == ConnectionState.Open)
-                            koneksi.Close();
+                        MessageBox.Show($"Error: {ex.Message}", "Error",
+                                      MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
             else
             {
-                MessageBox.Show("Pilih peminjaman yang akan disetujui!");
+                MessageBox.Show("Pilih approval yang akan disetujui!");
             }
         }
 
@@ -151,14 +231,15 @@ namespace GUI.MenuAdmin.Approval
             if (dataGridView1.SelectedRows.Count > 0)
             {
                 DataGridViewRow selectedRow = dataGridView1.SelectedRows[0];
-                string idPeminjaman = selectedRow.Cells["id_peminjaman"].Value.ToString();
-                string nama = selectedRow.Cells["nama"].Value.ToString();
-                string judul = selectedRow.Cells["judul"].Value.ToString();
-                string status = selectedRow.Cells["status"].Value.ToString();
+                string idApproval = selectedRow.Cells["id_approval"].Value?.ToString() ?? "";
+                string nama = selectedRow.Cells["nama"].Value?.ToString() ?? "";
+                string judul = selectedRow.Cells["judul"].Value?.ToString() ?? "";
+                string status = selectedRow.Cells["status"].Value?.ToString() ?? "";
 
-                if (status != "Menunggu Approve")
+                if (!status.Equals("Pending", StringComparison.OrdinalIgnoreCase) &&
+                    !status.Equals("Menunggu Approve", StringComparison.OrdinalIgnoreCase))
                 {
-                    MessageBox.Show("Hanya peminjaman dengan status 'Menunggu Approve' yang dapat ditolak!");
+                    MessageBox.Show("Hanya approval dengan status 'Pending' yang dapat ditolak!");
                     return;
                 }
 
@@ -171,29 +252,30 @@ namespace GUI.MenuAdmin.Approval
                 {
                     try
                     {
-                        koneksi.Open();
-                        SqlCommand cmd = koneksi.CreateCommand();
-                        cmd.CommandType = CommandType.Text;
+                        var approvalResult = _approvalService.ProcessApproval(idApproval, "Rejected", "Ditolak melalui GUI Admin");
 
-                        // Update status peminjaman
-                        cmd.CommandText = "UPDATE Peminjaman SET status = 'Ditolak' WHERE id_peminjaman = " + idPeminjaman;
-                        cmd.ExecuteNonQuery();
-
-                        koneksi.Close();
-                        MessageBox.Show("Peminjaman berhasil ditolak!");
-                        DisplayPendingApprovals();
+                        if (approvalResult.IsSuccess)
+                        {
+                            MessageBox.Show("Peminjaman berhasil ditolak!", "Sukses",
+                                          MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            DisplayPendingApprovals(); // Refresh
+                        }
+                        else
+                        {
+                            MessageBox.Show($"Gagal menolak: {approvalResult.Message}", "Error",
+                                          MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show("Error: " + ex.Message);
-                        if (koneksi.State == ConnectionState.Open)
-                            koneksi.Close();
+                        MessageBox.Show($"Error: {ex.Message}", "Error",
+                                      MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
             else
             {
-                MessageBox.Show("Pilih peminjaman yang akan ditolak!");
+                MessageBox.Show("Pilih approval yang akan ditolak!");
             }
         }
 
@@ -207,30 +289,28 @@ namespace GUI.MenuAdmin.Approval
 
             try
             {
-                koneksi.Open();
-                SqlCommand cmd = koneksi.CreateCommand();
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = @"SELECT p.id_peminjaman, p.nama, p.id_buku, b.judul, 
-                                   p.tanggal_peminjaman, p.status 
-                                   FROM Peminjaman p 
-                                   INNER JOIN Buku b ON p.id_buku = b.id_buku 
-                                   WHERE p.nama LIKE '%" + textBox1.Text + @"%' 
-                                   OR b.judul LIKE '%" + textBox1.Text + @"%' 
-                                   OR p.id_buku LIKE '%" + textBox1.Text + @"%' 
-                                   OR p.status LIKE '%" + textBox1.Text + @"%'";
-                cmd.ExecuteNonQuery();
-                DataTable dt = new DataTable();
-                SqlDataAdapter sqlDA = new SqlDataAdapter(cmd);
-                sqlDA.Fill(dt);
-                dataGridView1.DataSource = dt;
-                koneksi.Close();
+                string keyword = textBox1.Text.Trim();
+
+                var filteredApprovals = _currentApprovals.Where(a =>
+                    a.namaPeminjam.Contains(keyword, StringComparison.OrdinalIgnoreCase) ||
+                    a.judulBuku.Contains(keyword, StringComparison.OrdinalIgnoreCase) ||
+                    a.idBuku.Contains(keyword, StringComparison.OrdinalIgnoreCase) ||
+                    a.status.Contains(keyword, StringComparison.OrdinalIgnoreCase) ||
+                    a.idApproval.Contains(keyword, StringComparison.OrdinalIgnoreCase)
+                ).ToList();
+
+                var dataTable = ConvertApprovalsToDataTable(filteredApprovals);
+                dataGridView1.DataSource = dataTable;
+                FormatDataGridView();
+
                 textBox1.Text = "";
+                MessageBox.Show($"Ditemukan {filteredApprovals.Count} hasil pencarian.", "Hasil Pencarian",
+                              MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message);
-                if (koneksi.State == ConnectionState.Open)
-                    koneksi.Close();
+                MessageBox.Show($"Error during search: {ex.Message}", "Error",
+                              MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -241,7 +321,7 @@ namespace GUI.MenuAdmin.Approval
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            // Optional: Handle cell click events
         }
     }
 }
